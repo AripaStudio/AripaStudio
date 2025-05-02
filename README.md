@@ -20,7 +20,7 @@ I also work with:
 I’m relatively new to the field, having entered the computer domain about 3 years ago, and I’m passionate about learning new things every day! 🌱  
 
 ---
-## 🙋 About Me  
+## 🙋‍♂️ About Me  
 I’m a self-taught developer from Iran, and my native language is Persian. My name is Khashayar (which I prefer), but my official name is Abolfazl. I started programming around 3 years ago, and while I’m still a beginner, I love creating games and tools.
 
 ---
