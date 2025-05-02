@@ -7,9 +7,8 @@ Hello everyone, welcome to the official Telegram channel of Aripa Studio. I'm Kh
 
 ## 🖼️ Studio Logos  
 Here are the logos for Aripa Studio:  
-- **Main Logo**: [![image](https://github.com/user-attachments/assets/06a1f3c8-a30c-4595-bd7b-fb2b133dec35)]  
-- **Games & Software Logo**: [![image](https://github.com/user-attachments/assets/330ca9fc-d324-4333-9326-992b58cf1488)]  
-
+- **Main Logo**: ![Main Logo](https://github.com/AripaStudio/AripaStudio/blob/main/AripaStudioMain.png?raw=true)  
+- **Games & Software Logo**: ![Games & Software Logo](https://github.com/AripaStudio/AripaStudio/blob/main/AripaStudioGameSoftware.png?raw=true)
 ---
 
 ## 📬 Connect with Me  
