@@ -48,7 +48,7 @@ Here’s a showcase of my projects—some are completed, and others are in the w
 **Download my projects:**  
 - 📲 Telegram: [Aripa Studio Games](https://t.me/AripaStudioGames)  
 - 🎮 itch.io: [My Profile](https://itch.io/profile/aripastudio)  
-- 😺 And on GitHub
+## - 😺 And on GitHub
 ### 🔧 Under Construction (Coming Soon)  
 **Games:**  
 - 🌌 **#Corner_of_Existence** - A 2d Game (Puzzel , History , survival ) 
