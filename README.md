@@ -30,34 +30,35 @@ I’m relatively new to the field, having entered the computer domain a few year
 
 ## 📊 GitHub Stats  
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=radical)  
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=radical)
+![GitHub Streak](https://streak-stats.demolab.com/?user=AripaStudio&theme=radical)
 
 ---
 
-## 🎮 Games and Software by Aripa Studio  
-Here’s a list of projects I’ve built or am currently working on:  
+## 🎮 My Games and Software at Aripa Studio  
+Here’s a showcase of my projects—some are completed, and others are in the works! 🚀  
 
-### Completed Projects:  
-1. #Material_Color_AP  
-2. #RandomWK_AP  
-3. #jange_dayero  
-4. #ToDoListAP  
-5. #Escape_from_Reality  
-6. #DNSchanger  
-7. #AripaStudio_Hub ([Download here](#AripaStudioHub))  
+### 🎉 Completed Projects  
+- 🖌️ **#Material_Color_AP** - A tool for exploring Material Design colors  
+- 🎲 **#RandomWK_AP** - A random word generator for creative projects  
+- ⚔️ **#jange_dayero** - A puzzle game 2D  
+- 📋 **#ToDoListAP** - A simple yet effective to-do list app  
+- 🏃 **#Escape_from_Reality** - A puzzle and History Game 2D  
+- 🌐 **#DNSchanger** - A utility to easily switch DNS settings (Console and With Dlang) ([Download here](https://github.com/AripaStudio/DNSchangerWindowsConsole/releases))  
+- 🛠️ **#AripaStudio_Hub** - Central hub for Aripa Studio ([Download here](#AripaStudioHub))  
 
-**Download links for my projects:**  
-- Telegram: [Aripa Studio Games](https://t.me/AripaStudioGames)  
-- itch.io: [My Profile](https://itch.io/profile/aripastudio)  
+**Download my projects:** 
+- 📲 Telegram Main Channel [Aripa Studio](https://t.me/AripaStudio)
+- 📲 Telegram: [Aripa Studio Games](https://t.me/AripaStudioGames)  
+- 🎮 itch.io: [My Profile](https://itch.io/profile/aripastudio) 
 
-### Under Construction (Coming Soon):  
+### 🔧 Under Construction (Coming Soon)  
 **Games:**  
-- #Corner_of_Existence  
+- 🌌 **#Corner_of_Existence** -   
 
 **Software:**  
-- #VibeDriveAP  
-- #AIO_Toolbox_AP  
-- #DNCaripa2  
+- 🎵 **#VibeDriveAP** -  
+- 🧰 **#AIO_Toolbox_AP** - 
+- 🔒 **#DNCaripa2** - 
 
 ---
 
