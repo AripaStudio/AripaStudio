@@ -47,7 +47,6 @@ Here’s a showcase of my projects—some are completed, and others are in the w
 - 🛠️ **#AripaStudio_Hub** - Central hub for Aripa Studio ([Download here](#AripaStudioHub))  
 
 **Download my projects:** 
-- 📲 Telegram Main Channel [Aripa Studio](https://t.me/AripaStudio)
 - 📲 Telegram: [Aripa Studio Games](https://t.me/AripaStudioGames)  
 - 🎮 itch.io: [My Profile](https://itch.io/profile/aripastudio) 
 
@@ -56,7 +55,7 @@ Here’s a showcase of my projects—some are completed, and others are in the w
 - 🌌 **#Corner_of_Existence** -   
 
 **Software:**  
-- 🎵 **#VibeDriveAP** -  
+- 💾 **#VibeDriveAP** -  
 - 🧰 **#AIO_Toolbox_AP** - 
 - 🔒 **#DNCaripa2** - 
 
