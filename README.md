@@ -14,6 +14,12 @@ Hello everyone, welcome to the official Telegram channel of Aripa Studio. I'm Kh
 I mostly work with:  
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)  
 ![D](https://img.shields.io/badge/D-007A7A?style=flat-square&logo=d&logoColor=white)  
+I also work with:  
+![WPF](https://img.shields.io/badge/WPF-0078D7?style=flat-square&logo=dotnet&logoColor=white)  
+![Avalonia](https://img.shields.io/badge/Avalonia-512BD4?style=flat-square&logo=avalonia&logoColor=white)  
+![Godot Mono](https://img.shields.io/badge/Godot_Mono-478CBF?style=flat-square&logo=godotengine&logoColor=white)  
+
+I’m relatively new to the field, having entered the computer domain a few years ago, and I’m passionate about learning new things every day! 🌱  
 
 ---
 
