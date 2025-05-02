@@ -60,8 +60,8 @@ Here’s a showcase of my projects—some are completed, and others are in the w
 
 ---
 ## 🌟 Featured Project: AripaStudioHub  
-AripaStudioHub is a central software for managing Aripa Studio's projects and tools. Check it out!  
-🔗 [AripaStudioHub Repository](https://github.com/AripaStudio/AripaStudioHub)  
+AripaStudioHub is a central software for managing Aripa Studio's projects and tools. Check it out!    
+[![GitHub](https://img.shields.io/badge/GitHub-AripaStudioHub%20Repository-2CA5E0?style=flat-square&logo=github&logoColor=white)](https://github.com/AripaStudio/AripaStudioHub)
 
 ---
 ## 🏆 Achievements  
