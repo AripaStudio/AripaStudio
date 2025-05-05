@@ -17,6 +17,7 @@ I also work with:
 ![Godot Mono](https://img.shields.io/badge/Godot_Mono-478CBF?style=flat-square&logo=godotengine&logoColor=white)  
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)  
 !And other things!
+
 I’m relatively new to the field, having entered the computer domain about 3 years ago, and I’m passionate about learning new things every day! 🌱  
 
 ---
