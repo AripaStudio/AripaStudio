@@ -77,7 +77,8 @@ AripaStudioHub is a central software for managing Aripa Studio's projects and to
 Join my Telegram channel for the latest updates on games and software!  
 [![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/AripaStudio)
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AripaStudio&theme=github-compact&bg_color=000000&line=0000ff&point=ffff00&range=one_week" alt="Dadmehr's Activity Graph"/>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AripaStudio&theme=github-compact&bg_color=000000&line=ffff00&point=0000ff&range=two_year" alt="Dadmehr's Activity Graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AripaStudio&theme=github-compact&bg_color=000000&line=0000ff&point=ffff00&range=one_week&hide=other_user_activity&area=true&custom_title=Weekly%20Activity%20Graph" alt="Weekly Activity Graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AripaStudio&theme=github-compact&bg_color=000000&line=ffff00&point=0000ff&range=two_year&hide=other_user_activity&area=true&custom_title=Two%20Year%20Activity%20Graph" alt="Two Year Activity Graph"/>
+
 
 
