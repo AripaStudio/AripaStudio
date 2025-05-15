@@ -76,3 +76,5 @@ AripaStudioHub is a central software for managing Aripa Studio's projects and to
 ## 📬 Stay Updated  
 Join my Telegram channel for the latest updates on games and software!  
 [![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/AripaStudio)
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AripaStudio&theme=github-compact" alt="Dadmehr's Activity Graph"/>
