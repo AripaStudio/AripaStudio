@@ -80,7 +80,7 @@ Join my Telegram channel for the latest updates on games and software!
 <p>one week:</p>
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=AripaStudio&theme=github-compact&bg_color=000000&line=0000ff&point=ffff00&range=one_week&hide=other_user_activity&area=true&custom_title=Weekly%20Activity%20Graph" alt="Weekly Activity Graph"/>
 <p>one year : </p>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AripaStudio&theme=github-compact&bg_color=000000&line=ffff00&point=0000ff&range=one_year&hide=other_user_activity&area=true&custom_title=Two%20Year%20Activity%20Graph" alt="One Year Activity Graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AripaStudio&theme=github-compact&bg_color=000000&line=ffff00&point=0000ff&range=one_year&hide=other_user_activity&area=true&custom_title=One%20Year%20Activity%20Graph" alt="One Year Activity Graph"/>
 
 
 
