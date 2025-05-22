@@ -167,3 +167,5 @@
     <img src="https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white" alt="Telegram">
   </a>
 </p>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AripaStudio&theme=github-compact&bg_color=000000&line=ffff00&point=0000ff&range=one_year&hide=other_user_activity&area=true&custom_title=One%20Year%20Activity%20Graph" alt="One Year Activity Graph"/>
