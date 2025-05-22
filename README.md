@@ -24,7 +24,9 @@
   I mostly work with:
   <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" alt="C#">
   <img src="https://img.shields.io/badge/D-007A7A?style=flat-square&logo=d&logoColor=white" alt="D">
-  <img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript"> Intermediate
+  <p>
+    <img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript"> Intermediate
+  </p>
 </p>
 <p>
   I also work with:
