@@ -55,10 +55,17 @@
 <h2>
   📊 GitHub Stats
 </h2>
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=radical" alt="GitHub Stats">
-  <img src="https://streak-stats.demolab.com/?user=AripaStudio&theme=radical" alt="GitHub Streak">
-</p>
+
+<div style="display: flex; 
+               flex-direction: row; 
+               align-items: center;
+               justify-content: flex-start; 
+               ">
+   <p>
+    <img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=radical" alt="GitHub Stats">
+    <img src="https://streak-stats.demolab.com/?user=AripaStudio&theme=radical" alt="GitHub Streak">
+  </p>
+</div>
 <hr>
 <h2>
   🎮 My Games and Software at Aripa Studio
