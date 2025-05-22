@@ -1,85 +1,169 @@
-# Hi there! 👋 Welcome to Aripa Studio
-
-Hello everyone, welcome to the official Telegram channel of Aripa Studio. I'm Khashayar Mobasheri (Abolfazl Mobasheri), and Aripa Studio is a one-person studio that works in game development and software development. Thank you for following us! ❤️  
-**Full name of the studio**: Aripa Pars Studio  
----
-## 📬 Connect with Me  
-[![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/AripaStudio)
-
----
-## 🛠️ Skills  
-I mostly work with:  
-![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)  
-![D](https://img.shields.io/badge/D-007A7A?style=flat-square&logo=d&logoColor=white)  
-![GDscript](https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white) Intermediate
-
-I also work with:  
-![WPF](https://img.shields.io/badge/WPF-0078D7?style=flat-square&logo=dotnet&logoColor=white)  
-![Avalonia](https://img.shields.io/badge/Avalonia-512BD4?style=flat-square&logo=avalonia&logoColor=white)  
-![Godot Mono](https://img.shields.io/badge/Godot_Mono-478CBF?style=flat-square&logo=godotengine&logoColor=white)  
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)  
-!And other things!
-
-I’m relatively new to the field, having entered the computer domain about 3 years ago, and I’m passionate about learning new things every day! 🌱  
-
----
-## 🙋‍♂️ About Me  
-I’m a self-taught developer from Iran, and my native language is Persian. My name is Khashayar (which I prefer), but my official name is Abolfazl. I started programming around 3 years ago, and while I’m still a beginner, I love creating games and tools.
-
----
-## 💻 Most Used Languages  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AripaStudio&layout=compact&theme=radical)
-
----
-## 📊 GitHub Stats  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=radical)  
-![GitHub Streak](https://streak-stats.demolab.com/?user=AripaStudio&theme=radical)
-
----
-## 🎮 My Games and Software at Aripa Studio  
-Here’s a showcase of my projects—some are completed, and others are in the works! 🚀  
-
-### 🎉 Completed Projects  
-- 🖌️ **#Material_Color_AP** - A tool for exploring Material Design colors  
-- 🎲 **#RandomWK_AP** - A random word generator for creative projects  
-- ⚔️ **#jange_dayero** - A puzzle game 2D  
-- 📋 **#ToDoListAP** - A simple yet effective to-do list app  
-- 🏃 **#Escape_from_Reality** - A puzzle and History Game 2D  
-- 🌐 **#DNSchanger** - A utility to easily switch DNS settings (Console and With Dlang) ([Download here](https://github.com/AripaStudio/DNSchangerWindowsConsole/releases))  
-- 🛠️ **#AripaStudio_Hub** - Central hub for Aripa Studio ([Download here](#AripaStudioHub))  
-
-**Download my projects:**  
-- 📲 Telegram: [Aripa Studio Games](https://t.me/AripaStudioGames)  
-- 🎮 itch.io: [My Profile](https://itch.io/profile/aripastudio)
-- <img src="github-icon.svg" width="32" height="32"> And on GitHub
-  
-### 🔧 Under Construction (Coming Soon)  
-**Games:**  
-- 🌌 **#Corner_of_Existence** - A 2d Game (Puzzel , History , survival ) 
-
-**Software:**  
-- 💾 **#VibeDriveAP** - A file management and organization software  
-- 🧰 **#AIO_Toolbox_AP** - An all-in-one utility software with various tools  
-- 🔒 **#DNCaripa2** - A graphical DNS changer software (the next version of the console-based DNSchanger)  
-
----
-## 🌟 Featured Project: AripaStudioHub  
-AripaStudioHub is a central software for managing Aripa Studio's projects and tools. Check it out!    
-[![GitHub](https://img.shields.io/badge/GitHub-AripaStudioHub%20Repository-2CA5E0?style=flat-square&logo=github&logoColor=white)](https://github.com/AripaStudio/AripaStudioHub)
-
----
-## 🏆 Achievements  
-- 🎯 Working solo on game and software development projects  
-- 🥇 Building a growing community on Telegram  
-
----
-
-## 📬 Stay Updated  
-Join my Telegram channel for the latest updates on games and software!  
-[![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/AripaStudio)
-
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AripaStudio&theme=github-compact&bg_color=000000&line=ffff00&point=0000ff&range=one_year&hide=other_user_activity&area=true&custom_title=One%20Year%20Activity%20Graph" alt="One Year Activity Graph"/>
-
-
-
+<h1>
+  Hi there! 👋 Welcome to Aripa Studio
+</h1>
+<p>
+  Hello everyone, welcome to the official Telegram channel of Aripa Studio. I'm Khashayar Mobasheri (Abolfazl Mobasheri), and Aripa Studio is a one-person studio that works in game development and software development. Thank you for following us! ❤️
+</p>
+<p>
+  <b>Full name of the studio</b>: Aripa Pars Studio
+</p>
+<hr>
+<h2>
+  📬 Connect with Me
+</h2>
+<p>
+  <a href="https://t.me/AripaStudio">
+    <img src="https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white" alt="Telegram">
+  </a>
+</p>
+<hr>
+<h2>
+  🛠️ Skills
+</h2>
+<p>
+  I mostly work with:
+  <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" alt="C#">
+  <img src="https://img.shields.io/badge/D-007A7A?style=flat-square&logo=d&logoColor=white" alt="D">
+  <img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript"> Intermediate
+</p>
+<p>
+  I also work with:
+  <img src="https://img.shields.io/badge/WPF-0078D7?style=flat-square&logo=dotnet&logoColor=white" alt="WPF">
+  <img src="https://img.shields.io/badge/Avalonia-512BD4?style=flat-square&logo=avalonia&logoColor=white" alt="Avalonia">
+  <img src="https://img.shields.io/badge/Godot_Mono-478CBF?style=flat-square&logo=godotengine&logoColor=white" alt="Godot Mono">
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
+  !And other things!
+</p>
+<p>
+  I’m relatively new to the field, having entered the computer domain about 3 years ago, and I’m passionate about learning new things every day! 🌱
+</p>
+<hr>
+<h2>
+  🙋‍♂️ About Me
+</h2>
+<p>
+  I’m a self-taught developer from Iran, and my native language is Persian. My name is Khashayar (which I prefer), but my official name is Abolfazl. I started programming around 3 years ago, and while I’m still a beginner, I love creating games and tools.
+</p>
+<hr>
+<h2>
+  💻 Most Used Languages
+</h2>
+<p>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AripaStudio&layout=compact&theme=radical" alt="Top Languages">
+</p>
+<hr>
+<h2>
+  📊 GitHub Stats
+</h2>
+<p>
+  <img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=radical" alt="GitHub Stats">
+  <img src="https://streak-stats.demolab.com/?user=AripaStudio&theme=radical" alt="GitHub Streak">
+</p>
+<hr>
+<h2>
+  🎮 My Games and Software at Aripa Studio
+</h2>
+<p>
+  Here’s a showcase of my projects—some are completed, and others are in the works! 🚀
+</p>
+<h3>
+  🎉 Completed Projects
+</h3>
+<ul>
+  <li>
+    🖌️ <b>#Material_Color_AP</b> - A tool for exploring Material Design colors
+  </li>
+  <li>
+    🎲 <b>#RandomWK_AP</b> - A random word generator for creative projects
+  </li>
+  <li>
+    ⚔️ <b>#jange_dayero</b> - A puzzle game 2D
+  </li>
+  <li>
+    📋 <b>#ToDoListAP</b> - A simple yet effective to-do list app
+  </li>
+  <li>
+    🏃 <b>#Escape_from_Reality</b> - A puzzle and History Game 2D
+  </li>
+  <li>
+    🌐 <b>#DNSchanger</b> - A utility to easily switch DNS settings (Console and With Dlang) (<a href="https://github.com/AripaStudio/DNSchangerWindowsConsole/releases">Download here</a>)
+  </li>
+  <li>
+    🛠️ <b>#AripaStudio_Hub</b> - Central hub for Aripa Studio (<a href="#AripaStudioHub">Download here</a>)
+  </li>
+</ul>
+<p>
+  <b>Download my projects:</b>
+</p>
+<ul>
+  <li>
+    📲 Telegram: <a href="https://t.me/AripaStudioGames">Aripa Studio Games</a>
+  </li>
+  <li>
+    🎮 itch.io: <a href="https://itch.io/profile/aripastudio">My Profile</a>
+  </li>
+  <li>
+    <img src="github-icon.svg" width="32" height="32" alt="GitHub Icon"> And on GitHub
+  </li>
+</ul>
+<h3>
+  🔧 Under Construction (Coming Soon)
+</h3>
+<p>
+  <b>Games:</b>
+</p>
+<ul>
+  <li>
+    🌌 <b>#Corner_of_Existence</b> - A 2d Game (Puzzel , History , survival )
+  </li>
+</ul>
+<p>
+  <b>Software:</b>
+</p>
+<ul>
+  <li>
+    💾 <b>#VibeDriveAP</b> - A file management and organization software
+  </li>
+  <li>
+    🧰 <b>#AIO_Toolbox_AP</b> - An all-in-one utility software with various tools
+  </li>
+  <li>
+    🔒 <b>#DNCaripa2</b> - A graphical DNS changer software (the next version of the console-based DNSchanger)
+  </li>
+</ul>
+<hr>
+<h2>
+  🌟 Featured Project: AripaStudioHub
+</h2>
+<p>
+  AripaStudioHub is a central software for managing Aripa Studio's projects and tools. Check it out!
+</p>
+<p>
+  <a href="https://github.com/AripaStudio/AripaStudioHub">
+    <img src="https://img.shields.io/badge/GitHub-AripaStudioHub%20Repository-2CA5E0?style=flat-square&logo=github&logoColor=white" alt="AripaStudioHub Repository">
+  </a>
+</p>
+<hr>
+<h2>
+  🏆 Achievements
+</h2>
+<ul>
+  <li>
+    🎯 Working solo on game and software development projects
+  </li>
+  <li>
+    🥇 Building a growing community on Telegram
+  </li>
+</ul>
+<hr>
+<h2>
+  📬 Stay Updated
+</h2>
+<p>
+  Join my Telegram channel for the latest updates on games and software!
+</p>
+<p>
+  <a href="https://t.me/AripaStudio">
+    <img src="https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white" alt="Telegram">
+  </a>
+</p>
