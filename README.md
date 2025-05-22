@@ -98,7 +98,7 @@
     🌐 <b>#DNSchanger</b> - A utility to easily switch DNS settings (Console and With Dlang) (<a href="https://github.com/AripaStudio/DNSchangerWindowsConsole/releases">Download here</a>)
   </li>
   <li>
-    🛠️ <b>#AripaStudio_Hub</b> - Central hub for Aripa Studio (<a href="#AripaStudioHub">Download here</a>)
+    🛠️ <b>#AripaStudio_Hub</b> - Central hub for Aripa Studio (<a href="https://github.com/AripaStudio/AripaStudioHub/releases">Download here</a>)
   </li>
 </ul>
 <p>
