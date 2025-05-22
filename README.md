@@ -51,7 +51,7 @@ Here’s a showcase of my projects—some are completed, and others are in the w
 **Download my projects:**  
 - 📲 Telegram: [Aripa Studio Games](https://t.me/AripaStudioGames)  
 - 🎮 itch.io: [My Profile](https://itch.io/profile/aripastudio)
-- ![GitHub](github-icon.svg) And on GitHub
+- <img src="github-icon.svg" width="32" height="32"> And on GitHub
   
 ### 🔧 Under Construction (Coming Soon)  
 **Games:**  
