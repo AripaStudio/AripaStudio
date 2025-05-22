@@ -2,7 +2,7 @@
   Hi there! 👋 Welcome to Aripa Studio
 </h1>
 <p>
-  Hello everyone, welcome to the official Telegram channel of Aripa Studio. I'm Khashayar Mobasheri (Abolfazl Mobasheri), and Aripa Studio is a one-person studio that works in game development and software development. Thank you for following us! ❤️
+  Hello everyone, welcome to the official GitHub account of Aripa Studio. I'm Khashayar Mobasheri (Abolfazl Mobasheri), and Aripa Studio is a one-person studio that works in game development and software development. Thank you for following us! ❤️
 </p>
 <p>
   <b>Full name of the studio</b>: Aripa Pars Studio
