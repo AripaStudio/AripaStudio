@@ -9,7 +9,7 @@
 </p>
 <hr>
 <h2>
-  <img src="AripaStudio/img/connection-people-share-svgrepo-com.svg" width="32" height="32" alt="telegram Icon"> Connect with Me
+  <img src="AripaStudio/img/connection-people-share-svgrepo-com.svg" width="32" height="32" alt="connetion people share"> Connect with Me
 </h2>
 <p>
   <a href="https://t.me/AripaStudio">
@@ -18,7 +18,7 @@
 </p>
 <hr>
 <h2>
-  <img src="AripaStudio/img/line-reading-text-svgrepo-com.svg" width="32" height="32" alt="telegram Icon"> Skills
+  <img src="img/line-reading-text-svgrepo-com.svg" width="32" height="32" alt="line reading text"> Skills
 </h2>
 <p>
   I mostly work with:
