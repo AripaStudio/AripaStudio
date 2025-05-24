@@ -9,7 +9,7 @@
 </p>
 <hr>
 <h2>
-  📬 Connect with Me
+  <img src="connection-people-share-svgrepo-com.svg" width="32" height="32" alt="telegram Icon"> Connect with Me
 </h2>
 <p>
   <a href="https://t.me/AripaStudio">
@@ -18,7 +18,7 @@
 </p>
 <hr>
 <h2>
-  🛠️ Skills
+  <img src="line-reading-text-svgrepo-com.svg" width="32" height="32" alt="telegram Icon"> Skills
 </h2>
 <p>
   I mostly work with:
