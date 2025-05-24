@@ -9,7 +9,7 @@
 </p>
 <hr>
 <h2>
-  <img src="img/connection-people-share-svgrepo-com.svg" width="32" height="32" alt="connetion people share"> Connect with Me
+  <img src="img/connection-people-share-svgrepo-com.svg" width="40" height="40" alt="connetion people share"> Connect with Me
 </h2>
 <p>
   <a href="https://t.me/AripaStudio">
@@ -18,7 +18,7 @@
 </p>
 <hr>
 <h2>
-  <img src="img/line-reading-text-svgrepo-com.svg" width="32" height="32" alt="line reading text"> Skills
+  <img src="img/line-reading-text-svgrepo-com.svg" width="40" height="40" alt="line reading text"> Skills
 </h2>
 <p>
   I mostly work with:
@@ -44,19 +44,19 @@
 <p>I also work with:</p>
 <table>
   <tr>
-    <td><img src="img/skill_icon/DotNet-icon.svg" width="35" height="35" alt="WPF"></td>
+    <td><img src="img/skill_icon/DotNet-icon.svg" width="50" height="50" alt="WPF"></td>
     <td>WPF UI</td>
   </tr>
   <tr>
-    <td><img src="img/skill_icon/avalonia-logo.ico" width="35" height="35" alt="Avalonia"></td>
+    <td><img src="img/skill_icon/avalonia-logo.ico" width="50" height="50" alt="Avalonia"></td>
     <td>Avalonia</td>
   </tr>
   <tr>
-    <td><img src="img/skill_icon/godot-engine-svgrepo-com.svg" width="35" height="35" alt="Godot Mono"></td>
+    <td><img src="img/skill_icon/godot-engine-svgrepo-com.svg" width="50" height="50" alt="Godot Mono"></td>
     <td>Godot Mono</td>
   </tr>
   <tr>
-    <td><img src="img/skill_icon/sqlite-svgrepo-com.svg" width="35" height="35" alt="SQLite"></td>
+    <td><img src="img/skill_icon/sqlite-svgrepo-com.svg" width="50" height="50" alt="SQLite"></td>
     <td>SQLite</td>
   </tr>
 </table>
