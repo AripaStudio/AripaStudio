@@ -106,7 +106,7 @@
 </p>
 <ul>
   <li>
-    📲 Telegram: <a href="https://t.me/AripaStudioGames">Aripa Studio Games</a>
+     <img src="telegram-icon.svg" width="32" height="32" alt="GitHub Icon"> Telegram: <a href="https://t.me/AripaStudioGames">Aripa Studio Games</a>
   </li>
   <li>
     <img src="itch-icon.svg" width="32" height="32" alt="GitHub Icon"> itch.io: <a href="https://itch.io/profile/aripastudio">My Profile</a>
