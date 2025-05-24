@@ -9,7 +9,7 @@
 </p>
 <hr>
 <h2>
-  <img src="connection-people-share-svgrepo-com.svg" width="32" height="32" alt="telegram Icon"> Connect with Me
+  <img src="AripaStudio/img/connection-people-share-svgrepo-com.svg" width="32" height="32" alt="telegram Icon"> Connect with Me
 </h2>
 <p>
   <a href="https://t.me/AripaStudio">
@@ -18,7 +18,7 @@
 </p>
 <hr>
 <h2>
-  <img src="line-reading-text-svgrepo-com.svg" width="32" height="32" alt="telegram Icon"> Skills
+  <img src="AripaStudio/img/line-reading-text-svgrepo-com.svg" width="32" height="32" alt="telegram Icon"> Skills
 </h2>
 <p>
   I mostly work with:
@@ -106,13 +106,13 @@
 </p>
 <ul>
   <li>
-     <img src="telegram-icon.svg" width="32" height="32" alt="telegram Icon"> Telegram: <a href="https://t.me/AripaStudioGames">Aripa Studio Games</a>
+     <img src="AripaStudio/img/telegram-icon.svg" width="32" height="32" alt="telegram Icon"> Telegram: <a href="https://t.me/AripaStudioGames">Aripa Studio Games</a>
   </li>
   <li>
-    <img src="itch-icon.svg" width="32" height="32" alt="itch.io Icon"> itch.io: <a href="https://itch.io/profile/aripastudio">My Profile</a>
+    <img src="/AripaStudio/img/itch-icon.svg" width="32" height="32" alt="itch.io Icon"> itch.io: <a href="https://itch.io/profile/aripastudio">My Profile</a>
   </li>
   <li>
-    <img src="github-icon.svg" width="32" height="32" alt="GitHub Icon"> And on GitHub
+    <img src="/AripaStudio/img/github-icon.svg" width="32" height="32" alt="GitHub Icon"> And on GitHub
   </li>
 </ul>
 <h3>
