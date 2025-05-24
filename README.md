@@ -28,17 +28,27 @@
     <img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript"> Intermediate
   </p>
 </p>
-<p>
-  I also work with:
-</p>
-  <img src="img/skill_icon/DotNet-icon.svg" width="35"  height="35" alt="WPF"> WPF ui
-  <img src="img/skill_icon/avalonia-logo.ico" width="35"  height="35" alt="Avalonia">
-  <img src="img/skill_icon/godot-engine-svgrepo-com.svg" width="35"  height="35" alt="Godot Mono"> Godot Mono
-  <img src="img/skill_icon/sqlite-svgrepo-com.svg" width="50"  height="50" alt="SQLite">
-  <p>
-   !And other things!
-  </p>
-<p>
+<p>I also work with:</p>
+<table>
+  <tr>
+    <td><img src="img/skill_icon/DotNet-icon.svg" width="35" height="35" alt="WPF"></td>
+    <td>WPF UI</td>
+  </tr>
+  <tr>
+    <td><img src="img/skill_icon/avalonia-logo.ico" width="35" height="35" alt="Avalonia"></td>
+    <td>Avalonia</td>
+  </tr>
+  <tr>
+    <td><img src="img/skill_icon/godot-engine-svgrepo-com.svg" width="35" height="35" alt="Godot Mono"></td>
+    <td>Godot Mono</td>
+  </tr>
+  <tr>
+    <td><img src="img/skill_icon/sqlite-svgrepo-com.svg" width="35" height="35" alt="SQLite"></td>
+    <td>SQLite</td>
+  </tr>
+</table>
+<p>!And other things!</p>
+
   I’m relatively new to the field, having entered the computer domain about 3 years ago, and I’m passionate about learning new things every day! 🌱
 </p>
 <hr>
