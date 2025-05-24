@@ -22,12 +22,25 @@
 </h2>
 <p>
   I mostly work with:
-  <img src="img/skill_icon/csharp-svgrepo-com.svg" width="40"  height="40" alt="C#">
-  <img src="img/skill_icon/brand-dlang-svgrepo-com.svg" width="40"  height="40" alt="D">
-  <p>
-    <img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript"> Intermediate
-  </p>
 </p>
+<table>
+  <tr>
+      <td><img src="img/skill_icon/csharp-svgrepo-com.svg" width="40"  height="40" alt="C#"></td>
+      <td>C#</td>
+  </tr>
+   <tr>
+      <td><img src="img/skill_icon/brand-dlang-svgrepo-com.svg" width="40"  height="40" alt="D"></td>
+      <td>D lang</td>
+  </tr>
+   <tr>
+      <td><img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript"></td>
+      <td>GDscript (Intermediate)</td>
+  </tr>
+  
+  
+  
+</table>
+
 <p>I also work with:</p>
 <table>
   <tr>
