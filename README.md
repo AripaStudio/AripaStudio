@@ -22,8 +22,8 @@
 </h2>
 <p>
   I mostly work with:
-  <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" alt="C#">
-  <img src="https://img.shields.io/badge/D-007A7A?style=flat-square&logo=d&logoColor=white" alt="D">
+  <img src="/AripaStudio/img/skill_icon/csharp-svgrepo-com.svg" width="20"  height="20" alt="C#">
+  <img src="/AripaStudio/img/skill_icon/brand-dlang-svgrepo-com.svg" width="20"  height="20" alt="D">
   <p>
     <img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript"> Intermediate
   </p>
@@ -32,8 +32,8 @@
   I also work with:
   <img src="https://img.shields.io/badge/WPF-0078D7?style=flat-square&logo=dotnet&logoColor=white" alt="WPF">
   <img src="https://img.shields.io/badge/Avalonia-512BD4?style=flat-square&logo=avalonia&logoColor=white" alt="Avalonia">
-  <img src="https://img.shields.io/badge/Godot_Mono-478CBF?style=flat-square&logo=godotengine&logoColor=white" alt="Godot Mono">
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="/AripaStudio/img/skill_icon/godot-engine-svgrepo-com.svg" width="20"  height="20" alt="Godot Mono"> Godot Mono
+  <img src="/AripaStudio/img/skill_icon/sqlite-svgrepo-com.svg" width="20"  height="20" alt="SQLite">
   !And other things!
 </p>
 <p>
