@@ -30,10 +30,10 @@
 </p>
 <p>
   I also work with:
-  <img src="https://img.shields.io/badge/WPF-0078D7?style=flat-square&logo=dotnet&logoColor=white" alt="WPF">
-  <img src="https://img.shields.io/badge/Avalonia-512BD4?style=flat-square&logo=avalonia&logoColor=white" alt="Avalonia">
+  <img src="img/skill_icon/DotNet-icon.svg" width="35"  height="35" alt="WPF"> WPF ui
+  <img src="img/skill_icon/avalonia-logo.ico" width="35"  height="35" alt="Avalonia">
   <img src="img/skill_icon/godot-engine-svgrepo-com.svg" width="35"  height="35" alt="Godot Mono"> Godot Mono
-  <img src="img/skill_icon/sqlite-svgrepo-com.svg" width="35"  height="35" alt="SQLite">
+  <img src="img/skill_icon/sqlite-svgrepo-com.svg" width="50"  height="50" alt="SQLite">
   !And other things!
 </p>
 <p>
