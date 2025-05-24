@@ -20,47 +20,57 @@
 <h2>
   <img src="img/line-reading-text-svgrepo-com.svg" width="40" height="40" alt="line reading text"> Skills
 </h2>
-<p>
-  I mostly work with:
-</p>
-<table>
-  <tr>
-      <td><img src="img/skill_icon/csharp-svgrepo-com.svg" width="40"  height="40" alt="C#"></td>
-      <td>C#</td>
-  </tr>
-   <tr>
-      <td><img src="img/skill_icon/brand-dlang-svgrepo-com.svg" width="40"  height="40" alt="D"></td>
-      <td>D lang</td>
-  </tr>
-   <tr>
-      <td><img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript"></td>
-      <td>GDscript (Intermediate)</td>
-  </tr>
-  
-  
-  
-</table>
 
-<p>I also work with:</p>
+
+
 <table>
   <tr>
-    <td><img src="img/skill_icon/DotNet-icon.svg" width="50" height="50" alt="WPF"></td>
-    <td>WPF UI</td>
-  </tr>
-  <tr>
-    <td><img src="img/skill_icon/avalonia-logo.ico" width="50" height="50" alt="Avalonia"></td>
-    <td>Avalonia</td>
-  </tr>
-  <tr>
-    <td><img src="img/skill_icon/godot-engine-svgrepo-com.svg" width="50" height="50" alt="Godot Mono"></td>
-    <td>Godot Mono</td>
-  </tr>
-  <tr>
-    <td><img src="img/skill_icon/sqlite-svgrepo-com.svg" width="50" height="50" alt="SQLite"></td>
-    <td>SQLite</td>
+    <td valign="top">
+      <p>I mostly work with:</p>
+      <table>
+        <tr>
+          <td><img src="img/skill_icon/csharp-svgrepo-com.svg" width="40" height="40" alt="C#"></td>
+          <td>C#</td>
+        </tr>
+        <tr>
+          <td><img src="img/skill_icon/brand-dlang-svgrepo-com.svg" width="40" height="40" alt="D"></td>
+          <td>D lang</td>
+        </tr>
+        <tr>
+          <td><img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript"></td>
+          <td>GDscript (Intermediate)</td>
+        </tr>
+      </table>
+    </td>
+    <td valign="top">
+      <p>I also work with:</p>
+      <table>
+        <tr>
+          <td><img src="img/skill_icon/DotNet-icon.svg" width="50" height="50" alt="WPF"></td>
+          <td>WPF UI</td>
+        </tr>
+        <tr>
+          <td><img src="img/skill_icon/avalonia-logo.ico" width="50" height="50" alt="Avalonia"></td>
+          <td>Avalonia</td>
+        </tr>
+        <tr>
+          <td><img src="img/skill_icon/godot-engine-svgrepo-com.svg" width="50" height="50" alt="Godot Mono"></td>
+          <td>Godot Mono</td>
+        </tr>
+        <tr>
+          <td><img src="img/skill_icon/sqlite-svgrepo-com.svg" width="50" height="50" alt="SQLite"></td>
+          <td>SQLite</td>
+        </tr>
+      </table>
+    </td>
   </tr>
 </table>
 <p>!And other things!</p>
+
+
+
+
+
 
   I’m relatively new to the field, having entered the computer domain about 3 years ago, and I’m passionate about learning new things every day! 🌱
 </p>
