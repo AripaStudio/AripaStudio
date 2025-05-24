@@ -9,7 +9,7 @@
 </p>
 <hr>
 <h2>
-  <img src="AripaStudio/img/connection-people-share-svgrepo-com.svg" width="32" height="32" alt="connetion people share"> Connect with Me
+  <img src="img/connection-people-share-svgrepo-com.svg" width="32" height="32" alt="connetion people share"> Connect with Me
 </h2>
 <p>
   <a href="https://t.me/AripaStudio">
@@ -106,13 +106,13 @@
 </p>
 <ul>
   <li>
-     <img src="AripaStudio/img/telegram-icon.svg" width="32" height="32" alt="telegram Icon"> Telegram: <a href="https://t.me/AripaStudioGames">Aripa Studio Games</a>
+     <img src="img/telegram-icon.svg" width="32" height="32" alt="telegram Icon"> Telegram: <a href="https://t.me/AripaStudioGames">Aripa Studio Games</a>
   </li>
   <li>
-    <img src="/AripaStudio/img/itch-icon.svg" width="32" height="32" alt="itch.io Icon"> itch.io: <a href="https://itch.io/profile/aripastudio">My Profile</a>
+    <img src="/img/itch-icon.svg" width="32" height="32" alt="itch.io Icon"> itch.io: <a href="https://itch.io/profile/aripastudio">My Profile</a>
   </li>
   <li>
-    <img src="/AripaStudio/img/github-icon.svg" width="32" height="32" alt="GitHub Icon"> And on GitHub
+    <img src="/img/github-icon.svg" width="32" height="32" alt="GitHub Icon"> And on GitHub
   </li>
 </ul>
 <h3>
