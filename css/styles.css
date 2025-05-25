@@ -157,7 +157,7 @@ a:hover {
 /* Footer Styles */
 .profile-footer {
     text-align: center;
-    padding: 50px 20px;
+    padding: 30px 20px;
     background: linear-gradient(135deg, #0a001a, #1a003a);
     border-top: 4px solid #ff00ff;
     border-radius: 0 0 20px 20px;
@@ -190,7 +190,6 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 20px;
     position: relative;
     z-index: 2; /* Ensure buttons are clickable */
 }
@@ -222,40 +221,6 @@ a:hover {
     background-color: #ff00ff;
     color: white;
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
-}
-
-/* Social Links Table in Footer */
-.social-links-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-.social-links-table td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #2a004a;
-    border-radius: 8px;
-    background-color: #1a003a;
-    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.social-links-table td:hover {
-    background-color: #2a004a;
-    transform: translateY(-3px);
-}
-
-.social-links-table a {
-    display: block;
-    color: #bd93f9;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05em;
-}
-
-.social-links-table a:hover {
-    color: #ff79c6;
-    text-decoration: underline;
 }
 
 /* Navigation Bar Styles */
@@ -521,16 +486,6 @@ a:hover {
 
     .footer-button {
         width: 100%;
-    }
-
-    .social-links-table {
-        display: block;
-    }
-
-    .social-links-table td {
-        display: block;
-        width: 100%;
-        margin-bottom: 10px;
     }
 
     .main-nav {

@@ -67,9 +67,6 @@
     font-size: 1.8em;
     margin-top: 0;
     margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
     animation: slideIn 0.5s ease-in;
 }
 
@@ -207,9 +204,6 @@
     padding: 12px 20px;
     margin-bottom: 10px;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     color: #f8f8f2;
     border: 1px solid #2a004a;
