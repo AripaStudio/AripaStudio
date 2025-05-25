@@ -1,101 +1,306 @@
+/* General Reset & Body Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 30px;
-    line-height: 1.7;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    font-family: 'Inter', sans-serif; /* Modern and clean font */
+    background-color: #1e2128; /* Dark background for a sleek look */
+    color: #e0e0e0; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved readability with more line spacing */
+    display: flex; /* Use flexbox for overall layout */
+    flex-direction: column; /* Stack content vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
 }
 
-h1 {
-    color: #337ab7;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
+/* Container for main content */
+.container {
+    max-width: 960px; /* Limit content width for better readability */
+    margin: 30px auto; /* Center the container with vertical margin */
+    padding: 0 20px; /* Horizontal padding for smaller screens */
+    flex-grow: 1; /* Allow container to grow and push footer down */
 }
 
-h2 {
-    color: #5e81ac;
-    font-size: 1.8em;
-    margin-top: 30px;
+/* Header Styles */
+.profile-header {
+    text-align: center; /* Center align header content */
+    padding: 40px 20px; /* Ample padding */
+    background-color: #282c34; /* Slightly darker background for header */
+    border-bottom: 2px solid #61afef; /* Accent border */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    margin-bottom: 30px; /* Space below header */
+}
+
+.profile-header h1 {
+    color: #61afef; /* Vibrant blue for main title */
+    font-size: 3em; /* Larger font size */
     margin-bottom: 15px;
-    border-bottom: 2px solid #d8dee9;
-    padding-bottom: 5px;
+    font-weight: 700; /* Bold font weight */
+    letter-spacing: 1px; /* Slight letter spacing */
 }
 
-h3 {
-    color: #81a1c1;
-    font-size: 1.4em;
+.profile-header p {
+    font-size: 1.1em;
+    color: #abb2bf; /* Slightly muted text color */
+}
+
+/* Main Content Section Styles */
+.profile-main {
+    padding-bottom: 30px; /* Padding at the bottom of main content */
+}
+
+.profile-section {
+    background-color: #282c34; /* Background for each section (card-like) */
+    padding: 30px;
+    margin-bottom: 25px; /* Space between sections */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Heading Styles within sections */
+.profile-section h2 {
+    color: #98c379; /* Greenish color for section titles */
+    font-size: 2em;
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #56b6c2; /* Cyan accent line */
+    padding-bottom: 10px;
+    display: flex; /* Use flexbox for icon and text alignment */
+    align-items: center; /* Vertically align icon and text */
+    gap: 10px; /* Space between icon and text */
+}
+
+.profile-section h3 {
+    color: #e5c07b; /* Yellowish color for sub-titles */
+    font-size: 1.5em;
     margin-top: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
+/* Horizontal Rule Styles */
 hr {
     border: 0;
     height: 1px;
-    background: #d8dee9;
-    margin: 30px 0;
+    background: linear-gradient(to right, transparent, #56b6c2, transparent); /* Gradient line */
+    margin: 40px 0; /* More spacing for horizontal rules */
 }
 
+/* Link Styles */
 a {
-    color: #22863a;
+    color: #61afef; /* Blue for links */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600; /* Semi-bold links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 a:hover {
+    color: #56b6c2; /* Lighter blue on hover */
     text-decoration: underline;
-    color: #28a745;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Social Badges (e.g., Telegram, GitHub Repository) */
+.social-badge img {
+    border-radius: 5px; /* Slightly rounded corners for badges */
+    transition: transform 0.2s ease; /* Scale effect on hover */
+}
+
+.social-badge:hover img {
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Skills Section Specific Styles */
+.skills-grid {
+    display: flex; /* Use flexbox for skill categories */
+    flex-wrap: wrap; /* Allow categories to wrap on smaller screens */
+    gap: 30px; /* Space between categories */
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
-table td {
-    padding: 8px;
-    border: 1px solid #e0e0e0;
-    text-align: left;
+.skill-category {
+    flex: 1; /* Allow categories to take equal space */
+    min-width: 280px; /* Minimum width before wrapping */
+    background-color: #3e4451; /* Slightly different background for skill categories */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Inner shadow */
 }
 
-table tr:nth-child(even) td {
-    background-color: #f9f9f9;
-}
-
-b {
-    font-weight: 600;
-}
-
-p {
+.skill-category h3 {
+    margin-top: 0;
+    border-bottom: 1px dashed #5c6370; /* Dashed line for skill category titles */
+    padding-bottom: 10px;
     margin-bottom: 15px;
 }
 
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-    margin-bottom: 15px;
+.skill-list {
+    display: flex;
+    flex-direction: column; /* Stack skill items vertically */
+    gap: 10px; /* Space between skill items */
 }
 
-li {
-    margin-bottom: 8px;
+.skill-item {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 10px; /* Space between icon and text */
+    font-size: 1.1em;
 }
 
-img {
-    vertical-align: middle;
+.skill-item img {
+    border-radius: 4px; /* Slight roundness for skill icons */
 }
 
+.note {
+    font-style: italic; /* Italicize "And other things!" */
+    text-align: center;
+    margin-top: 20px;
+    color: #abb2bf;
+}
+
+/* GitHub Stats & Activity Graph Styles */
 .github-stats-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column; /* Stack stats images vertically */
+    align-items: center; /* Center align images */
+    gap: 15px; /* Space between images */
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .github-stats-container img {
-    max-width: 100%;
-    margin: 5px 0;
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for stats images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Project Lists Styles */
+.project-list {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove default padding */
+}
+
+.project-list li {
+    margin-bottom: 10px;
+    padding-left: 25px; /* Space for custom bullet */
+    position: relative; /* For custom bullet positioning */
+}
+
+.project-list li::before {
+    content: '✨'; /* Custom bullet point */
+    position: absolute;
+    left: 0;
+    color: #c678dd; /* Purple accent for bullets */
+}
+
+.download-links-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #e5c07b;
+}
+
+.download-links {
+    list-style: none;
+    padding-left: 0;
+    display: flex; /* Arrange download links horizontally */
+    flex-wrap: wrap;
+    gap: 20px; /* Space between download links */
+}
+
+.download-links li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.download-links img {
+    border-radius: 50%; /* Make icons circular */
+}
+
+/* Footer Styles */
+.profile-footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #282c34;
+    border-top: 2px solid #61afef; /* Accent border */
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    margin-top: 30px; /* Space above footer */
+}
+
+/* "Back to GitHub" Button Style */
+.github-link-container {
+    margin-top: 20px;
+}
+
+.github-button {
+    display: inline-flex; /* Allow icon and text to be side-by-side */
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background-color: #61afef; /* Blue background for button */
+    color: #1e2128; /* Dark text on button */
+    border-radius: 50px; /* Pill-shaped button */
+    font-size: 1.1em;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(97, 175, 239, 0.4); /* Blue shadow */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.github-button:hover {
+    background-color: #56b6c2; /* Lighter blue on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(86, 182, 194, 0.6); /* Enhanced shadow on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.github-button img {
+    filter: invert(1); /* Invert GitHub icon color to white for dark background */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-header h1 {
+        font-size: 2.2em;
+    }
+
+    .profile-section h2 {
+        font-size: 1.6em;
+    }
+
+    .profile-section h3 {
+        font-size: 1.3em;
+    }
+
+    .skills-grid {
+        flex-direction: column; /* Stack skill categories vertically on small screens */
+        gap: 20px;
+    }
+
+    .skill-category {
+        min-width: unset; /* Remove min-width constraint */
+    }
+
+    .download-links {
+        flex-direction: column; /* Stack download links vertically on small screens */
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-header h1 {
+        font-size: 1.8em;
+    }
+
+    .profile-section {
+        padding: 20px;
+    }
+
+    .profile-section h2 {
+        font-size: 1.4em;
+    }
+
+    .github-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
 }
