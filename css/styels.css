@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif; 
+    color: #333; 
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #2c3e50; 
+}
+
+hr {
+    border: 1px solid #eee;
+    margin: 20px 0;
+}
+
+a {
+    color: #3498db; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
