@@ -246,7 +246,7 @@ a:hover {
     height: auto;
     border-radius: 12px; /* More rounded corners */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 240, 255, 0.2); /* Stronger shadow with blue glow */
-    border: 1px solid #4a006a; /* Subtle border */
+    border: 1px solid #4a006a; /* Subtle border for images */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -359,7 +359,7 @@ a:hover {
     to { transform: rotate(-360deg); opacity: 1; }
 }
 
-/* "Back to GitHub" Button Style */
+/* "Back to GitHub" Button Style (used for navigation in footer) */
 .github-link-container {
     margin-top: 30px;
     z-index: 1;
@@ -369,17 +369,17 @@ a:hover {
 .github-button {
     display: inline-flex;
     align-items: center;
-    gap: 15px; /* Increased gap */
-    padding: 18px 40px; /* Even larger padding for a more prominent button */
-    background: linear-gradient(45deg, #00f0ff, #00c0ff); /* Gradient button background */
-    color: #1a1a2e; /* Dark text on button */
+    gap: 15px;
+    padding: 18px 40px;
+    background: linear-gradient(45deg, #00f0ff, #00c0ff);
+    color: #1a1a2e;
     border-radius: 50px;
-    font-size: 1.3em; /* Larger font size for button text */
+    font-size: 1.3em;
     font-weight: 700;
-    box-shadow: 0 8px 25px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3); /* Stronger neon shadow with glow */
-    transition: all 0.4s cubic-bezier(.25,.8,.25,1); /* Custom cubic-bezier for smoother transition */
+    box-shadow: 0 8px 25px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
     text-transform: uppercase;
-    letter-spacing: 1.5px; /* More letter spacing */
+    letter-spacing: 1.5px;
     border: none;
     cursor: pointer;
     position: relative;
@@ -393,7 +393,7 @@ a:hover {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2); /* Light swipe effect */
+    background: rgba(255, 255, 255, 0.2);
     transform: skewX(-30deg);
     transition: all 0.4s cubic-bezier(.25,.8,.25,1);
 }
@@ -403,9 +403,9 @@ a:hover {
 }
 
 .github-button:hover {
-    background: linear-gradient(45deg, #00c0ff, #00f0ff); /* Invert gradient on hover */
-    transform: translateY(-10px) scale(1.03); /* More dramatic lift and scale */
-    box-shadow: 0 15px 40px rgba(0, 240, 255, 0.7), 0 0 30px rgba(0, 240, 255, 0.5); /* Even stronger neon shadow */
+    background: linear-gradient(45deg, #00c0ff, #00f0ff);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 240, 255, 0.7), 0 0 30px rgba(0, 240, 255, 0.5);
     text-decoration: none;
 }
 
@@ -415,10 +415,48 @@ a:hover {
 }
 
 .github-button:hover img {
-    transform: rotate(360deg); /* Full rotation on icon hover */
+    transform: rotate(360deg);
 }
 
-/* Responsive adjustments */
+/* Navigation Bar Styles (Shared across pages) */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2a004a; /* Dark purple background */
+    padding: 15px 0;
+    border-bottom: 2px solid #ff00ff; /* Magenta accent line */
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(255, 0, 255, 0.2);
+}
+
+.nav-link {
+    color: #e0e6ed;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    background-color: #4a006a; /* Lighter purple on hover */
+    color: #00f0ff; /* Neon blue text on hover */
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background: linear-gradient(45deg, #ff00ff, #00f0ff); /* Gradient for active link */
+    color: #1a1a2e; /* Dark text for active link */
+    box-shadow: 0 3px 10px rgba(255, 0, 255, 0.4);
+    pointer-events: none; /* Disable click on active link */
+}
+
+
+/* Responsive adjustments for global styles */
 @media (max-width: 992px) {
     .container {
         padding: 0 20px;
@@ -489,9 +527,20 @@ a:hover {
     }
 
     .github-button {
-        padding: 15px 30px;
-        font-size: 1.2em;
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+
+    .main-nav {
+        flex-direction: column;
         gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        padding: 8px 20px;
+        margin: 0 5px;
+        font-size: 1em;
     }
 }
 

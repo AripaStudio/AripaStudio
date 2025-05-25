@@ -169,43 +169,6 @@
     border-radius: 50%; /* Circular icons */
 }
 
-/* Navigation Bar Styles */
-.main-nav {
-    display: flex;
-    justify-content: center; /* Center the navigation links */
-    background-color: #2a004a; /* Dark purple background */
-    padding: 15px 0;
-    border-bottom: 2px solid #ff00ff; /* Magenta accent line */
-    border-radius: 10px;
-    margin-bottom: 40px;
-    box-shadow: 0 5px 15px rgba(255, 0, 255, 0.2);
-}
-
-.nav-link {
-    color: #e0e6ed;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1em;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    margin: 0 10px;
-}
-
-.nav-link:hover {
-    background-color: #4a006a; /* Lighter purple on hover */
-    color: #00f0ff; /* Neon blue text on hover */
-    transform: translateY(-3px);
-    text-decoration: none;
-}
-
-.nav-link.active {
-    background: linear-gradient(45deg, #ff00ff, #00f0ff); /* Gradient for active link */
-    color: #1a1a2e; /* Dark text for active link */
-    box-shadow: 0 3px 10px rgba(255, 0, 255, 0.4);
-    pointer-events: none; /* Disable click on active link */
-}
-
 /* Footer adjustment for this page */
 .profile-footer .github-button {
     background: linear-gradient(45deg, #ff00ff, #aaff00); /* Different gradient for footer button on this page */
@@ -238,18 +201,6 @@
     .project-links {
         flex-direction: column; /* Stack links vertically */
         align-items: flex-start;
-    }
-
-    .main-nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
-    }
-
-    .nav-link {
-        padding: 8px 20px;
-        margin: 0 5px;
-        font-size: 1em;
     }
 
     .profile-header h1 {
