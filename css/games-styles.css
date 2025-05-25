@@ -7,7 +7,15 @@
 .profile-header h1 {
     font-size: 3.2em; /* Slightly smaller title for this page */
     letter-spacing: 1.5px;
+    color: #ffcc00; /* Golden yellow for main title on this page */
+    text-shadow: 0 0 15px rgba(255, 204, 0, 0.8), 0 0 25px rgba(255, 204, 0, 0.6);
 }
+
+.profile-header {
+    border-bottom: 4px solid #ffcc00; /* Golden yellow accent border */
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.25); /* Golden shadow */
+}
+
 
 /* Projects Section Styling */
 .projects-section h2 {
@@ -57,6 +65,7 @@
 
 .project-meta {
     display: flex;
+    flex-wrap: wrap; /* Allow meta items to wrap */
     gap: 15px;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -91,51 +100,90 @@
 .project-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* Space between links */
+    gap: 10px; /* Reduced gap for more links */
     margin-top: 20px;
-    border-top: 1px dashed #4a006a; /* Dashed separator */
+    border-top: 1px dashed #4a006a;
     padding-top: 15px;
+    justify-content: center; /* Center links within the card */
 }
 
 .project-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 18px;
-    border-radius: 30px; /* Pill shape */
+    padding: 8px 15px; /* Slightly smaller padding for more compact links */
+    border-radius: 25px; /* More rounded */
     font-weight: 600;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 0.85em; /* Slightly smaller font */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.project-link.github-link {
+.project-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific Project Link Styles */
+.project-link.github-repo-link,
+.project-link.github-repo-link-platform { /* Added for platform link */
     background-color: #4a4a6a; /* Dark gray for GitHub links */
     color: #e0e6ed;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
-.project-link.github-link:hover {
+.project-link.github-repo-link:hover,
+.project-link.github-repo-link-platform:hover {
     background-color: #5a5a7a;
-    transform: translateY(-3px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 240, 255, 0.2);
 }
-
-.project-link.github-link img {
+.project-link.github-repo-link img,
+.project-link.github-repo-link-platform img {
     filter: brightness(0) invert(1); /* White GitHub icon */
 }
 
-.project-link.download-link {
-    background: linear-gradient(45deg, #ff00ff, #00f0ff); /* Magenta-blue gradient for download links */
+.project-link.telegram-download-link {
+    background: linear-gradient(45deg, #0088cc, #2ca5e0); /* Telegram blue gradient */
+    color: #1a1a2e;
+    box-shadow: 0 2px 5px rgba(0, 136, 204, 0.3);
+}
+.project-link.telegram-download-link:hover {
+    background: linear-gradient(45deg, #2ca5e0, #0088cc);
+    box-shadow: 0 5px 10px rgba(0, 136, 204, 0.5);
+}
+
+.project-link.itch-download-link {
+    background: linear-gradient(45deg, #fa5c5c, #ff3366); /* Itch.io red gradient */
+    color: #1a1a2e;
+    box-shadow: 0 2px 5px rgba(250, 92, 92, 0.3);
+}
+.project-link.itch-download-link:hover {
+    background: linear-gradient(45deg, #ff3366, #fa5c5c);
+    box-shadow: 0 5px 10px rgba(250, 92, 92, 0.5);
+}
+
+.project-link.download-app-link { /* For direct app downloads */
+    background: linear-gradient(45deg, #ff00ff, #aaff00); /* Magenta to Green gradient */
     color: #1a1a2e;
     box-shadow: 0 2px 5px rgba(255, 0, 255, 0.3);
 }
-
-.project-link.download-link:hover {
-    background: linear-gradient(45deg, #00f0ff, #ff00ff); /* Invert gradient on hover */
-    transform: translateY(-3px);
+.project-link.download-app-link:hover {
+    background: linear-gradient(45deg, #aaff00, #ff00ff);
     box-shadow: 0 5px 10px rgba(255, 0, 255, 0.5);
 }
+
+.project-link.coming-soon-link {
+    background-color: #5a5a5a; /* Gray for coming soon */
+    color: #c0c0c0;
+    cursor: default; /* No pointer cursor */
+    opacity: 0.7;
+}
+.project-link.coming-soon-link:hover {
+    transform: none; /* No transform on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Keep original shadow */
+    opacity: 1;
+}
+
 
 .download-all-note {
     text-align: center;
@@ -143,31 +191,42 @@
     font-size: 1.1em;
     color: #c0c0c0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack text and buttons */
     align-items: center;
     gap: 15px;
+}
+
+.download-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between platform links */
 }
 
 .download-platform-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding: 10px 20px; /* Larger padding */
+    border-radius: 30px; /* Pill shape */
     background-color: #3a3a5a;
     color: #e0e6ed;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .download-platform-link:hover {
     background-color: #4a4a6a;
-    transform: translateY(-3px);
+    transform: translateY(-5px); /* More lift */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 240, 255, 0.2);
     text-decoration: none;
 }
 
 .download-platform-link img {
     border-radius: 50%; /* Circular icons */
 }
+
 
 /* Footer adjustment for this page */
 .profile-footer .github-button {
@@ -199,12 +258,33 @@
     }
 
     .project-links {
-        flex-direction: column; /* Stack links vertically */
-        align-items: flex-start;
+        flex-direction: row; /* Keep links in a row if space allows */
+        justify-content: center;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        padding: 8px 20px;
+        margin: 0 5px;
+        font-size: 1em;
     }
 
     .profile-header h1 {
         font-size: 2.5em;
+    }
+
+    .download-all-note {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .download-platforms {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
