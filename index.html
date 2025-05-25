@@ -28,25 +28,48 @@
 
             <section id="skills" class="profile-section">
                 <h2><img src="img/line-reading-text-svgrepo-com.svg" width="40" height="40" alt="Skills Icon"> Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>I mostly work with:</h3>
-                        <div class="skill-list">
-                            <div class="skill-item"><img src="img/skill_icon/csharp-svgrepo-com.svg" width="40" height="40" alt="C# Icon"><span>C#</span></div>
-                            <div class="skill-item"><img src="img/skill_icon/brand-dlang-svgrepo-com.svg" width="40" height="40" alt="D Icon"><span>D lang</span></div>
-                            <div class="skill-item"><img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript Badge"><span>GDscript (Intermediate)</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>I also work with:</h3>
-                        <div class="skill-list">
-                            <div class="skill-item"><img src="img/skill_icon/DotNet-icon.svg" width="50" height="50" alt="WPF Icon"><span>WPF UI</span></div>
-                            <div class="skill-item"><img src="img/skill_icon/avalonia-logo.ico" width="50" height="50" alt="Avalonia Icon"><span>Avalonia</span></div>
-                            <div class="skill-item"><img src="img/skill_icon/godot-engine-svgrepo-com.svg" width="50" height="50" alt="Godot Mono Icon"><span>Godot Mono</span></div>
-                            <div class="skill-item"><img src="img/skill_icon/sqlite-svgrepo-com.svg" width="50" height="50" alt="SQLite Icon"><span>SQLite</span></div>
-                        </div>
-                    </div>
-                </div>
+                <table class="skills-table">
+                    <tr>
+                        <td class="skill-category-cell" valign="top">
+                            <h3>I mostly work with:</h3>
+                            <table class="inner-skill-table">
+                                <tr>
+                                    <td class="skill-icon-cell"><img src="img/skill_icon/csharp-svgrepo-com.svg" width="40" height="40" alt="C# Icon"></td>
+                                    <td class="skill-name-cell">C#</td>
+                                </tr>
+                                <tr>
+                                    <td class="skill-icon-cell"><img src="img/skill_icon/brand-dlang-svgrepo-com.svg" width="40" height="40" alt="D Icon"></td>
+                                    <td class="skill-name-cell">D lang</td>
+                                </tr>
+                                <tr>
+                                    <td class="skill-icon-cell"><img src="https://img.shields.io/badge/GDscript-007A7A?style=flat-square&logo=godot&logoColor=white" alt="GDscript Badge"></td>
+                                    <td class="skill-name-cell">GDscript (Intermediate)</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="skill-category-cell" valign="top">
+                            <h3>I also work with:</h3>
+                            <table class="inner-skill-table">
+                                <tr>
+                                    <td class="skill-icon-cell"><img src="img/skill_icon/DotNet-icon.svg" width="50" height="50" alt="WPF Icon"></td>
+                                    <td class="skill-name-cell">WPF UI</td>
+                                </tr>
+                                <tr>
+                                    <td class="skill-icon-cell"><img src="img/skill_icon/avalonia-logo.ico" width="50" height="50" alt="Avalonia Icon"></td>
+                                    <td class="skill-name-cell">Avalonia</td>
+                                </tr>
+                                <tr>
+                                    <td class="skill-icon-cell"><img src="img/skill_icon/godot-engine-svgrepo-com.svg" width="50" height="50" alt="Godot Mono Icon"></td>
+                                    <td class="skill-name-cell">Godot Mono</td>
+                                </tr>
+                                <tr>
+                                    <td class="skill-icon-cell"><img src="img/skill_icon/sqlite-svgrepo-com.svg" width="50" height="50" alt="SQLite Icon"></td>
+                                    <td class="skill-name-cell">SQLite</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
                 <p class="note">And other things!</p>
             </section>
 
@@ -58,9 +81,9 @@
 
             <section id="languages-stats" class="profile-section">
                 <h2>💻 Most Used Languages</h2>
-                <p class="stats-image-wrapper">
+                <div class="stats-image-wrapper">
                     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AripaStudio&layout=compact&theme=radical" alt="Top Languages Stats">
-                </p>
+                </div>
             </section>
 
             <section id="github-stats" class="profile-section">
