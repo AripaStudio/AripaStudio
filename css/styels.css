@@ -2,11 +2,11 @@
 body {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    background-color: #1a1a2e; /* Deeper dark background */
-    color: #e0e0e0;
+    background: radial-gradient(circle at 70% 30%, #1e003a, #0a0a1a); /* Deep radial gradient background */
+    color: #e0e6ed; /* Light text color for contrast */
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.65; /* Improved readability */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -15,81 +15,117 @@ body {
 
 /* Container for main content */
 .container {
-    max-width: 1000px; /* Slightly wider container */
-    margin: 30px auto;
-    padding: 0 25px; /* Increased horizontal padding */
+    max-width: 1000px;
+    margin: 40px auto; /* More vertical margin */
+    padding: 0 30px; /* More horizontal padding */
     flex-grow: 1;
 }
 
 /* Header Styles */
 .profile-header {
     text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #2a2a4a, #1a1a2e); /* Gradient background */
-    border-bottom: 3px solid #00f0ff; /* Neon blue accent border */
-    border-radius: 15px 15px 0 0; /* More rounded top corners */
-    margin-bottom: 40px;
-    box-shadow: 0 8px 20px rgba(0, 240, 255, 0.15); /* Neon shadow */
+    padding: 60px 20px; /* More padding */
+    background: linear-gradient(135deg, #2a004a, #1a003a); /* Deeper purple gradient */
+    border-bottom: 4px solid #ff00ff; /* Vibrant magenta accent border */
+    border-radius: 20px 20px 0 0; /* Even more rounded top corners */
+    margin-bottom: 50px; /* More space below header */
+    box-shadow: 0 10px 30px rgba(255, 0, 255, 0.25); /* Stronger magenta shadow */
+    position: relative;
+    overflow: hidden; /* Hide overflow for subtle background animation */
+}
+
+.profile-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 0, 255, 0.1) 0%, transparent 70%);
+    animation: header-glow 15s infinite alternate; /* Subtle glow animation */
+    z-index: 0;
+}
+
+@keyframes header-glow {
+    from { transform: rotate(0deg); opacity: 0.8; }
+    to { transform: rotate(360deg); opacity: 1; }
 }
 
 .profile-header h1 {
     color: #00f0ff; /* Bright neon blue for main title */
-    font-size: 3.5em; /* Even larger font size */
-    margin-bottom: 15px;
-    font-weight: 700;
-    letter-spacing: 2px; /* Increased letter spacing */
-    text-shadow: 0 0 10px rgba(0, 240, 255, 0.7); /* Text glow effect */
+    font-size: 4em; /* Significantly larger font size */
+    margin-bottom: 20px;
+    font-weight: 800; /* Extra bold font weight */
+    letter-spacing: 3px; /* More letter spacing */
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.8), 0 0 25px rgba(0, 240, 255, 0.6); /* Enhanced text glow effect */
+    z-index: 1; /* Ensure text is above pseudo-element */
+    position: relative;
 }
 
 .profile-header p {
-    font-size: 1.2em;
-    color: #c0c0c0; /* Lighter gray for readability */
-    max-width: 700px;
-    margin: 0 auto 10px auto;
+    font-size: 1.25em;
+    color: #c0c0c0;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    z-index: 1;
+    position: relative;
 }
 
 /* Main Content Section Styles */
 .profile-main {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .profile-section {
-    background-color: #2a2a4a; /* Darker background for sections */
-    padding: 35px;
-    margin-bottom: 30px;
-    border-radius: 12px; /* More rounded corners */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
-    border: 1px solid #3a3a5a; /* Subtle border */
+    background-color: #1f003a; /* Darker purple for sections */
+    padding: 40px; /* More padding */
+    margin-bottom: 35px; /* More space between sections */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 0, 255, 0.1); /* Stronger shadow with subtle magenta glow */
+    border: 1px solid #3a005a; /* Subtle border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 0, 255, 0.3); /* More pronounced shadow and glow on hover */
 }
 
 /* Heading Styles within sections */
 .profile-section h2 {
     color: #aaff00; /* Neon green for section titles */
-    font-size: 2.2em;
+    font-size: 2.5em; /* Larger font size */
     margin-top: 0;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #aaff00; /* Neon green accent line */
-    padding-bottom: 12px;
+    margin-bottom: 30px; /* More space below heading */
+    border-bottom: 3px solid #aaff00; /* Thicker neon green accent line */
+    padding-bottom: 15px;
     display: flex;
     align-items: center;
-    gap: 15px; /* Increased space between icon and text */
-    font-weight: 600;
+    gap: 18px; /* More space between icon and text */
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(170, 255, 0, 0.5); /* Subtle text glow */
+}
+
+.profile-section h2 img {
+    filter: drop-shadow(0 0 5px rgba(170, 255, 0, 0.7)); /* Glow for icons in h2 */
 }
 
 .profile-section h3 {
     color: #ffcc00; /* Golden yellow for sub-titles */
-    font-size: 1.6em;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    font-size: 1.8em; /* Larger font size */
+    margin-top: 35px;
+    margin-bottom: 20px;
     font-weight: 600;
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.3); /* Subtle text glow */
 }
 
 /* Horizontal Rule Styles */
 hr {
     border: 0;
-    height: 2px; /* Thicker line */
-    background: linear-gradient(to right, transparent, #00f0ff, transparent); /* Neon gradient line */
-    margin: 50px 0;
+    height: 3px; /* Even thicker line */
+    background: linear-gradient(to right, transparent, #ff00ff, #00f0ff, transparent); /* Multi-color neon gradient */
+    margin: 60px 0; /* More spacing */
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); /* Glow for hr */
 }
 
 /* Link Styles */
@@ -97,99 +133,101 @@ a {
     color: #00f0ff; /* Neon blue for links */
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 a:hover {
     color: #aaff00; /* Neon green on hover */
     text-decoration: underline;
-    transform: translateY(-2px); /* Slight lift on hover */
+    transform: translateY(-3px); /* More pronounced lift on hover */
 }
 
 /* Social Badges (e.g., Telegram, GitHub Repository) */
 .social-badge img {
-    border-radius: 8px; /* More rounded corners for badges */
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* More rounded corners for badges */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .social-badge:hover img {
-    transform: translateY(-5px); /* More pronounced lift effect */
-    box-shadow: 0 5px 15px rgba(0, 240, 255, 0.4); /* Neon shadow on hover */
+    transform: translateY(-7px) scale(1.05); /* More pronounced lift and slight scale */
+    box-shadow: 0 8px 25px rgba(0, 240, 255, 0.5); /* Stronger neon shadow on hover */
 }
 
 /* Skills Section Specific Styles - Table based */
 .skills-table {
     width: 100%;
-    border-collapse: separate; /* Allows for border-spacing */
-    border-spacing: 20px; /* Space between cells */
-    margin-top: 20px;
-    table-layout: fixed; /* Ensures equal column width */
+    border-collapse: separate;
+    border-spacing: 30px; /* Increased space between cells */
+    margin-top: 30px;
+    table-layout: fixed;
 }
 
 .skills-table tr {
-    vertical-align: top; /* Align content to top within row */
+    vertical-align: top;
 }
 
 .skill-category-cell {
-    width: 50%; /* Each category takes half width */
-    padding: 25px;
-    background-color: #3a3a5a; /* Distinct background for category cells */
-    border-radius: 10px; /* Rounded corners for category cells */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    padding: 30px; /* More padding */
+    background-color: #2a004a; /* Deeper purple for category cells */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 255, 0.1); /* Stronger shadow with subtle magenta glow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #4a006a; /* Subtle border */
 }
 
 .skill-category-cell:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 20px rgba(0, 240, 255, 0.2); /* Subtle neon glow on hover */
+    transform: translateY(-8px); /* More pronounced lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 0, 255, 0.4); /* Stronger shadow and glow on hover */
 }
 
 .skill-category-cell h3 {
     margin-top: 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ffcc00; /* Golden line for category titles */
-    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ffcc00; /* Thicker golden line for category titles */
+    padding-bottom: 12px;
 }
 
 .inner-skill-table {
     width: 100%;
-    border-collapse: collapse; /* Collapse borders for inner table */
-    margin-top: 15px;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
 .skill-row {
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px; /* Rounded corners for skill rows */
 }
 
 .skill-row:hover {
-    background-color: #4a4a6a; /* Slightly lighter background on hover for skill rows */
-    border-radius: 5px; /* Rounded corners on hover */
+    background-color: #3a005a; /* Lighter purple on hover for skill rows */
+    transform: translateX(5px); /* Slight horizontal shift on hover */
 }
 
 .skill-icon-cell {
-    padding: 8px 10px 8px 0;
-    width: 60px; /* Fixed width for icon column */
+    padding: 10px 15px 10px 0; /* More padding */
+    width: 70px; /* Wider fixed width for icon column */
     text-align: center;
 }
 
 .skill-icon-cell img {
-    border-radius: 6px; /* Slightly rounded skill icons */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* More rounded skill icons */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skill-name-cell {
-    padding: 8px 0;
-    font-size: 1.1em;
-    color: #e0e0e0;
+    padding: 10px 0;
+    font-size: 1.15em; /* Slightly larger font */
+    color: #e0e6ed;
 }
 
 .note {
     font-style: italic;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     color: #abb2bf;
-    font-size: 0.95em;
+    font-size: 1em;
 }
 
 /* GitHub Stats & Activity Graph Styles */
@@ -198,40 +236,52 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    margin-top: 25px;
+    gap: 30px; /* More space between images */
+    margin-top: 30px;
 }
 
 .stats-image-wrapper img,
 .github-stats-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border: 1px solid #4a4a6a; /* Subtle border for images */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 240, 255, 0.2); /* Stronger shadow with blue glow */
+    border: 1px solid #4a006a; /* Subtle border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-image-wrapper img:hover,
+.github-stats-container img:hover {
+    transform: scale(1.02); /* Slight scale on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 240, 255, 0.4); /* Enhanced shadow and glow */
 }
 
 /* Project Lists Styles */
 .project-list {
     list-style: none;
     padding-left: 0;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .project-list li {
-    margin-bottom: 12px;
-    padding-left: 30px;
+    margin-bottom: 15px;
+    padding-left: 35px; /* More space for custom bullet */
     position: relative;
-    font-size: 1.1em;
+    font-size: 1.15em;
 }
 
 .project-list li::before {
-    content: '🚀'; /* Rocket emoji as bullet */
+    content: '✨'; /* Sparkle emoji as bullet */
     position: absolute;
     left: 0;
-    color: #c678dd; /* Purple accent (though emoji overrides color) */
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.6;
+    animation: pulse 2s infinite alternate; /* Subtle pulse animation for bullets */
+}
+
+@keyframes pulse {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(1.1); opacity: 0.8; }
 }
 
 .project-list li b {
@@ -239,11 +289,12 @@ a:hover {
 }
 
 .download-links-title {
-    margin-top: 35px;
-    margin-bottom: 20px;
-    font-size: 1.3em;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 1.4em;
     color: #aaff00; /* Neon green for title */
-    font-weight: 600;
+    font-weight: 700;
+    text-align: center;
 }
 
 .download-links {
@@ -251,168 +302,249 @@ a:hover {
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px; /* Increased space between download links */
-    justify-content: center; /* Center align download links */
+    gap: 30px; /* More space between download links */
+    justify-content: center;
 }
 
 .download-links li {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-    background-color: #3a3a5a; /* Background for each link item */
-    padding: 10px 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    gap: 12px;
+    margin-bottom: 15px;
+    background-color: #3a005a; /* Deeper purple for each link item */
+    padding: 15px 25px; /* More padding */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #4a006a;
 }
 
 .download-links li:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 240, 255, 0.3);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 0, 255, 0.3);
 }
 
 .download-links img {
     border-radius: 50%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer Styles */
 .profile-footer {
     text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #1a1a2e, #2a2a4a); /* Gradient background */
-    border-top: 3px solid #00f0ff; /* Neon blue accent border */
-    border-radius: 0 0 15px 15px; /* More rounded bottom corners */
-    margin-top: 40px;
-    box-shadow: 0 -8px 20px rgba(0, 240, 255, 0.15); /* Neon shadow */
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1a003a, #2a004a); /* Gradient background */
+    border-top: 4px solid #ff00ff; /* Vibrant magenta accent border */
+    border-radius: 0 0 20px 20px; /* More rounded bottom corners */
+    margin-top: 50px;
+    box-shadow: 0 -10px 30px rgba(255, 0, 255, 0.25); /* Stronger magenta shadow */
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-footer::before {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 0, 255, 0.1) 0%, transparent 70%);
+    animation: footer-glow 15s infinite alternate reverse; /* Subtle glow animation, reversed */
+    z-index: 0;
+}
+
+@keyframes footer-glow {
+    from { transform: rotate(0deg); opacity: 0.8; }
+    to { transform: rotate(-360deg); opacity: 1; }
 }
 
 /* "Back to GitHub" Button Style */
 .github-link-container {
-    margin-top: 20px;
+    margin-top: 30px;
+    z-index: 1;
+    position: relative;
 }
 
 .github-button {
     display: inline-flex;
     align-items: center;
-    gap: 12px; /* Increased gap */
-    padding: 15px 35px; /* Larger padding for a more prominent button */
+    gap: 15px; /* Increased gap */
+    padding: 18px 40px; /* Even larger padding for a more prominent button */
     background: linear-gradient(45deg, #00f0ff, #00c0ff); /* Gradient button background */
     color: #1a1a2e; /* Dark text on button */
     border-radius: 50px;
-    font-size: 1.2em; /* Larger font size for button text */
+    font-size: 1.3em; /* Larger font size for button text */
     font-weight: 700;
-    box-shadow: 0 6px 20px rgba(0, 240, 255, 0.4); /* Stronger neon shadow */
-    transition: all 0.3s ease;
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 1px; /* Letter spacing for button text */
-    border: none; /* Remove default border */
-    cursor: pointer; /* Indicate clickable element */
+    box-shadow: 0 8px 25px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3); /* Stronger neon shadow with glow */
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1); /* Custom cubic-bezier for smoother transition */
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* More letter spacing */
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.github-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Light swipe effect */
+    transform: skewX(-30deg);
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.github-button:hover::before {
+    left: 100%;
 }
 
 .github-button:hover {
     background: linear-gradient(45deg, #00c0ff, #00f0ff); /* Invert gradient on hover */
-    transform: translateY(-7px) scale(1.02); /* More pronounced lift and slight scale */
-    box-shadow: 0 10px 30px rgba(0, 240, 255, 0.6); /* Even stronger neon shadow on hover */
+    transform: translateY(-10px) scale(1.03); /* More dramatic lift and scale */
+    box-shadow: 0 15px 40px rgba(0, 240, 255, 0.7), 0 0 30px rgba(0, 240, 255, 0.5); /* Even stronger neon shadow */
     text-decoration: none;
 }
 
 .github-button img {
-    filter: brightness(0) invert(1); /* Ensure GitHub icon is white/light on dark background */
-    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
+    transition: transform 0.4s ease;
 }
 
 .github-button:hover img {
-    transform: rotate(10deg); /* Slight rotation on icon hover */
+    transform: rotate(360deg); /* Full rotation on icon hover */
 }
 
 /* Responsive adjustments */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+    .profile-header h1 {
+        font-size: 3.5em;
+    }
+    .profile-section h2 {
+        font-size: 2.2em;
+    }
+    .profile-section h3 {
+        font-size: 1.6em;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
-        margin: 20px auto;
+        margin: 25px auto;
         padding: 0 15px;
     }
 
+    .profile-header {
+        padding: 40px 15px;
+        margin-bottom: 40px;
+    }
     .profile-header h1 {
-        font-size: 2.5em;
+        font-size: 2.8em;
+        letter-spacing: 2px;
+    }
+    .profile-header p {
+        font-size: 1.1em;
     }
 
+    .profile-section {
+        padding: 30px;
+        margin-bottom: 25px;
+    }
     .profile-section h2 {
-        font-size: 1.8em;
+        font-size: 2em;
         flex-direction: column; /* Stack icon and text for h2 on small screens */
         text-align: center;
-        gap: 5px;
+        gap: 8px;
     }
-
     .profile-section h2 img {
         margin-bottom: 5px;
     }
-
     .profile-section h3 {
         font-size: 1.4em;
     }
 
-    .skills-table,
-    .skills-table tr {
-        display: block; /* Make table and row behave like blocks */
-        width: 100%;
-        border-spacing: 0; /* Remove spacing for block display */
+    .skills-table {
+        border-spacing: 15px; /* Reduce spacing for smaller screens */
     }
-
     .skill-category-cell {
-        width: auto; /* Auto width for full width on small screens */
-        display: block;
-        margin-bottom: 20px; /* Space between stacked categories */
-        padding: 20px;
+        padding: 25px;
     }
-
-    .inner-skill-table {
-        margin-top: 10px;
+    .skill-icon-cell {
+        width: 50px; /* Adjust icon column width */
+    }
+    .skill-name-cell {
+        font-size: 1.05em;
     }
 
     .download-links {
         flex-direction: column;
-        align-items: center; /* Center download links when stacked */
-        gap: 15px;
+        align-items: center;
+        gap: 20px;
     }
 
     .github-button {
-        padding: 12px 25px;
-        font-size: 1.1em;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        gap: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .profile-header {
-        padding: 30px 15px;
-    }
-
     .profile-header h1 {
-        font-size: 2em;
+        font-size: 2.2em;
         letter-spacing: 1px;
     }
-
     .profile-header p {
         font-size: 1em;
     }
 
     .profile-section {
-        padding: 25px;
+        padding: 20px;
         margin-bottom: 20px;
     }
-
     .profile-section h2 {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
-
     .profile-section h3 {
         font-size: 1.2em;
     }
 
-    .github-button {
-        padding: 10px 20px;
+    .skills-table {
+        border-spacing: 10px;
+    }
+    .skill-category-cell {
+        padding: 20px;
+    }
+    .skill-icon-cell {
+        width: 45px;
+    }
+    .skill-name-cell {
         font-size: 1em;
+    }
+
+    .project-list li {
+        font-size: 1.05em;
+        padding-left: 25px;
+    }
+    .project-list li::before {
+        font-size: 1.1em;
+    }
+
+    .download-links li {
+        padding: 12px 20px;
         gap: 8px;
+    }
+
+    .github-button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+        gap: 8px;
+        letter-spacing: 1px;
     }
 }
