@@ -463,32 +463,38 @@ a:hover {
     pointer-events: none; /* Disable click on active link */
 }
 
-/* Main Menu Button */
-.menu-button {
+/* Main Menu Button (for index.html and games-software.html) */
+.quick-links-button {
     background: linear-gradient(45deg, #aaff00, #ffcc00); /* Green to Yellow gradient */
     color: #1a1a2e;
-    padding: 10px 20px;
-    border-radius: 30px;
+    padding: 15px 30px; /* Larger padding for prominence */
+    border-radius: 50px; /* More rounded */
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.2em; /* Larger font size */
     cursor: pointer;
     border: none;
     outline: none;
     transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(170, 255, 0, 0.3);
-    margin-left: 20px; /* Space from nav links */
+    box-shadow: 0 5px 15px rgba(170, 255, 0, 0.3);
+    position: fixed; /* Fixed position */
+    bottom: 30px; /* 30px from bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 1500; /* Ensure it's above other content */
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.menu-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(170, 255, 0, 0.5);
+.quick-links-button:hover {
+    transform: translateX(-50%) translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(170, 255, 0, 0.5); /* Stronger shadow on hover */
     background: linear-gradient(45deg, #ffcc00, #aaff00); /* Invert gradient on hover */
 }
 
-/* Menu Overlay */
+/* Menu Overlay (Shared across pages) */
 .menu-overlay {
     position: fixed;
     top: 0;
@@ -505,7 +511,7 @@ a:hover {
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.menu-overlay.active {
+.menu-overlay.active { /* This class is not explicitly added/removed in JS, but could be for more complex animations */
     opacity: 1;
     visibility: visible;
 }
@@ -584,14 +590,14 @@ a:hover {
     text-decoration: none;
 }
 
-.menu-link-item a svg {
+.menu-link-item a img { /* Changed from svg to img for consistency with existing HTML */
     width: 24px;
     height: 24px;
-    fill: currentColor; /* Use current text color for SVG */
+    filter: invert(1); /* Invert SVG colors for dark background */
     transition: transform 0.3s ease;
 }
 
-.menu-link-item a:hover svg {
+.menu-link-item a:hover img {
     transform: rotate(10deg);
 }
 
@@ -688,9 +694,11 @@ a:hover {
         font-size: 1em;
     }
 
-    .menu-button {
-        margin-left: 0; /* Remove left margin */
-        margin-top: 15px; /* Add top margin when stacked */
+    .quick-links-button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+        gap: 8px;
+        letter-spacing: 1px;
     }
 
     .menu-content {
@@ -751,11 +759,10 @@ a:hover {
         gap: 8px;
     }
 
-    .github-button {
-        padding: 12px 25px;
-        font-size: 1.1em;
-        gap: 8px;
-        letter-spacing: 1px;
+    .quick-links-button {
+        padding: 10px 20px;
+        font-size: 1em;
+        gap: 5px;
     }
 
     .menu-content h2 {

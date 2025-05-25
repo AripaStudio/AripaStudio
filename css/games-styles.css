@@ -229,15 +229,66 @@
 
 
 /* Footer adjustment for this page */
-.profile-footer .github-button {
-    background: linear-gradient(45deg, #ff00ff, #aaff00); /* Different gradient for footer button on this page */
-    box-shadow: 0 8px 25px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+.profile-footer .github-link-container {
+    margin-top: 0; /* Remove top margin as footer nav buttons handle spacing */
 }
 
-.profile-footer .github-button:hover {
-    background: linear-gradient(45deg, #aaff00, #ff00ff);
-    box-shadow: 0 15px 40px rgba(255, 0, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.5);
+.profile-footer .github-button {
+    /* This button is replaced by the general footer navigation buttons */
+    display: none; /* Hide the old GitHub button */
 }
+
+/* Footer Styles (Consistent with About Me page, but adjusted for this page's navigation) */
+.profile-footer {
+    padding-top: 25px;
+    border-top: 1px solid #4a4a6a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px; /* Ensure enough space from content above */
+}
+
+.footer-nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-button {
+    background-color: #6272a4; /* A soft blue-gray */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-button:hover {
+    background-color: #8be9fd; /* Lighter blue on hover */
+    color: #1a1a2e;
+    transform: translateY(-3px);
+}
+
+.footer-button.active {
+    background-color: #ff79c6; /* Pink for active page */
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 121, 198, 0.7);
+}
+
+.footer-button img {
+    filter: invert(1); /* Invert SVG colors for dark background */
+}
+
 
 /* Responsive adjustments for games-software.html */
 @media (max-width: 768px) {
@@ -258,24 +309,8 @@
     }
 
     .project-links {
-        flex-direction: row; /* Keep links in a row if space allows */
-        justify-content: center;
-    }
-
-    .main-nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
-    }
-
-    .nav-link {
-        padding: 8px 20px;
-        margin: 0 5px;
-        font-size: 1em;
-    }
-
-    .profile-header h1 {
-        font-size: 2.5em;
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: center; /* Center stacked links */
     }
 
     .download-all-note {
@@ -286,11 +321,20 @@
         flex-direction: column;
         gap: 10px;
     }
+
+    .footer-nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-button {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
     .profile-header h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .project-card h3 {

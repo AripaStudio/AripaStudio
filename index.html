@@ -167,5 +167,61 @@
             </a>
         </div>
     </div>
+
+    <div id="mainMenuOverlay" class="menu-overlay">
+        <div class="menu-content">
+            <button class="menu-close-button" onclick="closeMenu()">×</button>
+            <h2>🔗 Quick Links</h2>
+            <ul class="menu-links">
+                <li class="menu-link-item">
+                    <a href="https://github.com/AripaStudio/AripaStudioHub/releases" target="_blank">
+                        <img src="img/download-icon.svg" width="24" height="24" alt="Download Icon">
+                        AripaStudioHub (Download)
+                    </a>
+                </li>
+                <li class="menu-link-item">
+                    <a href="https://github.com/AripaStudio" target="_blank">
+                        <img src="img/github-square-icon.svg" width="24" height="24" alt="GitHub Icon">
+                        Aripa Studio GitHub
+                    </a>
+                </li>
+                <li class="menu-link-item">
+                    <a href="https://www.youtube.com/@AripaStudio" target="_blank">
+                        <img src="img/youtube-icon.svg" width="24" height="24" alt="YouTube Icon">
+                        Aripa Studio YouTube
+                    </a>
+                </li>
+                <li class="menu-link-item">
+                    <a href="https://aripastudio.itch.io/" target="_blank">
+                        <img src="img/itchio-icon.svg" width="24" height="24" alt="itch.io Icon">
+                        Aripa Studio itch.io
+                    </a>
+                </li>
+                <li class="menu-link-item">
+                    <a href="https://t.me/khashayarAP" target="_blank">
+                        <img src="img/telegram-personal-icon.svg" width="24" height="24" alt="Telegram Icon">
+                        Personal Telegram
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="quick-links-button" onclick="openMenu()">
+        <img src="img/menu-icon.svg" width="20" height="20" alt="Menu Icon">
+        Quick Links
+    </button>
+
+    <script>
+        // Function to open the main menu overlay
+        function openMenu() {
+            document.getElementById('mainMenuOverlay').style.display = 'flex';
+        }
+
+        // Function to close the main menu overlay
+        function closeMenu() {
+            document.getElementById('mainMenuOverlay').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
