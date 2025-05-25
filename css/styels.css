@@ -428,6 +428,14 @@ a:hover {
     border-radius: 10px;
     margin-bottom: 40px;
     box-shadow: 0 5px 15px rgba(255, 0, 255, 0.2);
+    position: relative; /* Needed for z-index and menu button positioning */
+    z-index: 1000; /* Ensure nav is above other content */
+}
+
+.nav-links-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .nav-link {
@@ -455,6 +463,137 @@ a:hover {
     pointer-events: none; /* Disable click on active link */
 }
 
+/* Main Menu Button */
+.menu-button {
+    background: linear-gradient(45deg, #aaff00, #ffcc00); /* Green to Yellow gradient */
+    color: #1a1a2e;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(170, 255, 0, 0.3);
+    margin-left: 20px; /* Space from nav links */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(170, 255, 0, 0.5);
+    background: linear-gradient(45deg, #ffcc00, #aaff00); /* Invert gradient on hover */
+}
+
+/* Menu Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 26, 0.95); /* Semi-transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Ensure it's on top of everything */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-content {
+    background-color: #1f003a; /* Dark purple for menu content */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: menu-slide-in 0.5s ease-out; /* Slide in animation */
+}
+
+@keyframes menu-slide-in {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.menu-close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #ff00ff; /* Magenta close button */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu-close-button:hover {
+    transform: rotate(90deg);
+    color: #aaff00; /* Green on hover */
+}
+
+.menu-content h2 {
+    color: #00f0ff; /* Neon blue for menu title */
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00f0ff;
+    padding-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between menu links */
+    list-style: none;
+    padding: 0;
+}
+
+.menu-link-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 25px;
+    background-color: #3a005a; /* Darker purple for menu link background */
+    border-radius: 10px;
+    color: #e0e6ed;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-link-item a:hover {
+    background: linear-gradient(45deg, #ff00ff, #00f0ff); /* Magenta to Blue gradient on hover */
+    color: #1a1a2e;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(255, 0, 255, 0.4);
+    text-decoration: none;
+}
+
+.menu-link-item a svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* Use current text color for SVG */
+    transition: transform 0.3s ease;
+}
+
+.menu-link-item a:hover svg {
+    transform: rotate(10deg);
+}
 
 /* Responsive adjustments for global styles */
 @media (max-width: 992px) {
@@ -537,10 +676,32 @@ a:hover {
         padding: 10px 0;
     }
 
+    .nav-links-container {
+        flex-direction: column; /* Stack nav links */
+        align-items: center;
+        gap: 10px;
+    }
+
     .nav-link {
         padding: 8px 20px;
-        margin: 0 5px;
+        margin: 0; /* Remove horizontal margin */
         font-size: 1em;
+    }
+
+    .menu-button {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 15px; /* Add top margin when stacked */
+    }
+
+    .menu-content {
+        padding: 30px;
+    }
+    .menu-content h2 {
+        font-size: 1.8em;
+    }
+    .menu-link-item a {
+        font-size: 1.1em;
+        padding: 12px 20px;
     }
 }
 
@@ -595,5 +756,13 @@ a:hover {
         font-size: 1.1em;
         gap: 8px;
         letter-spacing: 1px;
+    }
+
+    .menu-content h2 {
+        font-size: 1.5em;
+    }
+    .menu-link-item a {
+        font-size: 1em;
+        padding: 10px 15px;
     }
 }
