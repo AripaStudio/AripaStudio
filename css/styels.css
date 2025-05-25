@@ -335,7 +335,7 @@ a:hover {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(135deg, #0a001a, #1a003a); /* Gradient background */
-    border-top: 4px solid #ff00ff; /* Vibrant magenta accent border */
+    border-top: 44px solid #ff00ff; /* Vibrant magenta accent border */
     border-radius: 0 0 20px 20px; /* More rounded bottom corners */
     margin-top: 50px;
     box-shadow: 0 -10px 30px rgba(255, 0, 255, 0.25); /* Stronger magenta shadow */
@@ -556,38 +556,36 @@ a:hover {
 }
 
 .menu-links {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Space between menu links */
     list-style: none;
     padding: 0;
+    display: flex; /* Ensure flexbox for vertical stacking */
+    flex-direction: column;
+    gap: 15px; /* Space between menu links, adjusted to match aboutme.css original */
 }
 
 .menu-link-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 0; /* Remove margin-bottom as gap handles spacing */
+    background-color: #3a3a5a; /* Matching aboutme.css original */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.menu-link-item:hover {
+    transform: translateY(-3px);
+    background-color: #444466; /* Matching aboutme.css original */
 }
 
 .menu-link-item a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    padding: 15px 25px;
-    background-color: #2a004a; /* Darker purple for menu link background */
-    border-radius: 10px;
-    color: #e0e6ed;
+    gap: 10px; /* Matching aboutme.css original */
+    padding: 15px; /* Matching aboutme.css original */
+    color: #f8f8f2;
+    text-decoration: none;
     font-size: 1.2em;
     font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-.menu-link-item a:hover {
-    background: linear-gradient(45deg, #ff00ff, #00f0ff); /* Magenta to Blue gradient on hover */
-    color: #1a1a2e;
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 6px 15px rgba(255, 0, 255, 0.4);
-    text-decoration: none;
 }
 
 .menu-link-item a img { /* Changed from svg to img for consistency with existing HTML */
