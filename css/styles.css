@@ -142,18 +142,6 @@ a:hover {
     transform: translateY(-3px);
 }
 
-/* Social Badges */
-.social-badge img {
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-.social-badge:hover img {
-    transform: translateY(-7px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 240, 255, 0.5);
-}
-
 /* Footer Styles */
 .profile-footer {
     text-align: center;

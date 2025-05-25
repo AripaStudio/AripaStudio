@@ -184,6 +184,12 @@
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border: 1px solid #2a004a;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.download-all-note:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 0, 255, 0.2);
 }
 
 .download-platforms {
