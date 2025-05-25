@@ -18,7 +18,7 @@
 </p>
 <hr>
 <h2>
-  <img src="img/line-reading-text-svgrepo-com.svg" width="40" height="40" alt="line reading text"> Skills
+  <img src="img/line-reading-text.svg" width="40" height="40" alt="line reading text"> Skills
 </h2>
 
 
@@ -141,7 +141,7 @@
 </p>
 <ul>
   <li>
-     <img src="img/telegram-icon.svg" width="32" height="32" alt="telegram Icon"> Telegram: <a href="https://t.me/AripaStudioGames">Aripa Studio Games</a>
+     <img src="img/telegram-personal-icon.svg" width="32" height="32" alt="telegram Icon"> Telegram: <a href="https://t.me/AripaStudioGames">Aripa Studio Games</a>
   </li>
   <li>
     <img src="/img/itch-icon.svg" width="32" height="32" alt="itch.io Icon"> itch.io: <a href="https://itch.io/profile/aripastudio">My Profile</a>
