@@ -174,8 +174,8 @@ a:hover {
     background-color: #1a003a; /* Deeper purple for category cells */
     border-radius: 15px; /* More rounded corners */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 255, 0.1); /* Stronger shadow with subtle magenta glow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #2a004a; /* Subtle border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-category-cell:hover {
