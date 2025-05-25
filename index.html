@@ -3,240 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Aripa Studio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Specific styles for the landing page */
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Full viewport height */
-            text-align: center;
-            padding: 20px;
-            /* Background is now defined in styles.css for consistency */
-        }
-
-        .landing-container {
-            max-width: 800px;
-            background-color: #1f003a; /* Dark purple background */
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 0, 255, 0.2); /* Stronger shadow with glow */
-            border: 1px solid #3a005a;
-            animation: fadeIn 1s ease-out; /* Fade in animation */
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .landing-container h1 {
-            color: #00f0ff; /* Neon blue */
-            font-size: 3.8em;
-            margin-bottom: 20px;
-            text-shadow: 0 0 15px rgba(0, 240, 255, 0.8);
-            letter-spacing: 2px;
-        }
-
-        .landing-container p {
-            font-size: 1.3em;
-            color: #e0e6ed;
-            margin-bottom: 30px;
-            line-height: 1.7;
-        }
-
-        .landing-buttons {
-            display: flex;
-            flex-direction: column; /* Stack buttons on small screens */
-            gap: 25px; /* Space between buttons */
-            margin-top: 40px;
-        }
-
-        .landing-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            padding: 20px 45px; /* Large padding for prominent buttons */
-            border-radius: 50px;
-            font-size: 1.4em; /* Large font size */
-            font-weight: 700;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            transition: all 0.4s cubic-bezier(.25,.8,.25,1);
-            border: none;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            color: #1a1a2e; /* Dark text on buttons */
-        }
-
-        .landing-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.2);
-            transform: skewX(-30deg);
-            transition: all 0.4s cubic-bezier(.25,.8,.25,1);
-        }
-
-        .landing-button:hover::before {
-            left: 100%;
-        }
-
-        .landing-button:hover {
-            transform: translateY(-10px) scale(1.03);
-            text-decoration: none;
-        }
-
-        .landing-button.about-me {
-            background: linear-gradient(45deg, #aaff00, #00f0ff); /* Green to Blue gradient */
-            box-shadow: 0 8px 25px rgba(170, 255, 0, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
-        }
-
-        .landing-button.about-me:hover {
-            background: linear-gradient(45deg, #00f0ff, #aaff00); /* Invert gradient */
-            box-shadow: 0 15px 40px rgba(170, 255, 0, 0.7), 0 0 30px rgba(0, 240, 255, 0.5);
-        }
-
-        .landing-button.games-software {
-            background: linear-gradient(45deg, #ff00ff, #ffcc00); /* Magenta to Yellow gradient */
-            box-shadow: 0 8px 25px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 204, 0, 0.3);
-        }
-
-        .landing-button.games-software:hover {
-            background: linear-gradient(45deg, #ffcc00, #ff00ff); /* Invert gradient */
-            box-shadow: 0 15px 40px rgba(255, 0, 255, 0.7), 0 0 30px rgba(255, 204, 0, 0.5);
-        }
-
-        /* New style for Quick Links button on landing page */
-        .landing-button.quick-links {
-            background: linear-gradient(45deg, #00f0ff, #ff00ff); /* Blue to Magenta gradient */
-            box-shadow: 0 8px 25px rgba(0, 240, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
-        }
-
-        .landing-button.quick-links:hover {
-            background: linear-gradient(45deg, #ff00ff, #00f0ff); /* Invert gradient */
-            box-shadow: 0 15px 40px rgba(0, 240, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.5);
-        }
-
-        /* Responsive adjustments for landing page */
-        @media (max-width: 768px) {
-            .landing-container {
-                padding: 40px 30px;
-            }
-            .landing-container h1 {
-                font-size: 3em;
-            }
-            .landing-container p {
-                font-size: 1.1em;
-            }
-            .landing-buttons {
-                flex-direction: column; /* Stack buttons vertically */
-                gap: 20px;
-            }
-            .landing-button {
-                padding: 18px 35px;
-                font-size: 1.2em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .landing-container {
-                padding: 30px 20px;
-            }
-            .landing-container h1 {
-                font-size: 2.5em;
-            }
-            .landing-container p {
-                font-size: 1em;
-            }
-            .landing-button {
-                padding: 15px 30px;
-                font-size: 1.1em;
-            }
-        }
-    </style>
+    <title>Welcome to Aripa Pars Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
 </head>
 <body>
-    <div class="landing-container">        
-        <h1>Welcome to Aripa Pars Studio!</h1>
-        <p>I'm Khashayar Mobasheri, the founder of Aripa Studio. We specialize in game development and software creation, driven by a passion for innovation and learning. Explore our journey and projects!</p>
-        <div class="landing-buttons">
-            <a href="aboutme.html" class="landing-button about-me">
-                About Me
-            </a>
-            <a href="games-software.html" class="landing-button games-software">
-                Games & Software
-            </a>
-            <button class="landing-button quick-links" onclick="openMenu()">
-                <img src="img/menu-icon.svg" width="20" height="20" alt="Menu Icon">
-                Quick Links
-            </button>
-        </div>
+    <div class="container">
+        <header class="profile-header">
+            <h1>Welcome to Aripa Pars Studio!</h1>
+            <p>I'm Khashayar Mobasheri, the founder of Aripa Studio. We specialize in game development and software creation, driven by a passion for innovation and learning. Explore our journey and projects!</p>
+        </header>
+
+        <nav class="main-nav">
+            <div class="nav-links-container">
+                <a href="index.html" class="nav-link active">Main Page</a>
+                <a href="games-software.html" class="nav-link">Games & Software</a>
+                <a href="aboutme.html" class="nav-link">About Me</a>
+            </div>
+        </nav>
+
+        <main class="profile-main">
+            <section class="profile-section">
+                <h2>Explore Our Work</h2>
+                <p>Check out our <a href="games-software.html">Games & Software</a> page to see our latest projects, or learn more <a href="aboutme.html">About Me</a> to understand our journey!</p>
+            </section>
+        </main>
+
+        <footer class="profile-footer">
+            <div class="footer-nav-buttons">
+                <a href="index.html" class="footer-button active">Main Page</a>
+                <a href="games-software.html" class="footer-button">Games & Software</a>
+                <a href="aboutme.html" class="footer-button">About Me</a>
+                <button class="quick-links-button" onclick="toggleMenu()">🔗 Quick Links</button>
+            </div>
+
+            <div class="social-links-table">
+                <table>
+                    <tr>
+                        <td><a href="https://t.me/AripaStudio">Telegram Channel</a></td>
+                        <td><a href="https://github.com/AripaStudio">GitHub Profile</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.youtube.com/@AripaStudio">YouTube Channel</a></td>
+                        <td><a href="https://aripastudio.itch.io">itch.io Page</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><a href="https://t.me/KhashayarMobasheri">Personal Telegram</a></td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
     </div>
 
-    <div id="mainMenuOverlay" class="menu-overlay">
+    <div class="menu-overlay" id="quickLinksMenu">
         <div class="menu-content">
-            <button class="menu-close-button" onclick="closeMenu()">×</button>
+            <button class="menu-close-button" onclick="toggleMenu()">×</button>
             <h2>🔗 Quick Links</h2>
             <ul class="menu-links">
-                <li class="menu-link-item">
-                    <a href="https://t.me/AripaStudio" target="_blank" class="prominent-telegram-link">
-                        <img src="img/telegram-personal-icon.svg" width="24" height="24" alt="Telegram Icon">
-                        Aripa Studio Telegram Channel
-                    </a>
-                </li>
-                <li class="menu-link-item">
-                    <a href="https://github.com/AripaStudio/AripaStudioHub/releases" target="_blank">
-                        <img src="img/download-icon.svg" width="24" height="24" alt="Download Icon">
-                        AripaStudioHub (Download)
-                    </a>
-                </li>
-                <li class="menu-link-item">
-                    <a href="https://github.com/AripaStudio" target="_blank">
-                        <img src="img/github-square-icon.svg" width="24" height="24" alt="GitHub Icon">
-                        Aripa Studio GitHub
-                    </a>
-                </li>
-                <li class="menu-link-item">
-                    <a href="https://www.youtube.com/@AripaStudio" target="_blank">
-                        <img src="img/youtube-icon.svg" width="24" height="24" alt="YouTube Icon">
-                        Aripa Studio YouTube
-                    </a>
-                </li>
-                <li class="menu-link-item">
-                    <a href="https://aripastudio.itch.io/" target="_blank">
-                        <img src="img/itchio-icon.svg" width="24" height="24" alt="itch.io Icon">
-                        Aripa Studio itch.io
-                    </a>
-                </li>
-                <li class="menu-link-item">
-                    <a href="https://t.me/khashayarAP" target="_blank">
-                        <img src="img/telegram-personal-icon.svg" width="24" height="24" alt="Telegram Icon">
-                        Personal Telegram
-                    </a>
-                </li>
+                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link"><img src="https://icongr.am/simple/telegram.svg?color=ffffff" alt="Telegram Icon"> Aripa Studio Telegram Channel</a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="https://icongr.am/simple/download.svg?color=ffffff" alt="Download Icon"> AripaStudioHub (Download)</a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio"><img src="https://icongr.am/simple/github.svg?color=ffffff" alt="GitHub Icon"> Aripa Studio GitHub</a></li>
+                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio"><img src="https://icongr.am/simple/youtube.svg?color=ffffff" alt="YouTube Icon"> Aripa Studio YouTube</a></li>
+                <li class="menu-link-item"><a href="https://aripastudio.itch.io"><img src="https://icongr.am/simple/itchdotio.svg?color=ffffff" alt="itch.io Icon"> Aripa Studio itch.io</a></li>
+                <li class="menu-link-item"><a href="https://t.me/KhashayarMobasheri"><img src="https://icongr.am/simple/telegram.svg?color=ffffff" alt="Telegram Icon"> Personal Telegram</a></li>
             </ul>
         </div>
     </div>
 
     <script>
-        // Function to open the main menu overlay
-        function openMenu() {
-            document.getElementById('mainMenuOverlay').classList.add('show');
-        }
-
-        // Function to close the main menu overlay
-        function closeMenu() {
-            document.getElementById('mainMenuOverlay').classList.remove('show');
+        function toggleMenu() {
+            const menu = document.getElementById('quickLinksMenu');
+            menu.classList.toggle('show');
         }
     </script>
 </body>

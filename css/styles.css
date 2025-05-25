@@ -2,37 +2,36 @@
 body {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    /* Even darker radial gradient background for a deeper, more immersive feel */
     background: radial-gradient(circle at 70% 30%, #05000a, #100020);
-    color: #e0e6ed; /* Light text color for contrast */
+    color: #e0e6ed;
     margin: 0;
     padding: 0;
-    line-height: 1.65; /* Improved readability */
+    line-height: 1.65;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 /* Container for main content */
 .container {
     max-width: 1000px;
-    margin: 40px auto; /* More vertical margin */
-    padding: 0 30px; /* More horizontal padding */
+    margin: 40px auto;
+    padding: 0 30px;
     flex-grow: 1;
 }
 
 /* Header Styles */
 .profile-header {
     text-align: center;
-    padding: 60px 20px; /* More padding */
-    background: linear-gradient(135deg, #1a003a, #0a001a); /* Deeper purple gradient */
-    border-bottom: 4px solid #ff00ff; /* Vibrant magenta accent border */
-    border-radius: 20px 20px 0 0; /* Even more rounded top corners */
-    margin-bottom: 50px; /* More space below header */
-    box-shadow: 0 10px 30px rgba(255, 0, 255, 0.25); /* Stronger magenta shadow */
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1a003a, #0a001a);
+    border-bottom: 4px solid #ff00ff;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(255, 0, 255, 0.25);
     position: relative;
-    overflow: hidden; /* Hide overflow for subtle background animation */
+    overflow: hidden;
 }
 
 .profile-header::before {
@@ -43,7 +42,7 @@ body {
     width: 200%;
     height: 200%;
     background: radial-gradient(circle, rgba(255, 0, 255, 0.1) 0%, transparent 70%);
-    animation: header-glow 15s infinite alternate; /* Subtle glow animation */
+    animation: header-glow 15s infinite alternate;
     z-index: 0;
 }
 
@@ -53,13 +52,13 @@ body {
 }
 
 .profile-header h1 {
-    color: #00f0ff; /* Bright neon blue for main title */
-    font-size: 4em; /* Significantly larger font size */
+    color: #00f0ff;
+    font-size: 4em;
     margin-bottom: 20px;
-    font-weight: 800; /* Extra bold font weight */
-    letter-spacing: 3px; /* More letter spacing */
-    text-shadow: 0 0 15px rgba(0, 240, 255, 0.8), 0 0 25px rgba(0, 240, 255, 0.6); /* Enhanced text glow effect */
-    z-index: 1; /* Ensure text is above pseudo-element */
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.8), 0 0 25px rgba(0, 240, 255, 0.6);
+    z-index: 1;
     position: relative;
 }
 
@@ -78,267 +77,92 @@ body {
 }
 
 .profile-section {
-    background-color: #15002a; /* Even darker purple for sections */
-    padding: 40px; /* More padding */
-    margin-bottom: 35px; /* More space between sections */
-    border-radius: 15px; /* More rounded corners */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 0, 255, 0.1); /* Stronger shadow with subtle magenta glow */
-    border: 1px solid #2a004a; /* Subtle border */
+    background-color: #15002a;
+    padding: 40px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 0, 255, 0.1);
+    border: 1px solid #2a004a;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-section:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 0, 255, 0.3); /* More pronounced shadow and glow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 0, 255, 0.3);
 }
 
 /* Heading Styles within sections */
 .profile-section h2 {
-    color: #aaff00; /* Neon green for section titles */
-    font-size: 2.5em; /* Larger font size */
+    color: #aaff00;
+    font-size: 2.5em;
     margin-top: 0;
-    margin-bottom: 30px; /* More space below heading */
-    border-bottom: 3px solid #aaff00; /* Thicker neon green accent line */
+    margin-bottom: 30px;
+    border-bottom: 3px solid #aaff00;
     padding-bottom: 15px;
     display: flex;
     align-items: center;
-    gap: 18px; /* More space between icon and text */
+    gap: 18px;
     font-weight: 700;
-    text-shadow: 0 0 8px rgba(170, 255, 0, 0.5); /* Subtle text glow */
+    text-shadow: 0 0 8px rgba(170, 255, 0, 0.5);
 }
 
 .profile-section h2 img {
-    filter: drop-shadow(0 0 5px rgba(170, 255, 0, 0.7)); /* Glow for icons in h2 */
+    filter: drop-shadow(0 0 5px rgba(170, 255, 0, 0.7));
 }
 
 .profile-section h3 {
-    color: #ffcc00; /* Golden yellow for sub-titles */
-    font-size: 1.8em; /* Larger font size */
+    color: #ffcc00;
+    font-size: 1.8em;
     margin-top: 35px;
     margin-bottom: 20px;
     font-weight: 600;
-    text-shadow: 0 0 5px rgba(255, 204, 0, 0.3); /* Subtle text glow */
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.3);
 }
 
 /* Horizontal Rule Styles */
 hr {
     border: 0;
-    height: 3px; /* Even thicker line */
-    background: linear-gradient(to right, transparent, #ff00ff, #00f0ff, transparent); /* Multi-color neon gradient */
-    margin: 60px 0; /* More spacing */
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); /* Glow for hr */
+    height: 3px;
+    background: linear-gradient(to right, transparent, #ff00ff, #00f0ff, transparent);
+    margin: 60px 0;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
 }
 
 /* Link Styles */
 a {
-    color: #00f0ff; /* Neon blue for links */
+    color: #00f0ff;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
 a:hover {
-    color: #aaff00; /* Neon green on hover */
+    color: #aaff00;
     text-decoration: underline;
-    transform: translateY(-3px); /* More pronounced lift on hover */
+    transform: translateY(-3px);
 }
 
-/* Social Badges (e.g., Telegram, GitHub Repository) */
+/* Social Badges */
 .social-badge img {
-    border-radius: 10px; /* More rounded corners for badges */
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .social-badge:hover img {
-    transform: translateY(-7px) scale(1.05); /* More pronounced lift and slight scale */
-    box-shadow: 0 8px 25px rgba(0, 240, 255, 0.5); /* Stronger neon shadow on hover */
-}
-
-/* Skills Section Specific Styles - Table based */
-.skills-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 30px; /* Increased space between cells */
-    margin-top: 30px;
-    table-layout: fixed;
-}
-
-.skills-table tr {
-    vertical-align: top;
-}
-
-.skill-category-cell {
-    width: 50%;
-    padding: 30px; /* More padding */
-    background-color: #1a003a; /* Deeper purple for category cells */
-    border-radius: 15px; /* More rounded corners */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 255, 0.1); /* Stronger shadow with subtle magenta glow */
-    border: 1px solid #2a004a; /* Subtle border */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-category-cell:hover {
-    transform: translateY(-8px); /* More pronounced lift effect on hover */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 0, 255, 0.4); /* Stronger shadow and glow on hover */
-}
-
-.skill-category-cell h3 {
-    margin-top: 0;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #ffcc00; /* Thicker golden line for category titles */
-    padding-bottom: 12px;
-}
-
-.inner-skill-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.skill-row {
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    border-radius: 8px; /* Rounded corners for skill rows */
-}
-
-.skill-row:hover {
-    background-color: #2a004a; /* Lighter purple on hover for skill rows */
-    transform: translateX(5px); /* Slight horizontal shift on hover */
-}
-
-.skill-icon-cell {
-    padding: 10px 15px 10px 0; /* More padding */
-    width: 70px; /* Wider fixed width for icon column */
-    text-align: center;
-}
-
-.skill-icon-cell img {
-    border-radius: 8px; /* More rounded skill icons */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.skill-name-cell {
-    padding: 10px 0;
-    font-size: 1.15em; /* Slightly larger font */
-    color: #e0e6ed;
-}
-
-.note {
-    font-style: italic;
-    text-align: center;
-    margin-top: 40px;
-    color: #abb2bf;
-    font-size: 1em;
-}
-
-/* GitHub Stats & Activity Graph Styles */
-.stats-image-wrapper,
-.github-stats-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px; /* More space between images */
-    margin-top: 30px;
-}
-
-.stats-image-wrapper img,
-.github-stats-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px; /* More rounded corners */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 240, 255, 0.2); /* Stronger shadow with blue glow */
-    border: 1px solid #2a004a; /* Subtle border for images */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.stats-image-wrapper img:hover,
-.github-stats-container img:hover {
-    transform: scale(1.02); /* Slight scale on hover */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 240, 255, 0.4); /* Enhanced shadow and glow */
-}
-
-/* Project Lists Styles */
-.project-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 25px;
-}
-
-.project-list li {
-    margin-bottom: 15px;
-    padding-left: 35px; /* More space for custom bullet */
-    position: relative;
-    font-size: 1.15em;
-}
-
-.project-list li::before {
-    content: '✨'; /* Sparkle emoji as bullet */
-    position: absolute;
-    left: 0;
-    font-size: 1.3em;
-    line-height: 1.6;
-    animation: pulse 2s infinite alternate; /* Subtle pulse animation for bullets */
-}
-
-@keyframes pulse {
-    from { transform: scale(1); opacity: 1; }
-    to { transform: scale(1.1); opacity: 0.8; }
-}
-
-.project-list li b {
-    color: #ffcc00; /* Golden yellow for project names */
-}
-
-.download-links-title {
-    margin-top: 40px;
-    margin-bottom: 25px;
-    font-size: 1.4em;
-    color: #aaff00; /* Neon green for title */
-    font-weight: 700;
-    text-align: center;
-}
-
-.download-links {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px; /* More space between download links */
-    justify-content: center;
-}
-
-.download-links li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 15px;
-    background-color: #1a003a; /* Deeper purple for each link item */
-    padding: 15px 25px; /* More padding */
-    border-radius: 10px; /* More rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 255, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #2a004a;
-}
-
-.download-links li:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 0, 255, 0.3);
-}
-
-.download-links img {
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-7px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 240, 255, 0.5);
 }
 
 /* Footer Styles */
 .profile-footer {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #0a001a, #1a003a); /* Gradient background */
-    border-top: 4px solid #ff00ff; /* Vibrant magenta accent border */
-    border-radius: 0 0 20px 20px; /* More rounded bottom corners */
+    background: linear-gradient(135deg, #0a001a, #1a003a);
+    border-top: 4px solid #ff00ff;
+    border-radius: 0 0 20px 20px;
     margin-top: 50px;
-    box-shadow: 0 -10px 30px rgba(255, 0, 255, 0.25); /* Stronger magenta shadow */
+    box-shadow: 0 -10px 30px rgba(255, 0, 255, 0.25);
     position: relative;
     overflow: hidden;
 }
@@ -351,7 +175,7 @@ a:hover {
     width: 200%;
     height: 200%;
     background: radial-gradient(circle, rgba(255, 0, 255, 0.1) 0%, transparent 70%);
-    animation: footer-glow 15s infinite alternate reverse; /* Subtle glow animation, reversed */
+    animation: footer-glow 15s infinite alternate reverse;
     z-index: 0;
 }
 
@@ -360,77 +184,93 @@ a:hover {
     to { transform: rotate(-360deg); opacity: 1; }
 }
 
-/* "Back to GitHub" Button Style (used for navigation in footer) */
-.github-link-container {
-    margin-top: 30px;
-    z-index: 1;
-    position: relative;
-}
-
-.github-button {
-    display: inline-flex;
-    align-items: center;
+.footer-nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
-    padding: 18px 40px;
-    background: linear-gradient(45deg, #00f0ff, #00c0ff);
-    color: #1a1a2e;
-    border-radius: 50px;
-    font-size: 1.3em;
-    font-weight: 700;
-    box-shadow: 0 8px 25px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
-    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.footer-button {
+    background-color: #4a006a;
+    color: white;
+    padding: 12px 25px;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.github-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    transform: skewX(-30deg);
-    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
-}
-
-.github-button:hover::before {
-    left: 100%;
-}
-
-.github-button:hover {
-    background: linear-gradient(45deg, #00c0ff, #00f0ff);
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 40px rgba(0, 240, 255, 0.7), 0 0 30px rgba(0, 240, 255, 0.5);
+    font-size: 1.1em;
+    font-weight: 600;
     text-decoration: none;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.github-button img {
-    filter: brightness(0) invert(1);
-    transition: transform 0.4s ease;
+.footer-button:hover {
+    background-color: #6a009a;
+    color: #e0e6ed;
+    transform: translateY(-3px);
 }
 
-.github-button:hover img {
-    transform: rotate(360deg);
+.footer-button.active {
+    background-color: #ff00ff;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
 }
 
-/* Navigation Bar Styles (Shared across pages) */
+.footer-button img {
+    filter: invert(1);
+}
+
+/* Social Links Table in Footer */
+.social-links-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.social-links-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #2a004a;
+    border-radius: 8px;
+    background-color: #1a003a;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social-links-table td:hover {
+    background-color: #2a004a;
+    transform: translateY(-3px);
+}
+
+.social-links-table a {
+    display: block;
+    color: #bd93f9;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.social-links-table a:hover {
+    color: #ff79c6;
+    text-decoration: underline;
+}
+
+/* Navigation Bar Styles */
 .main-nav {
     display: flex;
     justify-content: center;
-    background-color: #1a003a; /* Dark purple background */
+    background-color: #1a003a;
     padding: 15px 0;
-    border-bottom: 2px solid #ff00ff; /* Magenta accent line */
+    border-bottom: 2px solid #ff00ff;
     border-radius: 10px;
     margin-bottom: 40px;
     box-shadow: 0 5px 15px rgba(255, 0, 255, 0.2);
-    position: relative; /* Needed for z-index and menu button positioning */
-    z-index: 1000; /* Ensure nav is above other content */
+    position: relative;
+    z-index: 1000;
 }
 
 .nav-links-container {
@@ -451,34 +291,32 @@ a:hover {
 }
 
 .nav-link:hover {
-    background-color: #2a004a; /* Lighter purple on hover */
-    color: #00f0ff; /* Neon blue text on hover */
+    background-color: #2a004a;
+    color: #00f0ff;
     transform: translateY(-3px);
     text-decoration: none;
 }
 
 .nav-link.active {
-    background: linear-gradient(45deg, #ff00ff, #00f0ff); /* Gradient for active link */
-    color: #1a1a2e; /* Dark text for active link */
+    background: linear-gradient(45deg, #ff00ff, #00f0ff);
+    color: #1a1a2e;
     box-shadow: 0 3px 10px rgba(255, 0, 255, 0.4);
-    pointer-events: none; /* Disable click on active link */
+    pointer-events: none;
 }
 
-/* Main Menu Button (for index.html and games-software.html) */
-/* This style is now for the Quick Links button within the footer/landing-buttons */
+/* Quick Links Button */
 .quick-links-button {
-    background: linear-gradient(45deg, #aaff00, #ffcc00); /* Green to Yellow gradient */
+    background: linear-gradient(45deg, #aaff00, #ffcc00);
     color: #1a1a2e;
-    padding: 15px 30px; /* Larger padding for prominence */
-    border-radius: 50px; /* More rounded */
+    padding: 15px 30px;
+    border-radius: 50px;
     font-weight: 700;
-    font-size: 1.2em; /* Larger font size */
+    font-size: 1.2em;
     cursor: pointer;
     border: none;
     outline: none;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(170, 255, 0, 0.3);
-    /* Removed fixed positioning as it's now part of flex layout */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -487,46 +325,46 @@ a:hover {
 }
 
 .quick-links-button:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 20px rgba(170, 255, 0, 0.5); /* Stronger shadow on hover */
-    background: linear-gradient(45deg, #ffcc00, #aaff00); /* Invert gradient on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(170, 255, 0, 0.5);
+    background: linear-gradient(45deg, #ffcc00, #aaff00);
 }
 
-/* Menu Overlay (Shared across pages) */
+/* Menu Overlay */
 .menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Slightly less opaque, as per original aboutme.css */
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2000; /* Ensure it's on top of everything */
-    opacity: 0; /* Hidden by default */
-    visibility: hidden; /* Hidden by default */
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.menu-overlay.show { /* Class added by JavaScript to show the menu */
+.menu-overlay.show {
     opacity: 1;
     visibility: visible;
 }
 
 .menu-content {
-    background-color: #2a2a4a; /* Matching aboutme.css original */
-    padding: 30px; /* Matching aboutme.css original */
+    background-color: #2a2a4a;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     text-align: center;
-    max-width: 400px; /* Matching aboutme.css original */
+    max-width: 400px;
     width: 90%;
     position: relative;
-    animation: fadeInScale 0.3s ease-out; /* Animation for menu content */
+    animation: fadeInScale 0.3s ease-out;
 }
 
-@keyframes fadeInScale { /* Animation from aboutme.css original */
+@keyframes fadeInScale {
     from {
         opacity: 0;
         transform: scale(0.9);
@@ -539,28 +377,27 @@ a:hover {
 
 .menu-close-button {
     position: absolute;
-    top: 10px; /* Matching aboutme.css original */
-    right: 10px; /* Matching aboutme.css original */
+    top: 10px;
+    right: 10px;
     background: none;
     border: none;
-    font-size: 1.8em; /* Matching aboutme.css original */
-    color: #e0e0e0; /* Matching aboutme.css original */
+    font-size: 1.8em;
+    color: #e0e0e0;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .menu-close-button:hover {
     transform: rotate(90deg);
-    color: #ff00ff; /* Matching aboutme.css original */
+    color: #ff00ff;
 }
 
 .menu-content h2 {
-    color: #ffcc00; /* Golden yellow for menu title, matching aboutme.css original */
-    font-size: 2em; /* Matching aboutme.css original */
-    margin-bottom: 20px; /* Matching aboutme.css original */
-    border-bottom: 1px solid #4a4a6a; /* Matching aboutme.css original */
-    padding-bottom: 10px; /* Matching aboutme.css original */
-    text-shadow: none; /* Remove text-shadow to match original aboutme.css */
+    color: #ffcc00;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #4a4a6a;
+    padding-bottom: 10px;
 }
 
 .menu-links {
@@ -568,12 +405,11 @@ a:hover {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between menu links, matching aboutme.css original */
+    gap: 15px;
 }
 
 .menu-link-item {
-    margin-bottom: 0; /* Gap handles spacing */
-    background-color: #3a3a5a; /* Matching aboutme.css original */
+    background-color: #3a3a5a;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -581,25 +417,25 @@ a:hover {
 
 .menu-link-item:hover {
     transform: translateY(-3px);
-    background-color: #444466; /* Matching aboutme.css original */
+    background-color: #444466;
 }
 
 .menu-link-item a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Matching aboutme.css original */
-    padding: 15px; /* Matching aboutme.css original */
-    color: #f8f8f2; /* Matching aboutme.css original */
+    gap: 10px;
+    padding: 15px;
+    color: #f8f8f2;
     text-decoration: none;
-    font-size: 1.2em; /* Matching aboutme.css original */
+    font-size: 1.2em;
     font-weight: 600;
 }
 
 .menu-link-item a img {
     width: 24px;
     height: 24px;
-    filter: invert(1); /* Invert SVG colors for dark background */
+    filter: invert(1);
     transition: transform 0.3s ease;
 }
 
@@ -607,22 +443,21 @@ a:hover {
     transform: rotate(10deg);
 }
 
-/* Prominent Telegram Link Style */
 .menu-link-item a.prominent-telegram-link {
-    background: linear-gradient(45deg, #0088cc, #2ca5e0); /* Telegram blue gradient */
+    background: linear-gradient(45deg, #0088cc, #2ca5e0);
     color: white;
-    font-size: 1.3em; /* Slightly larger font */
-    padding: 18px 30px; /* More padding */
-    border-radius: 50px; /* Pill shape */
-    box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5); /* Stronger shadow */
-    animation: pulse-telegram 2s infinite ease-in-out; /* Pulsing animation */
+    font-size: 1.3em;
+    padding: 18px 30px;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5);
+    animation: pulse-telegram 2s infinite ease-in-out;
 }
 
 .menu-link-item a.prominent-telegram-link:hover {
-    background: linear-gradient(45deg, #2ca5e0, #0088cc); /* Invert gradient on hover */
-    transform: translateY(-7px) scale(1.05); /* More pronounced lift */
-    box-shadow: 0 8px 25px rgba(0, 136, 204, 0.7); /* Even stronger shadow */
-    animation: none; /* Stop pulsing on hover */
+    background: linear-gradient(45deg, #2ca5e0, #0088cc);
+    transform: translateY(-7px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 136, 204, 0.7);
+    animation: none;
 }
 
 @keyframes pulse-telegram {
@@ -631,7 +466,7 @@ a:hover {
     100% { transform: scale(1); box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5); }
 }
 
-/* Responsive adjustments for global styles */
+/* Responsive adjustments */
 @media (max-width: 992px) {
     .container {
         padding: 0 20px;
@@ -671,7 +506,7 @@ a:hover {
     }
     .profile-section h2 {
         font-size: 2em;
-        flex-direction: column; /* Stack icon and text for h2 on small screens */
+        flex-direction: column;
         text-align: center;
         gap: 8px;
     }
@@ -682,28 +517,23 @@ a:hover {
         font-size: 1.4em;
     }
 
-    .skills-table {
-        border-spacing: 15px; /* Reduce spacing for smaller screens */
-    }
-    .skill-category-cell {
-        padding: 25px;
-    }
-    .skill-icon-cell {
-        width: 50px; /* Adjust icon column width */
-    }
-    .skill-name-cell {
-        font-size: 1.05em;
-    }
-
-    .download-links {
+    .footer-nav-buttons {
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
 
-    .github-button {
-        padding: 12px 25px;
-        font-size: 1.1em;
+    .footer-button {
+        width: 100%;
+    }
+
+    .social-links-table {
+        display: block;
+    }
+
+    .social-links-table td {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .main-nav {
@@ -713,14 +543,14 @@ a:hover {
     }
 
     .nav-links-container {
-        flex-direction: column; /* Stack nav links */
+        flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
     .nav-link {
         padding: 8px 20px;
-        margin: 0; /* Remove horizontal margin */
+        margin: 0;
         font-size: 1em;
     }
 
@@ -761,32 +591,6 @@ a:hover {
     }
     .profile-section h3 {
         font-size: 1.2em;
-    }
-
-    .skills-table {
-        border-spacing: 10px;
-    }
-    .skill-category-cell {
-        padding: 20px;
-    }
-    .skill-icon-cell {
-        width: 45px;
-    }
-    .skill-name-cell {
-        font-size: 1em;
-    }
-
-    .project-list li {
-        font-size: 1.05em;
-        padding-left: 25px;
-    }
-    .project-list li::before {
-        font-size: 1.1em;
-    }
-
-    .download-links li {
-        padding: 12px 20px;
-        gap: 8px;
     }
 
     .quick-links-button {

@@ -1,29 +1,27 @@
 /* General Body and Container Styles */
-/* Background handled by styles.css now */
-
 .container {
     width: 100%;
     max-width: 960px;
     margin: 20px;
     padding: 20px;
-    background-color: #100020; /* Slightly lighter dark background for content area, darker than before */
+    background-color: #100020;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 25px; /* Space between sections */
+    gap: 25px;
 }
 
 /* Header Styles */
 .profile-header {
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #2a004a; /* Darker border */
+    border-bottom: 1px solid #2a004a;
 }
 
 .profile-header h1 {
-    color: #8be9fd; /* A vibrant light blue */
+    color: #8be9fd;
     font-size: 2.5em;
     margin-bottom: 10px;
     font-weight: 700;
@@ -36,23 +34,23 @@
 }
 
 .profile-header b {
-    color: #f1fa8c; /* A soft yellow */
+    color: #f1fa8c;
 }
 
 /* Main Content Section Styles */
 .profile-main {
     display: flex;
     flex-direction: column;
-    gap: 25px; /* Space between main sections */
+    gap: 25px;
 }
 
 .profile-section {
-    background-color: #15002a; /* Darker background for sections */
+    background-color: #15002a;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
-    border: 1px solid #2a004a; /* Subtle border */
+    border: 1px solid #2a004a;
 }
 
 .profile-section:hover {
@@ -60,7 +58,7 @@
 }
 
 .profile-section h2 {
-    color: #50fa7b; /* A bright green */
+    color: #50fa7b;
     font-size: 1.8em;
     margin-top: 0;
     margin-bottom: 15px;
@@ -75,13 +73,13 @@
 }
 
 .profile-section a {
-    color: #bd93f9; /* A soft purple for links */
+    color: #bd93f9;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
 .profile-section a:hover {
-    color: #ff79c6; /* A pinkish color on hover */
+    color: #ff79c6;
     text-decoration: underline;
 }
 
@@ -89,29 +87,29 @@
 .skills-table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 15px; /* Space between rows */
+    border-spacing: 0 15px;
     margin-top: 20px;
 }
 
 .skill-category-cell {
     width: 50%;
     padding: 15px;
-    background-color: #1a003a; /* Slightly different background for skill categories, darker */
+    background-color: #1a003a;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border: 1px solid #2a004a; /* Subtle border */
+    border: 1px solid #2a004a;
 }
 
 .skill-category-cell:first-child {
-    padding-right: 10px; /* Space between the two columns */
+    padding-right: 10px;
 }
 
 .skill-category-cell:last-child {
-    padding-left: 10px; /* Space between the two columns */
+    padding-left: 10px;
 }
 
 .skill-category-cell h3 {
-    color: #ffb86c; /* An orange-yellow color for subheadings */
+    color: #ffb86c;
     font-size: 1.3em;
     margin-top: 0;
     margin-bottom: 15px;
@@ -129,18 +127,18 @@
 }
 
 .inner-skill-table tr:hover {
-    background-color: #2a004a; /* Highlight on hover, darker */
+    background-color: #2a004a;
 }
 
 .skill-icon-cell {
     padding: 10px;
     text-align: center;
-    width: 60px; /* Fixed width for icons */
+    width: 60px;
 }
 
 .skill-name-cell {
     padding: 10px;
-    color: #f8f8f2; /* White text for skill names */
+    color: #f8f8f2;
     font-size: 1.1em;
 }
 
@@ -151,7 +149,7 @@
     margin-top: 20px;
 }
 
-/* Stats Image Wrapper (for GitHub stats) */
+/* Stats Image Wrapper */
 .stats-image-wrapper,
 .github-stats-container {
     text-align: center;
@@ -168,10 +166,10 @@
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 1px solid #2a004a; /* Subtle border */
+    border: 1px solid #2a004a;
 }
 
-/* Project List (Achievements) */
+/* Project List */
 .project-list {
     list-style: none;
     padding: 0;
@@ -179,7 +177,7 @@
 }
 
 .project-list li {
-    background-color: #1a003a; /* Darker background */
+    background-color: #1a003a;
     padding: 12px 20px;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -188,92 +186,7 @@
     gap: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     color: #f8f8f2;
-    border: 1px solid #2a004a; /* Subtle border */
-}
-
-/* Footer Styles */
-.profile-footer {
-    padding-top: 25px;
-    border-top: 1px solid #2a004a; /* Darker border */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.footer-nav-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.footer-button {
-    background-color: #4a006a; /* A soft blue-gray, darker */
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.footer-button:hover {
-    background-color: #6a009a; /* Lighter purple on hover */
-    color: #e0e6ed;
-    transform: translateY(-3px);
-}
-
-.footer-button.active {
-    background-color: #ff00ff; /* Magenta for active page */
-    color: white;
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
-}
-
-.footer-button img {
-    filter: invert(1); /* Invert SVG colors for dark background */
-}
-
-/* Social Links Table in Footer */
-.social-links-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-.social-links-table td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #2a004a; /* Darker border */
-    border-radius: 8px;
-    background-color: #1a003a; /* Darker background */
-    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.social-links-table td:hover {
-    background-color: #2a004a; /* Darker highlight on hover */
-    transform: translateY(-3px);
-}
-
-.social-links-table a {
-    display: block;
-    color: #bd93f9;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05em;
-}
-
-.social-links-table a:hover {
-    color: #ff79c6;
-    text-decoration: underline;
+    border: 1px solid #2a004a;
 }
 
 /* Responsive Adjustments */
@@ -291,9 +204,8 @@
         font-size: 1.5em;
     }
 
-    .skills-table,
-    .social-links-table {
-        display: block; /* Stack tables on small screens */
+    .skills-table {
+        display: block;
     }
 
     .skill-category-cell {
@@ -307,20 +219,5 @@
     .skill-category-cell:last-child {
         padding-right: 15px;
         padding-left: 15px;
-    }
-
-    .footer-nav-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer-button {
-        width: 100%;
-    }
-
-    .social-links-table td {
-        display: block;
-        width: 100%;
-        margin-bottom: 10px;
     }
 }
