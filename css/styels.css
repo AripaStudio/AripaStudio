@@ -1,25 +1,101 @@
 body {
-    font-family: sans-serif; 
-    color: #333; 
-    margin: 20px;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 30px;
+    line-height: 1.7;
 }
 
-h1, h2, h3 {
-    color: #2c3e50; 
+h1 {
+    color: #337ab7;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #5e81ac;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d8dee9;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #81a1c1;
+    font-size: 1.4em;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 hr {
-    border: 1px solid #eee;
-    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background: #d8dee9;
+    margin: 30px 0;
 }
 
 a {
-    color: #3498db; 
+    color: #22863a;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #28a745;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table td {
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+b {
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.github-stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.github-stats-container img {
+    max-width: 100%;
+    margin: 5px 0;
+}
