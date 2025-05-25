@@ -465,6 +465,7 @@ a:hover {
 }
 
 /* Main Menu Button (for index.html and games-software.html) */
+/* This style is now for the Quick Links button within the footer/landing-buttons */
 .quick-links-button {
     background: linear-gradient(45deg, #aaff00, #ffcc00); /* Green to Yellow gradient */
     color: #1a1a2e;
@@ -477,11 +478,7 @@ a:hover {
     outline: none;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(170, 255, 0, 0.3);
-    position: fixed; /* Fixed position */
-    bottom: 30px; /* 30px from bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    z-index: 1500; /* Ensure it's above other content */
+    /* Removed fixed positioning as it's now part of flex layout */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -490,7 +487,7 @@ a:hover {
 }
 
 .quick-links-button:hover {
-    transform: translateX(-50%) translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
     box-shadow: 0 8px 20px rgba(170, 255, 0, 0.5); /* Stronger shadow on hover */
     background: linear-gradient(45deg, #ffcc00, #aaff00); /* Invert gradient on hover */
 }

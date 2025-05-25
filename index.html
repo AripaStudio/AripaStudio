@@ -116,6 +116,17 @@
             box-shadow: 0 15px 40px rgba(255, 0, 255, 0.7), 0 0 30px rgba(255, 204, 0, 0.5);
         }
 
+        /* New style for Quick Links button on landing page */
+        .landing-button.quick-links {
+            background: linear-gradient(45deg, #00f0ff, #ff00ff); /* Blue to Magenta gradient */
+            box-shadow: 0 8px 25px rgba(0, 240, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+        }
+
+        .landing-button.quick-links:hover {
+            background: linear-gradient(45deg, #ff00ff, #00f0ff); /* Invert gradient */
+            box-shadow: 0 15px 40px rgba(0, 240, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.5);
+        }
+
         /* Responsive adjustments for landing page */
         @media (max-width: 768px) {
             .landing-container {
@@ -165,6 +176,10 @@
             <a href="games-software.html" class="landing-button games-software">
                 Games & Software
             </a>
+            <button class="landing-button quick-links" onclick="openMenu()">
+                <img src="img/menu-icon.svg" width="20" height="20" alt="Menu Icon">
+                Quick Links
+            </button>
         </div>
     </div>
 
@@ -212,11 +227,6 @@
             </ul>
         </div>
     </div>
-
-    <button class="quick-links-button" onclick="openMenu()">
-        <img src="img/menu-icon.svg" width="20" height="20" alt="Menu Icon">
-        Quick Links
-    </button>
 
     <script>
         // Function to open the main menu overlay
