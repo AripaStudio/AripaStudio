@@ -2,7 +2,8 @@
 body {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    background: radial-gradient(circle at 70% 30%, #1e003a, #0a0a1a); /* Deep radial gradient background */
+    /* Even darker radial gradient background for a deeper, more immersive feel */
+    background: radial-gradient(circle at 70% 30%, #05000a, #100020);
     color: #e0e6ed; /* Light text color for contrast */
     margin: 0;
     padding: 0;
@@ -25,7 +26,7 @@ body {
 .profile-header {
     text-align: center;
     padding: 60px 20px; /* More padding */
-    background: linear-gradient(135deg, #2a004a, #1a003a); /* Deeper purple gradient */
+    background: linear-gradient(135deg, #1a003a, #0a001a); /* Deeper purple gradient */
     border-bottom: 4px solid #ff00ff; /* Vibrant magenta accent border */
     border-radius: 20px 20px 0 0; /* Even more rounded top corners */
     margin-bottom: 50px; /* More space below header */
@@ -77,12 +78,12 @@ body {
 }
 
 .profile-section {
-    background-color: #1f003a; /* Darker purple for sections */
+    background-color: #15002a; /* Even darker purple for sections */
     padding: 40px; /* More padding */
     margin-bottom: 35px; /* More space between sections */
     border-radius: 15px; /* More rounded corners */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 0, 255, 0.1); /* Stronger shadow with subtle magenta glow */
-    border: 1px solid #3a005a; /* Subtle border */
+    border: 1px solid #2a004a; /* Subtle border */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -170,11 +171,11 @@ a:hover {
 .skill-category-cell {
     width: 50%;
     padding: 30px; /* More padding */
-    background-color: #2a004a; /* Deeper purple for category cells */
+    background-color: #1a003a; /* Deeper purple for category cells */
     border-radius: 15px; /* More rounded corners */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 255, 0.1); /* Stronger shadow with subtle magenta glow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #4a006a; /* Subtle border */
+    border: 1px solid #2a004a; /* Subtle border */
 }
 
 .skill-category-cell:hover {
@@ -201,7 +202,7 @@ a:hover {
 }
 
 .skill-row:hover {
-    background-color: #3a005a; /* Lighter purple on hover for skill rows */
+    background-color: #2a004a; /* Lighter purple on hover for skill rows */
     transform: translateX(5px); /* Slight horizontal shift on hover */
 }
 
@@ -246,7 +247,7 @@ a:hover {
     height: auto;
     border-radius: 12px; /* More rounded corners */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 240, 255, 0.2); /* Stronger shadow with blue glow */
-    border: 1px solid #4a006a; /* Subtle border for images */
+    border: 1px solid #2a004a; /* Subtle border for images */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -311,12 +312,12 @@ a:hover {
     align-items: center;
     gap: 12px;
     margin-bottom: 15px;
-    background-color: #3a005a; /* Deeper purple for each link item */
+    background-color: #1a003a; /* Deeper purple for each link item */
     padding: 15px 25px; /* More padding */
     border-radius: 10px; /* More rounded corners */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #4a006a;
+    border: 1px solid #2a004a;
 }
 
 .download-links li:hover {
@@ -333,7 +334,7 @@ a:hover {
 .profile-footer {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #1a003a, #2a004a); /* Gradient background */
+    background: linear-gradient(135deg, #0a001a, #1a003a); /* Gradient background */
     border-top: 4px solid #ff00ff; /* Vibrant magenta accent border */
     border-radius: 0 0 20px 20px; /* More rounded bottom corners */
     margin-top: 50px;
@@ -422,7 +423,7 @@ a:hover {
 .main-nav {
     display: flex;
     justify-content: center;
-    background-color: #2a004a; /* Dark purple background */
+    background-color: #1a003a; /* Dark purple background */
     padding: 15px 0;
     border-bottom: 2px solid #ff00ff; /* Magenta accent line */
     border-radius: 10px;
@@ -450,7 +451,7 @@ a:hover {
 }
 
 .nav-link:hover {
-    background-color: #4a006a; /* Lighter purple on hover */
+    background-color: #2a004a; /* Lighter purple on hover */
     color: #00f0ff; /* Neon blue text on hover */
     transform: translateY(-3px);
     text-decoration: none;
@@ -501,7 +502,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(10, 10, 26, 0.95); /* Semi-transparent dark background */
+    background: rgba(0, 0, 0, 0.9); /* Even darker, more opaque background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,13 +512,8 @@ a:hover {
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.menu-overlay.active { /* This class is not explicitly added/removed in JS, but could be for more complex animations */
-    opacity: 1;
-    visibility: visible;
-}
-
 .menu-content {
-    background-color: #1f003a; /* Dark purple for menu content */
+    background-color: #1a003a; /* Dark purple for menu content */
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
@@ -567,13 +563,17 @@ a:hover {
     padding: 0;
 }
 
+.menu-link-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .menu-link-item a {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
     padding: 15px 25px;
-    background-color: #3a005a; /* Darker purple for menu link background */
+    background-color: #2a004a; /* Darker purple for menu link background */
     border-radius: 10px;
     color: #e0e6ed;
     font-size: 1.2em;
@@ -599,6 +599,30 @@ a:hover {
 
 .menu-link-item a:hover img {
     transform: rotate(10deg);
+}
+
+/* Prominent Telegram Link Style */
+.menu-link-item a.prominent-telegram-link {
+    background: linear-gradient(45deg, #0088cc, #2ca5e0); /* Telegram blue gradient */
+    color: white;
+    font-size: 1.3em; /* Slightly larger font */
+    padding: 18px 30px; /* More padding */
+    border-radius: 50px; /* Pill shape */
+    box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5); /* Stronger shadow */
+    animation: pulse-telegram 2s infinite ease-in-out; /* Pulsing animation */
+}
+
+.menu-link-item a.prominent-telegram-link:hover {
+    background: linear-gradient(45deg, #2ca5e0, #0088cc); /* Invert gradient on hover */
+    transform: translateY(-7px) scale(1.05); /* More pronounced lift */
+    box-shadow: 0 8px 25px rgba(0, 136, 204, 0.7); /* Even stronger shadow */
+    animation: none; /* Stop pulsing on hover */
+}
+
+@keyframes pulse-telegram {
+    0% { transform: scale(1); box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5); }
+    50% { transform: scale(1.02); box-shadow: 0 8px 25px rgba(0, 136, 204, 0.7); }
+    100% { transform: scale(1); box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5); }
 }
 
 /* Responsive adjustments for global styles */

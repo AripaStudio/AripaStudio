@@ -16,6 +16,20 @@
     box-shadow: 0 10px 30px rgba(255, 204, 0, 0.25); /* Golden shadow */
 }
 
+/* Container for Games & Software page, slightly different background for visual depth */
+.container {
+    background-color: #0a001a; /* Even darker background for the container */
+    max-width: 1200px; /* Increased max-width for projects grid */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between sections */
+}
+
 
 /* Projects Section Styling */
 .projects-section h2 {
@@ -32,11 +46,11 @@
 }
 
 .project-card {
-    background-color: #2a004a; /* Deeper purple for project cards */
+    background-color: #1a003a; /* Deeper purple for project cards, darker */
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 0, 255, 0.15); /* Shadow with magenta glow */
-    border: 1px solid #4a006a; /* Subtle border */
+    border: 1px solid #2a004a; /* Subtle border */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex; /* Flexbox for internal content alignment */
     flex-direction: column;
@@ -91,7 +105,7 @@
 }
 
 .project-type {
-    background-color: #5a008a; /* Dark purple for type */
+    background-color: #2a004a; /* Dark purple for type, darker */
     color: #e0e6ed;
     padding: 5px 10px;
     border-radius: 5px;
@@ -102,7 +116,7 @@
     flex-wrap: wrap;
     gap: 10px; /* Reduced gap for more links */
     margin-top: 20px;
-    border-top: 1px dashed #4a006a;
+    border-top: 1px dashed #2a004a; /* Darker dashed border */
     padding-top: 15px;
     justify-content: center; /* Center links within the card */
 }
@@ -128,13 +142,13 @@
 /* Specific Project Link Styles */
 .project-link.github-repo-link,
 .project-link.github-repo-link-platform { /* Added for platform link */
-    background-color: #4a4a6a; /* Dark gray for GitHub links */
+    background-color: #2a004a; /* Dark gray for GitHub links, darker */
     color: #e0e6ed;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .project-link.github-repo-link:hover,
 .project-link.github-repo-link-platform:hover {
-    background-color: #5a5a7a;
+    background-color: #3a005a; /* Darker hover */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 240, 255, 0.2);
 }
 .project-link.github-repo-link img,
@@ -173,7 +187,7 @@
 }
 
 .project-link.coming-soon-link {
-    background-color: #5a5a5a; /* Gray for coming soon */
+    background-color: #2a004a; /* Gray for coming soon, darker */
     color: #c0c0c0;
     cursor: default; /* No pointer cursor */
     opacity: 0.7;
@@ -194,6 +208,11 @@
     flex-direction: column; /* Stack text and buttons */
     align-items: center;
     gap: 15px;
+    background-color: #15002a; /* Darker background for this section */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2a004a; /* Subtle border */
 }
 
 .download-platforms {
@@ -209,15 +228,16 @@
     gap: 8px;
     padding: 10px 20px; /* Larger padding */
     border-radius: 30px; /* Pill shape */
-    background-color: #3a3a5a;
+    background-color: #1a003a; /* Darker background */
     color: #e0e6ed;
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #2a004a; /* Subtle border */
 }
 
 .download-platform-link:hover {
-    background-color: #4a4a6a;
+    background-color: #2a004a; /* Darker hover */
     transform: translateY(-5px); /* More lift */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 240, 255, 0.2);
     text-decoration: none;
@@ -241,12 +261,14 @@
 /* Footer Styles (Consistent with About Me page, but adjusted for this page's navigation) */
 .profile-footer {
     padding-top: 25px;
-    border-top: 1px solid #4a4a6a;
+    border-top: 1px solid #2a004a; /* Darker border */
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 50px; /* Ensure enough space from content above */
+    background: linear-gradient(135deg, #05000a, #100020); /* Darker gradient for footer */
+    border-radius: 0 0 15px 15px; /* Match container border radius */
 }
 
 .footer-nav-buttons {
@@ -257,7 +279,7 @@
 }
 
 .footer-button {
-    background-color: #6272a4; /* A soft blue-gray */
+    background-color: #4a006a; /* A soft blue-gray, darker */
     color: white;
     padding: 12px 25px;
     border: none;
@@ -274,15 +296,15 @@
 }
 
 .footer-button:hover {
-    background-color: #8be9fd; /* Lighter blue on hover */
-    color: #1a1a2e;
+    background-color: #6a009a; /* Lighter purple on hover */
+    color: #e0e6ed;
     transform: translateY(-3px);
 }
 
 .footer-button.active {
-    background-color: #ff79c6; /* Pink for active page */
+    background-color: #ff00ff; /* Magenta for active page */
     color: white;
-    box-shadow: 0 0 15px rgba(255, 121, 198, 0.7);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
 }
 
 .footer-button img {
