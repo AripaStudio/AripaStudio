@@ -60,12 +60,12 @@
             <button class="menu-close-button" onclick="toggleMenu()">×</button>
             <h2>🔗 Quick Links</h2>
             <ul class="menu-links">
-                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link">Aripa Studio Telegram Channel</a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases">AripaStudioHub (Download)</a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio">Aripa Studio GitHub</a></li>
-                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio">Aripa Studio YouTube</a></li>
-                <li class="menu-link-item"><a href="https://aripastudio.itch.io">Aripa Studio itch.io</a></li>
-                <li class="menu-link-item"><a href="https://t.me/KhashayarMobasheri">Personal Telegram</a></li>
+                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link"><img src="img/telegram.svg" alt="Telegram Icon" width="24"> Aripa Studio Telegram Channel</a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="img/download.svg" alt="Download Icon" width="24"> AripaStudioHub (Download)</a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio"><img src="img/github.svg" alt="GitHub Icon" width="24"> Aripa Studio GitHub</a></li>
+                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio"><img src="img/youtube.svg" alt="YouTube Icon" width="24"> Aripa Studio YouTube</a></li>
+                <li class="menu-link-item"><a href="https://aripastudio.itch.io"><img src="img/itchio.svg" alt="itch.io Icon" width="24"> Aripa Studio itch.io</a></li>
+                <li class="menu-link-item"><a href="https://t.me/KhashayarMobasheri"><img src="img/telegram.svg" alt="Telegram Icon" width="24"> Personal Telegram</a></li>
             </ul>
         </div>
     </div>
@@ -79,6 +79,13 @@
                 menu.classList.add('show');
             }
         }
+
+        // Ensure footer buttons are clickable
+        document.querySelectorAll('.footer-button, .quick-links-button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        });
     </script>
 </body>
 </html>

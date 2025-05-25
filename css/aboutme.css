@@ -2,7 +2,7 @@
 .container {
     width: 100%;
     max-width: 960px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     background-color: #100020;
     border-radius: 15px;
@@ -25,6 +25,7 @@
     font-size: 2.5em;
     margin-bottom: 10px;
     font-weight: 700;
+    animation: fadeIn 1s ease-in;
 }
 
 .profile-header p {
@@ -42,6 +43,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    align-items: center;
 }
 
 .profile-section {
@@ -49,12 +51,15 @@
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
     border: 1px solid #2a004a;
+    width: 100%;
+    max-width: 800px;
 }
 
 .profile-section:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 0, 255, 0.2);
 }
 
 .profile-section h2 {
@@ -65,6 +70,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    animation: slideIn 0.5s ease-in;
 }
 
 .profile-section p {
@@ -189,10 +195,69 @@
     border: 1px solid #2a004a;
 }
 
+/* Hobbies List */
+.hobby-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.hobby-list li {
+    background-color: #1a003a;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #f8f8f2;
+    border: 1px solid #2a004a;
+}
+
+/* Contact Links */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #2a004a;
+    color: #e0e6ed;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link:hover {
+    transform: translateY(-3px);
+    background-color: #3a005a;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .container {
-        margin: 10px;
+        margin: 10px auto;
         padding: 15px;
     }
 
@@ -200,24 +265,52 @@
         font-size: 2em;
     }
 
+    .profile-section {
+        padding: 20px;
+    }
+
     .profile-section h2 {
         font-size: 1.5em;
     }
 
     .skills-table {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .skill-category-cell {
         width: 100%;
         margin-bottom: 20px;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding: 15px;
     }
 
     .skill-category-cell:first-child,
     .skill-category-cell:last-child {
-        padding-right: 15px;
-        padding-left: 15px;
+        padding: 15px;
+    }
+
+    .github-stats-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-header h1 {
+        font-size: 1.8em;
+    }
+
+    .profile-section h2 {
+        font-size: 1.3em;
+    }
+
+    .skill-name-cell {
+        font-size: 1em;
     }
 }
