@@ -335,7 +335,7 @@ a:hover {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(135deg, #0a001a, #1a003a); /* Gradient background */
-    border-top: 44px solid #ff00ff; /* Vibrant magenta accent border */
+    border-top: 4px solid #ff00ff; /* Vibrant magenta accent border */
     border-radius: 0 0 20px 20px; /* More rounded bottom corners */
     margin-top: 50px;
     box-shadow: 0 -10px 30px rgba(255, 0, 255, 0.25); /* Stronger magenta shadow */
@@ -502,69 +502,80 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9); /* Even darker, more opaque background */
+    background: rgba(0, 0, 0, 0.8); /* Slightly less opaque, as per original aboutme.css */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2000; /* Ensure it's on top of everything */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Hidden by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+.menu-overlay.show { /* Class added by JavaScript to show the menu */
+    opacity: 1;
+    visibility: visible;
 }
 
 .menu-content {
-    background-color: #1a003a; /* Dark purple for menu content */
-    padding: 40px;
+    background-color: #2a2a4a; /* Matching aboutme.css original */
+    padding: 30px; /* Matching aboutme.css original */
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     text-align: center;
-    max-width: 500px;
+    max-width: 400px; /* Matching aboutme.css original */
     width: 90%;
     position: relative;
-    animation: menu-slide-in 0.5s ease-out; /* Slide in animation */
+    animation: fadeInScale 0.3s ease-out; /* Animation for menu content */
 }
 
-@keyframes menu-slide-in {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+@keyframes fadeInScale { /* Animation from aboutme.css original */
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .menu-close-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px; /* Matching aboutme.css original */
+    right: 10px; /* Matching aboutme.css original */
     background: none;
     border: none;
-    font-size: 2em;
-    color: #ff00ff; /* Magenta close button */
+    font-size: 1.8em; /* Matching aboutme.css original */
+    color: #e0e0e0; /* Matching aboutme.css original */
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .menu-close-button:hover {
     transform: rotate(90deg);
-    color: #aaff00; /* Green on hover */
+    color: #ff00ff; /* Matching aboutme.css original */
 }
 
 .menu-content h2 {
-    color: #00f0ff; /* Neon blue for menu title */
-    font-size: 2.2em;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #00f0ff;
-    padding-bottom: 10px;
-    text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+    color: #ffcc00; /* Golden yellow for menu title, matching aboutme.css original */
+    font-size: 2em; /* Matching aboutme.css original */
+    margin-bottom: 20px; /* Matching aboutme.css original */
+    border-bottom: 1px solid #4a4a6a; /* Matching aboutme.css original */
+    padding-bottom: 10px; /* Matching aboutme.css original */
+    text-shadow: none; /* Remove text-shadow to match original aboutme.css */
 }
 
 .menu-links {
     list-style: none;
     padding: 0;
-    display: flex; /* Ensure flexbox for vertical stacking */
+    display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between menu links, adjusted to match aboutme.css original */
+    gap: 15px; /* Space between menu links, matching aboutme.css original */
 }
 
 .menu-link-item {
-    margin-bottom: 0; /* Remove margin-bottom as gap handles spacing */
+    margin-bottom: 0; /* Gap handles spacing */
     background-color: #3a3a5a; /* Matching aboutme.css original */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -582,13 +593,13 @@ a:hover {
     justify-content: center;
     gap: 10px; /* Matching aboutme.css original */
     padding: 15px; /* Matching aboutme.css original */
-    color: #f8f8f2;
+    color: #f8f8f2; /* Matching aboutme.css original */
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2em; /* Matching aboutme.css original */
     font-weight: 600;
 }
 
-.menu-link-item a img { /* Changed from svg to img for consistency with existing HTML */
+.menu-link-item a img {
     width: 24px;
     height: 24px;
     filter: invert(1); /* Invert SVG colors for dark background */

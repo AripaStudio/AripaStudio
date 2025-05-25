@@ -213,20 +213,15 @@
         </div>
     </div>
 
-    <button class="quick-links-button" onclick="openMenu()">
-        <img src="img/menu-icon.svg" width="20" height="20" alt="Menu Icon">
-        Quick Links
-    </button>
-
     <script>
         // Function to open the main menu overlay
         function openMenu() {
-            document.getElementById('mainMenuOverlay').style.display = 'flex';
+            document.getElementById('mainMenuOverlay').classList.add('show');
         }
 
         // Function to close the main menu overlay
         function closeMenu() {
-            document.getElementById('mainMenuOverlay').style.display = 'none';
+            document.getElementById('mainMenuOverlay').classList.remove('show');
         }
     </script>
 </body>

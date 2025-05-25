@@ -1,5 +1,5 @@
 /* Import general styles to maintain consistency */
-@import url('styles.css');
+/* Removed @import url('styles.css'); as it's now linked directly in HTML */
 
 /* General Body and Container Styles */
 body {
