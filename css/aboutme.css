@@ -1,10 +1,5 @@
-/* Import general styles to maintain consistency */
-/* Removed @import url('styles.css'); as it's now linked directly in HTML */
-
 /* General Body and Container Styles */
-body {
-    /* Background handled by styles.css now */
-}
+/* Background handled by styles.css now */
 
 .container {
     width: 100%;
