@@ -1,0 +1,273 @@
+/* Import general styles to maintain consistency */
+@import url('styles.css');
+
+/* Specific styles for the Games & Software page */
+
+/* Adjustments for header on this specific page */
+.profile-header h1 {
+    font-size: 3.2em; /* Slightly smaller title for this page */
+    letter-spacing: 1.5px;
+}
+
+/* Projects Section Styling */
+.projects-section h2 {
+    color: #ffcc00; /* Golden yellow for project section titles */
+    border-bottom-color: #ffcc00;
+    text-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+}
+
+.projects-grid {
+    display: grid; /* Use CSS Grid for a flexible and responsive layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid columns */
+    gap: 30px; /* Space between project cards */
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #2a004a; /* Deeper purple for project cards */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 0, 255, 0.15); /* Shadow with magenta glow */
+    border: 1px solid #4a006a; /* Subtle border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Flexbox for internal content alignment */
+    flex-direction: column;
+    justify-content: space-between; /* Push footer content to bottom */
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02); /* More dramatic lift and slight scale on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 0, 255, 0.4); /* Stronger shadow and glow */
+}
+
+.project-card h3 {
+    color: #00f0ff; /* Neon blue for project titles */
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+}
+
+.project-description {
+    color: #c0c0c0;
+    font-size: 1.05em;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allow description to take available space */
+}
+
+.project-meta {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.project-status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-status.completed {
+    background-color: #aaff00; /* Neon green for completed */
+    color: #1a1a2e;
+}
+
+.project-status.in-progress {
+    background-color: #ffcc00; /* Golden yellow for in-progress */
+    color: #1a1a2e;
+}
+
+.project-type {
+    background-color: #5a008a; /* Dark purple for type */
+    color: #e0e6ed;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between links */
+    margin-top: 20px;
+    border-top: 1px dashed #4a006a; /* Dashed separator */
+    padding-top: 15px;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 30px; /* Pill shape */
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.project-link.github-link {
+    background-color: #4a4a6a; /* Dark gray for GitHub links */
+    color: #e0e6ed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.project-link.github-link:hover {
+    background-color: #5a5a7a;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.project-link.github-link img {
+    filter: brightness(0) invert(1); /* White GitHub icon */
+}
+
+.project-link.download-link {
+    background: linear-gradient(45deg, #ff00ff, #00f0ff); /* Magenta-blue gradient for download links */
+    color: #1a1a2e;
+    box-shadow: 0 2px 5px rgba(255, 0, 255, 0.3);
+}
+
+.project-link.download-link:hover {
+    background: linear-gradient(45deg, #00f0ff, #ff00ff); /* Invert gradient on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(255, 0, 255, 0.5);
+}
+
+.download-all-note {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.download-platform-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #3a3a5a;
+    color: #e0e6ed;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-platform-link:hover {
+    background-color: #4a4a6a;
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.download-platform-link img {
+    border-radius: 50%; /* Circular icons */
+}
+
+/* Navigation Bar Styles */
+.main-nav {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    background-color: #2a004a; /* Dark purple background */
+    padding: 15px 0;
+    border-bottom: 2px solid #ff00ff; /* Magenta accent line */
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(255, 0, 255, 0.2);
+}
+
+.nav-link {
+    color: #e0e6ed;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    background-color: #4a006a; /* Lighter purple on hover */
+    color: #00f0ff; /* Neon blue text on hover */
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background: linear-gradient(45deg, #ff00ff, #00f0ff); /* Gradient for active link */
+    color: #1a1a2e; /* Dark text for active link */
+    box-shadow: 0 3px 10px rgba(255, 0, 255, 0.4);
+    pointer-events: none; /* Disable click on active link */
+}
+
+/* Footer adjustment for this page */
+.profile-footer .github-button {
+    background: linear-gradient(45deg, #ff00ff, #aaff00); /* Different gradient for footer button on this page */
+    box-shadow: 0 8px 25px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+.profile-footer .github-button:hover {
+    background: linear-gradient(45deg, #aaff00, #ff00ff);
+    box-shadow: 0 15px 40px rgba(255, 0, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.5);
+}
+
+/* Responsive adjustments for games-software.html */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 1.6em;
+    }
+
+    .project-description {
+        font-size: 1em;
+    }
+
+    .project-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        padding: 8px 20px;
+        margin: 0 5px;
+        font-size: 1em;
+    }
+
+    .profile-header h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-header h1 {
+        font-size: 2em;
+    }
+
+    .project-card h3 {
+        font-size: 1.4em;
+    }
+
+    .project-link {
+        padding: 8px 15px;
+        font-size: 0.85em;
+    }
+}
