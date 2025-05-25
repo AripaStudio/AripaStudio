@@ -142,12 +142,12 @@
             <button class="menu-close-button" onclick="toggleMenu()">×</button>
             <h2>🔗 Quick Links</h2>
             <ul class="menu-links">
-                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link"><img src="https://icongr.am/simple/telegram.svg?color=ffffff" alt="Telegram Icon"> Aripa Studio Telegram Channel</a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="https://icongr.am/simple/download.svg?color=ffffff" alt="Download Icon"> AripaStudioHub (Download)</a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio"><img src="https://icongr.am/simple/github.svg?color=ffffff" alt="GitHub Icon"> Aripa Studio GitHub</a></li>
-                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio"><img src="https://icongr.am/simple/youtube.svg?color=ffffff" alt="YouTube Icon"> Aripa Studio YouTube</a></li>
-                <li class="menu-link-item"><a href="https://aripastudio.itch.io"><img src="https://icongr.am/simple/itchdotio.svg?color=ffffff" alt="itch.io Icon"> Aripa Studio itch.io</a></li>
-                <li class="menu-link-item"><a href="https://t.me/KhashayarMobasheri"><img src="https://icongr.am/simple/telegram.svg?color=ffffff" alt="Telegram Icon"> Personal Telegram</a></li>
+                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link">Aripa Studio Telegram Channel</a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases">AripaStudioHub (Download)</a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio">Aripa Studio GitHub</a></li>
+                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio">Aripa Studio YouTube</a></li>
+                <li class="menu-link-item"><a href="https://aripastudio.itch.io">Aripa Studio itch.io</a></li>
+                <li class="menu-link-item"><a href="https://t.me/KhashayarMobasheri">Personal Telegram</a></li>
             </ul>
         </div>
     </div>
@@ -155,7 +155,11 @@
     <script>
         function toggleMenu() {
             const menu = document.getElementById('quickLinksMenu');
-            menu.classList.toggle('show');
+            if (menu.classList.contains('show')) {
+                menu.classList.remove('show');
+            } else {
+                menu.classList.add('show');
+            }
         }
     </script>
 </body>

@@ -146,10 +146,6 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 240, 255, 0.2);
 }
 
-.project-link.github-repo-link img {
-    filter: brightness(0) invert(1);
-}
-
 .project-link.download-app-link {
     background: linear-gradient(45deg, #ff00ff, #aaff00);
     color: #1a1a2e;
@@ -216,10 +212,6 @@
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 240, 255, 0.2);
     text-decoration: none;
-}
-
-.download-platform-link img {
-    border-radius: 50%;
 }
 
 /* Responsive adjustments */
