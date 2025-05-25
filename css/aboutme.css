@@ -1,73 +1,432 @@
-/* Import general styles to maintain consistency across the website */
-@import url('styles.css');
-
-/* Specific styles for the About Me page to make it more visually appealing */
-
-/* Unique body background for About Me page */
+/* General Body and Container Styles */
 body {
-    background: radial-gradient(circle at 20% 80%, #3a002a, #0a0a1a); /* Different radial gradient with a purple-reddish tint */
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Dark background */
+    color: #e0e0e0; /* Light text color for better contrast */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top for longer content */
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-/* Section specific styles for About Me page */
-.profile-section {
-    background-color: #2a004a; /* Slightly different shade of purple for sections */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(170, 255, 0, 0.1); /* Subtle green glow for sections */
-    border: 1px solid #4a006a;
-    animation: section-fade-in 1s ease-out forwards; /* Fade in animation for sections */
-    opacity: 0; /* Start invisible for animation */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #2a2a4a; /* Slightly lighter dark background for content area */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between sections */
 }
 
-/* Animation for sections to fade in */
-@keyframes section-fade-in {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Header specific styles for About Me page */
+/* Header Styles */
 .profile-header {
-    border-bottom: 4px solid #aaff00; /* Green accent border for header */
-    box-shadow: 0 10px 30px rgba(170, 255, 0, 0.25); /* Green shadow for header */
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4a4a6a;
 }
 
 .profile-header h1 {
-    color: #aaff00; /* Green for main title */
-    text-shadow: 0 0 15px rgba(170, 255, 0, 0.8), 0 0 25px rgba(170, 255, 0, 0.6); /* Green text glow */
+    color: #8be9fd; /* A vibrant light blue */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-/* Adjustments for footer button on this specific page */
-.profile-footer .github-button {
-    background: linear-gradient(45deg, #aaff00, #00f0ff); /* Green to Blue gradient for footer button */
-    box-shadow: 0 8px 25px rgba(170, 255, 0, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+.profile-header p {
+    font-size: 1.1em;
+    color: #c0c0c0;
+    margin-bottom: 5px;
 }
 
-.profile-footer .github-button:hover {
-    background: linear-gradient(45deg, #00f0ff, #aaff00); /* Invert gradient on hover */
-    box-shadow: 0 15px 40px rgba(170, 255, 0, 0.7), 0 0 30px rgba(0, 240, 255, 0.5);
+.profile-header b {
+    color: #f1fa8c; /* A soft yellow */
 }
 
-/* Ensure skill icons in h2 also have the correct glow for About Me page */
-.profile-section h2 img {
-    filter: drop-shadow(0 0 5px rgba(170, 255, 0, 0.7)); /* Green glow for icons in h2 */
+/* Main Content Section Styles */
+.profile-main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between main sections */
 }
 
-/* Ensure project list bullets are consistent with the "growth" theme */
-.project-list li::before {
-    content: '🌱'; /* Plant emoji for growth theme */
-    color: #aaff00; /* Green accent (though emoji overrides color) */
+.profile-section {
+    background-color: #3a3a5a; /* Darker background for sections */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Adjustments for GitHub stats images to match the green theme */
+.profile-section:hover {
+    transform: translateY(-5px);
+}
+
+.profile-section h2 {
+    color: #50fa7b; /* A bright green */
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-section p {
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.profile-section a {
+    color: #bd93f9; /* A soft purple for links */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.profile-section a:hover {
+    color: #ff79c6; /* A pinkish color on hover */
+    text-decoration: underline;
+}
+
+/* Skills Table Specific Styles */
+.skills-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px; /* Space between rows */
+    margin-top: 20px;
+}
+
+.skill-category-cell {
+    width: 50%;
+    padding: 15px;
+    background-color: #444466; /* Slightly different background for skill categories */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category-cell:first-child {
+    padding-right: 10px; /* Space between the two columns */
+}
+
+.skill-category-cell:last-child {
+    padding-left: 10px; /* Space between the two columns */
+}
+
+.skill-category-cell h3 {
+    color: #ffb86c; /* An orange-yellow color for subheadings */
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.inner-skill-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inner-skill-table tr {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.inner-skill-table tr:hover {
+    background-color: #555577; /* Highlight on hover */
+}
+
+.skill-icon-cell {
+    padding: 10px;
+    text-align: center;
+    width: 60px; /* Fixed width for icons */
+}
+
+.skill-name-cell {
+    padding: 10px;
+    color: #f8f8f2; /* White text for skill names */
+    font-size: 1.1em;
+}
+
+.note {
+    text-align: center;
+    font-style: italic;
+    color: #aaaaaa;
+    margin-top: 20px;
+}
+
+/* Stats Image Wrapper (for GitHub stats) */
+.stats-image-wrapper,
+.github-stats-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .stats-image-wrapper img,
 .github-stats-container img {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(170, 255, 0, 0.2); /* Green glow for stats images */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.stats-image-wrapper img:hover,
-.github-stats-container img:hover {
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(170, 255, 0, 0.4); /* Enhanced green glow */
+/* Project List (Achievements) */
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
 }
 
-/* Adjustments for skill category cells to match green theme */
-.skill-category-cell:hover {
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(170, 255, 0, 0.4); /* Green glow on hover */
+.project-list li {
+    background-color: #444466;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #f8f8f2;
+}
+
+/* Footer Styles */
+.profile-footer {
+    padding-top: 25px;
+    border-top: 1px solid #4a4a6a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-button {
+    background-color: #6272a4; /* A soft blue-gray */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-button:hover {
+    background-color: #8be9fd; /* Lighter blue on hover */
+    color: #1a1a2e;
+    transform: translateY(-3px);
+}
+
+.footer-button.active {
+    background-color: #ff79c6; /* Pink for active page */
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 121, 198, 0.7);
+}
+
+.footer-button img {
+    filter: invert(1); /* Invert SVG colors for dark background */
+}
+
+/* Social Links Table in Footer */
+.social-links-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.social-links-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #4a4a6a;
+    border-radius: 8px;
+    background-color: #3a3a5a;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social-links-table td:hover {
+    background-color: #555577;
+    transform: translateY(-3px);
+}
+
+.social-links-table a {
+    display: block;
+    color: #bd93f9;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.social-links-table a:hover {
+    color: #ff79c6;
+    text-decoration: underline;
+}
+
+/* Menu Overlay Styles */
+.menu-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+    backdrop-filter: blur(5px); /* Optional: blur background */
+}
+
+.menu-content {
+    background-color: #2a2a4a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    animation: fadeInScale 0.3s ease-out forwards;
+}
+
+.menu-close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #ff79c6;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.menu-close-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-content h2 {
+    color: #50fa7b;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-link-item {
+    margin-bottom: 15px;
+    background-color: #3a3a5a;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.menu-link-item:hover {
+    transform: translateY(-3px);
+    background-color: #444466;
+}
+
+.menu-link-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    color: #f8f8f2;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.menu-link-item a img {
+    filter: invert(1); /* Invert SVG colors for dark background */
+}
+
+/* Animations */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .profile-header h1 {
+        font-size: 2em;
+    }
+
+    .profile-section h2 {
+        font-size: 1.5em;
+    }
+
+    .skills-table,
+    .social-links-table {
+        display: block; /* Stack tables on small screens */
+    }
+
+    .skill-category-cell {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .skill-category-cell:first-child,
+    .skill-category-cell:last-child {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .footer-nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-button {
+        width: 100%;
+    }
+
+    .social-links-table td {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
