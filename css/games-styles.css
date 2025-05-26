@@ -107,6 +107,13 @@
     border-radius: 5px;
 }
 
+.project-Tags {
+    background-color: #694585;
+    color: #e0e6ed;
+    padding: 5px 10px;    
+}
+
+
 .project-links {
     display: flex;
     flex-wrap: wrap;
