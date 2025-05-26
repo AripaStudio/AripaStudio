@@ -7,8 +7,8 @@
   </a>  
 </p>
 <p>
-<img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=dracula" alt="GitHub Stats">
+<img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=dark" alt="GitHub Stats">
 </p>
 <p>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=dracula" alt="GitHub Streak">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=dark" alt="GitHub Streak">
 </p>
