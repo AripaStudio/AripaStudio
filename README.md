@@ -5,4 +5,6 @@
   <a href="https://t.me/AripaStudio">
     <img src="https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white" alt="Telegram">
   </a>
+    <img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=dracula" alt="GitHub Stats">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=dracula" alt="GitHub Streak">
 </p>
