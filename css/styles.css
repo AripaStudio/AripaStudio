@@ -410,18 +410,22 @@ a:hover {
     animation: none;
 }
 
+
+/* for BackGround Icons :  */
+.background-icons{
+    background-color: rgb(65, 99, 87);
+    border-radius: 30px;
+    display: inline-block;
+    padding: 4px;
+}
+
+
 @keyframes pulse-telegram {
     0% { transform: scale(1); box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5); }
     50% { transform: scale(1.02); box-shadow: 0 8px 25px rgba(0, 136, 204, 0.7); }
     100% { transform: scale(1); box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5); }
 }
 
-
-/* for BackGround Icons :  */
-.background-icons{
-    background-color: rgb(65, 99, 87);
-    border-radius: 30px;
-}
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
