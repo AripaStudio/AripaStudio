@@ -419,6 +419,13 @@ a:hover {
     padding: 4px;
 }
 
+.background-icons_dark{
+    background-color: rgb(11, 117, 117);
+    border-radius: 30px;
+    display: inline-block;
+    padding: 7px;
+}
+
 
 @keyframes pulse-telegram {
     0% { transform: scale(1); box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5); }
