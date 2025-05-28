@@ -419,11 +419,11 @@ a:hover {
     padding: 4px;
 }
 
-.background-icons_dark{
-    background-color: rgb(11, 117, 117);
+.background-icons_GreenLight{
+    background-color: rgb(0, 255, 179);
     border-radius: 30px;
     display: inline-block;
-    padding: 7px;
+    padding: 5px;
 }
 
 
