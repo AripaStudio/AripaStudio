@@ -24,8 +24,15 @@
             </div>
         </nav>
 
+
         <main class="profile-main">
-            <section class="profile-section projects-section">
+            <section class="project-categories">
+                <button class="category-button active" data-category="completed">نرم افزار / بازی ساخته شده</button>
+                <button class="category-button" data-category="in-progress">نرم افزار / بازی در حال ساخت</button>
+                <button class="category-button" data-category="miscellaneous">پروژه‌های کوچک یا متفرقه</button>
+            </section>
+
+           <section class="profile-section projects-section completed-projects">
                 <h2>🎉 Completed Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
@@ -160,8 +167,8 @@
                 </div>
             </section>
 
-            <section class="profile-section projects-section">
-                <h2>🔧 Under Construction (Coming Soon)</h2>
+            <section class="profile-section projects-section in-progress-projects" style="display: none;">
+               <h2>🔧 Under Construction (Coming Soon)</h2>
                 <div class="projects-grid">
                     <div class="project-card">
                         <h3>#Corner_of_Existence</h3>
@@ -209,7 +216,15 @@
                     </div>
                 </div>
             </section>
+
+            <section class="profile-section projects-section miscellaneous-projects" style="display: none;">
+                <h2>✨ Miscellaneous Projects</h2>
+                <div class="projects-grid">
+                    ...
+                </div>
+            </section>
         </main>
+
 
         <footer class="profile-footer">
             <div class="footer-nav-buttons">
@@ -236,22 +251,7 @@
         </div>
     </div>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('quickLinksMenu');
-            if (menu.classList.contains('show')) {
-                menu.classList.remove('show');
-            } else {
-                menu.classList.add('show');
-            }
-        }
-
-        // Ensure footer buttons are clickable
-        document.querySelectorAll('.footer-button, .quick-links-button').forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.stopPropagation();
-            });
-        });
-    </script>
+    <script src="js/games-filter.js"></script>
+    <script src="js/quickLinkMenu.js"></script>
 </body>
 </html>

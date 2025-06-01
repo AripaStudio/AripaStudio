@@ -226,6 +226,46 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 240, 255, 0.2);
     text-decoration: none;
 }
+.project-categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.category-button {
+    background-color: #2a004a;
+    color: #e0e6ed;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.category-button:hover {
+    background-color: #3a005a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.category-button.active {
+    background: linear-gradient(45deg, #ff00ff, #00f0ff);
+    color: #1a1a2e;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+}
+
+@keyframes button-glow {
+    from { box-shadow: 0 0 5px rgba(255, 0, 255, 0.3); }
+    to { box-shadow: 0 0 15px rgba(255, 0, 255, 0.7); }
+}
+
+.category-button.active {
+    animation: button-glow 1s infinite alternate;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
