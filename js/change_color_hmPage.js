@@ -32,7 +32,7 @@ setInterval(() => changeColor(lbl_Head_aboutme, neonColors), 1000);
 setInterval(() => changeColorClass(lbl_info_aboutme, neonDarkColors), 1500);
 
 setInterval(() => changeColor(lbl_Head_games, neonColors), 1000);
-setInterval(() => changeColor(lbl_info_games , neonDarkColors));
+setInterval(() => changeColor(lbl_info_games , neonDarkColors) , 1500);
 
 function changeColor(element, colorArray) {
     if (!element || !colorArray || colorArray.length === 0) {
