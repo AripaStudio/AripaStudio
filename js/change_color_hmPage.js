@@ -13,31 +13,53 @@ const lbl_info_aboutme = document.getElementsByClassName("info_aboutme");
 
 
 let neonColors = [
-  "#0FF",
-  "#FF0",
-  "#F0F",
-  "#0F0",
-  "#FF0066",
-  "#00FFFF",
-  "#99FF33",
-  "#FF99CC",
-  "#66FF66"
+  "#0FF",       // Aqua
+  "#FF0",       // Yellow
+  "#F0F",       // Magenta
+  "#0F0",       // Green
+  "#FF0066",    // Neon Pink
+  "#00FFFF",    // Cyan
+  "#99FF33",    // Light Green
+  "#FF99CC",    // Light Pink
+  "#66FF66",    // Bright Green
+  "#FF4500",    // Orange Red
+  "#FF1493",    // Deep Pink
+  "#00FF7F",    // Spring Green
+  "#FF6347",    // Tomato
+  "#FFD700",    // Gold
+  "#FF00FF",    // Bright Magenta
+  "#FF8C00",    // Dark Orange
+  "#32CD32",    // Lime Green
+  "#ADFF2F",    // Green Yellow
+  "#FF1493",    // Deep Pink
+  "#FF00B3",    // Neon Fuchsia
+  "#00FFCC"     // Neon Turquoise
 ];
 
+
 let neonDarkColors = [
-    "#B2EBF2",
-    "#B2DFDB",
-    "#C8E6C9",
-    "#DCEDC8",
-    "#F0F4C3",
-    "#F8BBD0",
-    "#E1BEE7",
-    "#D1C4E9",
-    "#BBDEFB",
-    "#80DEEA",
-    "#80CBC4",
-    "#A7FFEB"
+    "#B2EBF2",   // Light Cyan
+    "#B2DFDB",   // Light Teal
+    "#C8E6C9",   // Light Green
+    "#DCEDC8",   // Light Lime
+    "#F0F4C3",   // Light Yellow Green
+    "#F8BBD0",   // Light Pink
+    "#E1BEE7",   // Light Purple
+    "#D1C4E9",   // Light Lavender
+    "#BBDEFB",   // Light Sky Blue
+    "#80DEEA",   // Light Turquoise
+    "#80CBC4",   // Light Teal Green
+    "#A7FFEB",   // Light Aquamarine
+    "#90CAF9",   // Light Blue
+    "#A5D6A7",   // Light Green Darker
+    "#E0E0E0",   // Light Gray
+    "#9E9E9E",   // Gray
+    "#607D8B",   // Blue Grey
+    "#455A64",   // Blue Grey Darker
+    "#78909C",   // Blue Grey Light
+    "#B0BEC5"    // Blue Grey Lightest
 ];
+
 
 //index.html
 setInterval(() => changeColor(lbl_welcome, neonColors), 1000);
