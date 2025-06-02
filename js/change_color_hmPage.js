@@ -3,25 +3,27 @@ const lbl_welcome = document.getElementById("welcome_homePage");
 const lbl_info_head = document.getElementById("info_studio");
 
 //games-software.html:
-const  lbl_Head_games = document.getElementById("head_games");
+const lbl_Head_games = document.getElementById("head_games");
 const lbl_info_games = document.getElementById("info_games");
-const lbls_Category_games = document.getElementsByClassName(header-textinfo);
+const lbls_Category_games = document.getElementsByClassName("header-textinfo");
 
 //aboutme.html:
 const lbl_Head_aboutme = document.getElementById("head_aboutme");
 const lbl_info_aboutme = document.getElementsByClassName("info_aboutme");
 
 
-let neonColors = ["#0ff",
-      "#ff0",
-      "#f0f",
-      "#0f0",
-        "#0ff",
-         "#ff0066",
-          "#00ffff",
-           "#99ff33",
-            "#ff99cc",
-             "#66ff66"];
+let neonColors = [
+  "#0FF",
+  "#FF0",
+  "#F0F",
+  "#0F0",
+  "#FF0066",
+  "#00FFFF",
+  "#99FF33",
+  "#FF99CC",
+  "#66FF66"
+];
+
 let neonDarkColors = [
     "#B2EBF2",
     "#B2DFDB",
