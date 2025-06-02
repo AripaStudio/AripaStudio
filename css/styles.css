@@ -34,6 +34,32 @@ body {
     overflow: hidden;
 }
 
+.header-textinfo 
+{
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1a003a, #0a001a);
+    border-bottom: 3px solid #ff00ff;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(3, 27, 92, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-textinfo::before 
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(89, 0, 255, 0.1) 0%, transparent 70%);
+    animation: header-glow 15s infinite alternate;
+    z-index: 0;
+}
+
 .profile-header::before {
     content: '';
     position: absolute;

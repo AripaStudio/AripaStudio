@@ -9,7 +9,16 @@ const lbl_Head_aboutme = document.getElementById("head_aboutme");
 const lbl_info_aboutme = document.getElementsByClassName("info_aboutme");
 
 
-let neonColors = ["#0ff", "#ff0", "#f0f", "#0f0", "#0ff", "#ff0066", "#00ffff", "#99ff33", "#ff99cc", "#66ff66"];
+let neonColors = ["#0ff",
+      "#ff0",
+      "#f0f",
+      "#0f0",
+        "#0ff",
+         "#ff0066",
+          "#00ffff",
+           "#99ff33",
+            "#ff99cc",
+             "#66ff66"];
 let neonDarkColors = [
     "#B2EBF2",
     "#B2DFDB",
