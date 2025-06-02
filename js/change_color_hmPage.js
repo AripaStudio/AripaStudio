@@ -1,10 +1,13 @@
 //index.html:
 const lbl_welcome = document.getElementById("welcome_homePage");
 const lbl_info_head = document.getElementById("info_studio");
-//aboutme.html:
+
+//games-software.html:
 const  lbl_Head_games = document.getElementById("head_games");
 const lbl_info_games = document.getElementById("info_games");
-//games-software.html:
+const lbls_Category_games = document.getElementsByClassName(header-textinfo);
+
+//aboutme.html:
 const lbl_Head_aboutme = document.getElementById("head_aboutme");
 const lbl_info_aboutme = document.getElementsByClassName("info_aboutme");
 
@@ -34,14 +37,18 @@ let neonDarkColors = [
     "#A7FFEB"
 ];
 
+//index.html
 setInterval(() => changeColor(lbl_welcome, neonColors), 1000);
 setInterval(() => changeColor(lbl_info_head, neonDarkColors), 1500);
 
+//aboutme.html
 setInterval(() => changeColor(lbl_Head_aboutme, neonColors), 1000);
 setInterval(() => changeColorClass(lbl_info_aboutme, neonDarkColors), 1500);
 
+//game-software.html
 setInterval(() => changeColor(lbl_Head_games, neonColors), 1000);
 setInterval(() => changeColor(lbl_info_games , neonDarkColors) , 1500);
+setInterval(() => changeColorClass(lbls_Category_games , neonDarkColors) , 1500);
 
 function changeColor(element, colorArray) {
     if (!element || !colorArray || colorArray.length === 0) {
