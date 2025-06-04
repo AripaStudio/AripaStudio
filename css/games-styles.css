@@ -262,6 +262,7 @@
 .Filter_container {
             display: flex;
             justify-content: space-between; 
+            border-radius: 40px  40px 4px 4px;
             align-items: center; 
             padding: 20px;
             border: 1px solid #ccc; 
@@ -269,14 +270,38 @@
         .left-div_filter {
             background-color: lightblue;
             padding: 20px;
-            width: 45%; 
+            width: 95%;
         }
         .right-div_filter {
-            background-color: lightgreen;
+           background-color: lightgreen;
             padding: 20px;
-            width: 45%; 
+            width: 25%; 
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
+.Filter-button
+{
+    background-color: #2a004a;
+    color: #e0e6ed;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}     
 
+.Filter-button:hover
+{
+    background-color: #3a005a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------------------------------*/
 @keyframes button-glow {
     from { box-shadow: 0 0 5px rgba(255, 0, 255, 0.3); }
     to { box-shadow: 0 0 15px rgba(255, 0, 255, 0.7); }
