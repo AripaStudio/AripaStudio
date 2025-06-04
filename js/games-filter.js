@@ -47,5 +47,13 @@ const Tag_AripaStudioHub = document.getElementById('Tags-Time-AripaStudioHub');
         // fonction Filter-button manager :
         function filter_manager()
         {        
-
+            Tag_SNshotAP.textContent = "31 may 2025";
+            Tag_materialColor.textContent = "14 october 2024";
+            Tag_randomwk.textContent = "3 october 2024";
+            Tag_Jange_Dayro.textContent = "1 november 2024";
+            Tag_TodoList.textContent = "19 december 2024";
+            Tag_Escape_from_reality.textContent = "1 april 2025";
+            Tag_DNCaripa.textContent = "11 april 2025";
+            Tag_AripaStudioHub.textContent = "18 april 2025";
+            
         }
