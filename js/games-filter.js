@@ -36,24 +36,59 @@ const Tag_AripaStudioHub = document.getElementById('Tags-Time-AripaStudioHub');
         //Event Click buttons : 
         button_Newest.addEventListener('click' , function()
         {
-            
+            const filter = filter_dates();
+            if(filter == true)
+            {
+
+            }
         });
 
         button_Oldest.addEventListener('click' , function()
         {
-
+            const filter = filter_dates();
+            if(filter == false)
+            {
+                
+            }
         });
 
         // fonction Filter-button manager :
         function filter_manager()
         {        
-            Tag_SNshotAP.textContent = "31 may 2025";
-            Tag_materialColor.textContent = "14 october 2024";
-            Tag_randomwk.textContent = "3 october 2024";
-            Tag_Jange_Dayro.textContent = "1 november 2024";
-            Tag_TodoList.textContent = "19 december 2024";
-            Tag_Escape_from_reality.textContent = "1 april 2025";
-            Tag_DNCaripa.textContent = "11 april 2025";
-            Tag_AripaStudioHub.textContent = "18 april 2025";
+            Tag_SNshotAP.textContent = "31-05-2025";
+            Tag_materialColor.textContent = "14-10-2024";
+            Tag_randomwk.textContent = "03-10-2024";
+            Tag_Jange_Dayro.textContent = "01-11-2024";
+            Tag_TodoList.textContent = "19-12-2024";
+            Tag_Escape_from_reality.textContent = "01-04-2025";
+            Tag_DNCaripa.textContent = "11-04-2025";
+            Tag_AripaStudioHub.textContent = "18-04-2025";
             
         }
+
+        function filter_dates(ascending = true)
+         {
+            
+            const dates = [
+                { name: "SNshotAP", date: "31-05-2025" },
+                { name: "Material Color", date: "14-10-2024" },
+                { name: "Random Work", date: "03-10-2024" },
+                { name: "Jange Dayro", date: "01-11-2024" },
+                { name: "Todo List", date: "19-12-2024" },
+                { name: "Escape from Reality", date: "01-04-2025" },
+                { name: "DN Caripa", date: "11-04-2025" },
+                { name: "Aripa Studio Hub", date: "18-04-2025" }
+            ];
+
+            const parseDate = (dateString) => {
+                const parts = dateString.split("-");
+                return new Date(parts[2], parts[1] - 1, parts[0]); 
+            };
+
+            dates.sort((a, b) => {
+                const dateA = parseDate(a.date);
+                const dateB = parseDate(b.date);
+                return ascending ? dateA - dateB : dateB - dateA;
+            });            
+        }
+
