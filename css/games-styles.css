@@ -258,6 +258,25 @@
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
 }
 
+/* Filter Games-software of Publish Time */
+.Filter_container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 20px;
+            border: 1px solid #ccc; 
+        }
+        .left-div_filter {
+            background-color: lightblue;
+            padding: 20px;
+            width: 45%; 
+        }
+        .right-div_filter {
+            background-color: lightgreen;
+            padding: 20px;
+            width: 45%; 
+        }
+
 @keyframes button-glow {
     from { box-shadow: 0 0 5px rgba(255, 0, 255, 0.3); }
     to { box-shadow: 0 0 15px rgba(255, 0, 255, 0.7); }
