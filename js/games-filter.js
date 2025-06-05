@@ -30,10 +30,7 @@ const Tag_AripaStudioHub = document.getElementById('Tags-Time-AripaStudioHub');
                 const category = button.getAttribute('data-category');
                 document.querySelector(`.${category}-projects`).style.display = 'block';
             });
-        });
-
-
-        //کامل کردن این بخش :
+        });        
 
         //Event Click buttons : 
         button_Newest.addEventListener('click' , function()
