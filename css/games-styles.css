@@ -34,12 +34,28 @@
     text-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
 }
 
+/* Main projects grid container for all projects */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
+
+/* Style for category headings */
+.category-heading {
+    color: #ffcc00; /* Example color, adjust as needed */
+    font-size: 2em;
+    margin-top: 40px; /* Space above the heading */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+}
+/* Ensure the first heading doesn't have extra top margin if it's the very first element */
+.projects-grid > .category-heading:first-child {
+    margin-top: 0;
+}
+
 
 .project-card {
     background-color: #1a003a;
@@ -259,27 +275,31 @@
 }
 
 /* Filter Games-software of Publish Time */
+/* Adjusted styles for Filter_container to be more flexible */
 .Filter_container {
-            display: flex;
-            justify-content: space-between; 
-            border-radius: 40px  40px 4px 4px;
-            align-items: center; 
-            padding: 20px;
-            border: 1px solid #ccc; 
-        }
-        .left-div_filter {
-            background-color: lightblue;
-            padding: 20px;
-            width: 95%;
-        }
-        .right-div_filter {
-           background-color: lightgreen;
-            padding: 20px;
-            width: 25%; 
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    align-items: center; 
+    padding: 15px 20px; 
+    background-color: #1a003a; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Filter_container p {
+    margin-right: 15px; 
+    color: #e0e6ed; 
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* Hidden class for hiding elements */
+.hidden {
+    display: none !important;
+}
+
 .Filter-button
 {
     background-color: #2a004a;
@@ -292,6 +312,7 @@
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-right: 10px; /* Space between filter buttons */
 }     
 
 .Filter-button:hover
@@ -301,15 +322,24 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
+.Filter-button.active {
+    background: linear-gradient(45deg, #ff00ff, #aaff00); 
+    color: #1a1a2e;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+}
+
+
 /* ---------------------------------------------------*/
 @keyframes button-glow {
     from { box-shadow: 0 0 5px rgba(255, 0, 255, 0.3); }
     to { box-shadow: 0 0 15px rgba(255, 0, 255, 0.7); }
 }
 
+/*
 .category-button.active {
     animation: button-glow 1s infinite alternate;
 }
+*/
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -341,6 +371,18 @@
     .download-platforms {
         flex-direction: column;
         gap: 10px;
+    }
+    .project-categories {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Filter_container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Filter_container p {
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 }
 
