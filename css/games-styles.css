@@ -290,7 +290,7 @@
 
 .Filter_container p {
     margin-right: 15px; 
-    color: #e0e6ed; 
+    color: #e0e6ed;     
     font-size: 1.1em;
     font-weight: 600;
 }
@@ -304,6 +304,7 @@
 {
     background-color: #2a004a;
     color: #e0e6ed;
+    margin: 5px;
     padding: 12px 25px;
     border: none;
     border-radius: 8px;
