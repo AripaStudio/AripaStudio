@@ -1,21 +1,13 @@
 {
-    "homepage":
-    {
+    "homepage": {
         "welcome_message": "Welcome to Aripa Pars Studio!",
         "studio_info": "I'm Khashayar Mobasheri, the founder of Aripa Pars Studio. We specialize in game development and software creation, driven by a passion for innovation and learning. Explore our journey and projects!",
         "explore_work_heading": "Explore Our Work",
-        "explore_work_paragraph": "Check out our <a href=\"games-software.html\">Games & Software</a> page to see our latest projects, or learn more <a href=\"aboutme.html\">About Me</a> to understand our journey!"        
+        "explore_work_paragraph": "Check out our <a href=\"games-software.html\">Games & Software</a> page to see our latest projects, or learn more <a href=\"aboutme.html\">About Me</a> to understand our journey!"
     },
-    "aboutme":
-    {
-
-    },
-    "games-software":
-    {
-
-    },
-    "general":
-    {
+    "aboutme": {},
+    "games-software": {},
+    "general": {
         "page_title": "Welcome to Aripa Pars Studio",
         "meta_description": "Aripa Pars Studio - Game development and software creation by Khashayar Mobasheri. Explore our projects and journey!",
         "meta_keywords": "Aripa Studio, game development, software, Khashayar Mobasheri, C#, Godot, Dlang",
