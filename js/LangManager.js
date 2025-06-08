@@ -32,6 +32,10 @@ function applyTranslations(lang) {
         return;
     }
 
+    // --- این خط جدید برای عیب یابی است ---
+    console.log(`DEBUG: translations[${lang}] content:`, translations[lang]);
+    // ------------------------------------
+
     const elements = document.querySelectorAll('[data-key]');
     elements.forEach(element => {
         const key = element.getAttribute('data-key');
