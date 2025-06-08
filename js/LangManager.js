@@ -65,6 +65,7 @@ function applyTranslations(lang) {
 }
 
 async function initializeLanguage() {
+    // Ensuring all promises resolve before proceeding
     await Promise.all([
         fetchTranslations('en').then(data => translations.en = data),
         fetchTranslations('fa').then(data => translations.fa = data)
@@ -72,17 +73,18 @@ async function initializeLanguage() {
     applyTranslations(currentLang);
 }
 
-function toggleLanguage() {
-    currentLang = (currentLang === 'en') ? 'fa' : 'en';
-    localStorage.setItem('lang', currentLang);
-    applyTranslations(currentLang);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    initializeLanguage();
+// Updated DOMContentLoaded listener to be async to properly await initializeLanguage
+document.addEventListener('DOMContentLoaded', async () => {
+    await initializeLanguage();
 
     const langToggleButton = document.getElementById('lang-toggle-buttonID');
     if (langToggleButton) {
         langToggleButton.addEventListener('click', toggleLanguage);
     }
 });
+
+function toggleLanguage() {
+    currentLang = (currentLang === 'en') ? 'fa' : 'en';
+    localStorage.setItem('lang', currentLang);
+    applyTranslations(currentLang);
+}
