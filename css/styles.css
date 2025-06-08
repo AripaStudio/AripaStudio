@@ -453,6 +453,27 @@ a:hover {
 }
 
 
+
+
+/*  langauge managaer style : */
+.lang-toggle-button
+{
+    background-color: #2aa057;
+    color: #e0e6ed;
+    margin: 5px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(8, 105, 76, 0.3);
+    margin-right: 10px;
+}
+
+
+
 @keyframes pulse-telegram {
     0% { transform: scale(1); box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5); }
     50% { transform: scale(1.02); box-shadow: 0 8px 25px rgba(0, 136, 204, 0.7); }

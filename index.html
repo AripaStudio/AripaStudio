@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aripa Pars Studio - Game development and software creation by Khashayar Mobasheri. Explore our projects and journey!">
-    <meta name="keywords" content="Aripa Studio, game development, software, Khashayar Mobasheri, C#, Godot, Dlang">
-    <title>Welcome to Aripa Pars Studio</title>
+    <meta name="description" data-key="general.meta_description" content="Aripa Pars Studio - Game development and software creation by Khashayar Mobasheri. Explore our projects and journey!">
+    <meta name="keywords" data-key="general.meta_keywords" content="Aripa Studio, game development, software, Khashayar Mobasheri, C#, Godot, Dlang">
+    <title data-key="general.page_title">Welcome to Aripa Pars Studio</title>
     <link rel="icon" href="img/studio/studio.jpg">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
@@ -13,32 +13,33 @@
 <body>
     <div class="container">
         <header class="profile-header">
-            <h1 id="welcome_homePage">Welcome to Aripa Pars Studio!</h1>
-            <p id="info_studio">I'm Khashayar Mobasheri, the founder of Aripa Pars Studio. We specialize in game development and software creation, driven by a passion for innovation and learning. Explore our journey and projects!</p>
+            <h1 data-key="homepage.welcome_message">Welcome to Aripa Pars Studio!</h1>
+            <p data-key="homepage.studio_info">I'm Khashayar Mobasheri, the founder of Aripa Pars Studio. We specialize in game development and software creation, driven by a passion for innovation and learning. Explore our journey and projects!</p>
         </header>
 
         <nav class="main-nav">
             <div class="nav-links-container">
-                <a href="index.html" class="nav-link active">Main Page</a>
-                <a href="games-software.html" class="nav-link">Games & Software</a>
-                <a href="aboutme.html" class="nav-link">About Me</a>
+                <a href="index.html" class="nav-link active" data-key="navigation.main_page">Main Page</a>
+                <a href="games-software.html" class="nav-link" data-key="navigation.games_software">Games & Software</a>
+                <a href="aboutme.html" class="nav-link" data-key="navigation.about_me">About Me</a>
             </div>
+            <button id="lang-toggle-button" class="lang-toggle-button">EN/FA</button>
         </nav>
 
         <main class="profile-main">
             <section class="profile-section">
-                <h2>Explore Our Work</h2>
-                <p>Check out our <a href="games-software.html">Games & Software</a> page to see our latest projects, or learn more <a href="aboutme.html">About Me</a> to understand our journey!</p>
+                <h2 data-key="homepage.explore_work_heading">Explore Our Work</h2>
+                <p data-key="homepage.explore_work_paragraph">Check out our <a href="games-software.html">Games & Software</a> page to see our latest projects, or learn more <a href="aboutme.html">About Me</a> to understand our journey!</p>
             </section>
         </main>
 
         <footer class="profile-footer">
             <div class="footer-nav-buttons">
-                <a href="index.html" class="footer-button active">Main Page</a>
-                <a href="games-software.html" class="footer-button">Games & Software</a>
-                <a href="aboutme.html" class="footer-button">About Me</a>
-                <button class="quick-links-button" onclick="toggleMenu()">🔗 Quick Links</button>
-                <p style="color: white; font-size: 20;">© 2025 Aripa Pars Studio. All rights reserved.</p>
+                <a href="index.html" class="footer-button active" data-key="navigation.main_page">Main Page</a>
+                <a href="games-software.html" class="footer-button" data-key="navigation.games_software">Games & Software</a>
+                <a href="aboutme.html" class="footer-button" data-key="navigation.about_me">About Me</a>
+                <button class="quick-links-button" onclick="toggleMenu()" data-key="navigation.quick_links">🔗 Quick Links</button>
+                <p style="color: white; font-size: 20px;" data-key="general.copyright_text">© 2025 Aripa Pars Studio. All rights reserved.</p>
             </div>
         </footer>
     </div>
@@ -46,19 +47,20 @@
     <div class="menu-overlay" id="quickLinksMenu">
         <div class="menu-content">
             <button class="menu-close-button" onclick="toggleMenu()">×</button>
-            <h2>🔗 Quick Links</h2>
+            <h2 data-key="navigation.menu_heading">🔗 Quick Links</h2>
             <ul class="menu-links">
-                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link"><img src="img/telegram-personal-icon.svg" class="background-icons_GreenLight" alt="Telegram Icon" width="24"> Aripa Studio Telegram Channel</a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="24"> AripaStudioHub (Download)</a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio"><img src="img/github-icon.svg" class="background-icons_GreenLight" alt="GitHub Icon" width="24"> Aripa Studio GitHub</a></li>
-                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio"><img src="img/youtube-icon.svg" class="background-icons" alt="YouTube Icon" width="24"> Aripa Studio YouTube</a></li>
-                <li class="menu-link-item"><a href="https://aripastudio.itch.io"><img src="img/itch-icon.svg" class="background-icons_GreenLight" alt="itch.io Icon" width="24"> Aripa Studio itch.io</a></li>
-                <li class="menu-link-item"><a href="https://t.me/khashayarAP"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> Personal Telegram</a></li>
+                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link"><img src="img/telegram-personal-icon.svg" class="background-icons_GreenLight" alt="Telegram Icon" width="24"> <span data-key="navigation.telegram_channel">Aripa Studio Telegram Channel</span></a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="24"> <span data-key="navigation.aripa_studio_hub_download">AripaStudioHub (Download)</span></a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio"><img src="img/github-icon.svg" class="background-icons_GreenLight" alt="GitHub Icon" width="24"> <span data-key="navigation.aripa_studio_github">Aripa Studio GitHub</span></a></li>
+                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio"><img src="img/youtube-icon.svg" class="background-icons" alt="YouTube Icon" width="24"> <span data-key="navigation.aripa_studio_youtube">Aripa Studio YouTube</span></a></li>
+                <li class="menu-link-item"><a href="https://aripastudio.itch.io"><img src="img/itch-icon.svg" class="background-icons_GreenLight" alt="itch.io Icon" width="24"> <span data-key="navigation.aripa_studio_itchio">Aripa Studio itch.io</span></a></li>
+                <li class="menu-link-item"><a href="https://t.me/khashayarAP"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> <span data-key="navigation.personal_telegram">Personal Telegram</span></a></li>
             </ul>
         </div>
     </div>
 
-   <script src="js/quickLinkMenu.js"></script>
-   <script src="js/change_color_hmPage.js"></script>
+    <script src="js/quickLinkMenu.js"></script>
+    <script src="js/change_color_hmPage.js"></script>
+    <script src="js/LangManager.js"></script>
 </body>
 </html>
