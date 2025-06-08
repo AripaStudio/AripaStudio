@@ -3,7 +3,7 @@ let currentLang = localStorage.getItem('lang') || 'en';
 
 async function fetchTranslations(lang) {
     try {
-        const response = await fetch(`./locales/${lang}.json`);
+        const response = await fetch(`./json/${lang}.json`);
         if (!response.ok) {
             throw new Error(`Failed to load translations for ${lang}: ${response.statusText}`);
         }
@@ -46,16 +46,15 @@ function applyTranslations(lang) {
                 } else if (element.name === 'keywords') {
                     element.setAttribute('content', translatedText);
                 }
-            } else if (element.tagName === 'A' && key.includes('navigation.')) {                 
+            } else if (element.tagName === 'A' && key.includes('navigation.')) {
                 const spanElement = element.querySelector('span');
                 if (spanElement) {
                     spanElement.innerHTML = translatedText;
                 } else {
-                    element.innerHTML = translatedText; 
+                    element.innerHTML = translatedText;
                 }
-            }
-            else {
-                element.innerHTML = translatedText; 
+            } else {
+                element.innerHTML = translatedText;
             }
         } else {
             console.warn(`Translation for key "${key}" not found in ${lang}.json`);
@@ -82,7 +81,7 @@ function toggleLanguage() {
 document.addEventListener('DOMContentLoaded', () => {
     initializeLanguage();
 
-    const langToggleButton = document.getElementById('lang-toggle-button');
+    const langToggleButton = document.getElementById('lang-toggle-buttonID');
     if (langToggleButton) {
         langToggleButton.addEventListener('click', toggleLanguage);
     }
