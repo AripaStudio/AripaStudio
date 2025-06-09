@@ -5,8 +5,31 @@
         "explore_work_heading": "Explore Our Work",
         "explore_work_paragraph": "Check out our <a href=\"games-software.html\">Games & Software</a> page to see our latest projects, or learn more <a href=\"aboutme.html\">About Me</a> to understand our journey!"
     },
-    "aboutme": {},
-    "games-software": {},
+    "aboutme": {
+
+        "page_title":"Hi there! 👋 Welcome to Aripa Studio",
+        "meta_description" : "Hello everyone, welcome to the official GitHub account of Aripa Studio. I'm Khashayar Mobasheri (Abolfazl Mobasheri), and Aripa Studio is a one-person studio that works in game development and software development. Thank you for following us! ❤️Full name of the studio: Aripa Pars Studio",
+        "about_me":"I’m relatively new to the field, having entered the computer domain about 3 years ago, and I’m passionate about learning new things every day! 🌱I’m a self-taught developer from Iran, and my native language is Persian. My name is Khashayar (which I prefer), but my official name is Abolfazl. I started programming around 3 years ago, and while I’m still a beginner, I love creating games and tools.",
+        "MyJourney":"I first started by learning basic HTML and CSS, but after a while, I left it behind and moved on to C#. That’s where I got introduced to software development and began practicing and working on small projects.After some time, I started making games with Godot Mono and developed a passion for game development.In fact, even before programming, I was very interested in game development because of my love for writing.Now, I work on both game development and programming, but I’m still at the early stages of this journey.",
+        "Hobbies" : [
+            "Hobbies",
+            "Playing 2D games (puzzle, strategy, or survival) or battle royale games (one of my favorite games is Botanicula)",
+            "Watching movies and anime is another one of my hobbies",
+            "Writing stories and listening to music"
+        ],
+        "ContactMe" : [
+            "Contact Me",
+            "Feel free to reach out to me through my social channels:"
+        ],
+        "Achievements" : [
+            "Achievements",
+            "🎯 Working solo on game and software development projects",
+            "🥇 Building a growing community on Telegram"
+        ]
+    },
+    "games-software": {       
+
+    },
     "general": {
         "page_title": "Welcome to Aripa Pars Studio",
         "meta_description": "Aripa Pars Studio - Game development and software creation by Khashayar Mobasheri. Explore our projects and journey!",

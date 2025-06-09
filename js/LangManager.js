@@ -30,11 +30,7 @@ function applyTranslations(lang) {
     if (!translations[lang]) {
         console.warn(`Translations for ${lang} are not loaded.`);
         return;
-    }
-
-    // --- این خط جدید برای عیب یابی است ---
-    console.log(`DEBUG: translations[${lang}] content:`, translations[lang]);
-    // ------------------------------------
+    }   
 
     const elements = document.querySelectorAll('[data-key]');
     elements.forEach(element => {
