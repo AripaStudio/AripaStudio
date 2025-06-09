@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games & Software - Aripa Studio</title>
+    <title data-key="games-software.page_title">Games & Software - Aripa Studio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/studio/studio.jpg">
     <link rel="stylesheet" href="css/games-styles.css">
@@ -12,285 +12,276 @@
 <body>
     <div class="container">
         <header class="profile-header">
-            <h1 id="head_games">🎮 My Games & Software at Aripa Studio 💻</h1>
-            <p id="info_games">Here’s a showcase of my projects—some are completed, and others are in the works! 🚀</p>
+            <h1 id="head_games" data-key="games-software.heading">🎮 My Games & Software at Aripa Studio 💻</h1>
+            <p id="info_games" data-key="games-software.info_paragraph">Here’s a showcase of my projects—some are completed, and others are in the works! 🚀</p>
         </header>
 
         <nav class="main-nav">
             <div class="nav-links-container">
-                <a href="index.html" class="nav-link">Main Page</a>
-                <a href="games-software.html" class="nav-link active">Games & Software</a>
-                <a href="aboutme.html" class="nav-link">About Me</a>
+                <a href="index.html" class="nav-link" data-key="navigation.main_page">Main Page</a>
+                <a href="games-software.html" class="nav-link active" data-key="navigation.games_software">Games & Software</a>
+                <a href="aboutme.html" class="nav-link" data-key="navigation.about_me">About Me</a>
             </div>
+            <button id="lang-toggle-buttonID" class="lang-toggle-button">EN/FA</button>
         </nav>
 
         <main class="profile-main">
-            <h2 class="header-textinfo">Category</h2>
+            <h2 class="header-textinfo" data-key="games-software.category_heading">Category</h2>
             <section class="project-categories">                
-                <button class="category-button active" data-category="completed">Completed Software / Game</button>
-                <button class="category-button" data-category="in-progress">Software / Game In Progress</button>
-                <button class="category-button" data-category="miscellaneous">My Small Projects</button>
+                <button class="category-button active" data-category="completed" data-key="games-software.completed_category_button">Completed Software / Game</button>
+                <button class="category-button" data-category="in-progress" data-key="games-software.in_progress_category_button">Software / Game In Progress</button>
+                <button class="category-button" data-category="miscellaneous" data-key="games-software.miscellaneous_category_button">My Small Projects</button>
             </section>
 
             <section class="profile-section">
                 <div class="Filter_container right-div_filter">
-                    <p style="font-size: 20px; color: black; font-weight: bold;">Filter : </p>
-                    <button id="filter-button-Newest" class="Filter-button active">Newest</button> <!-- Newest is default active -->
-                    <button id="filter-button-Oldest" class="Filter-button">Oldest</button>
+                    <p style="font-size: 20px; color: black; font-weight: bold;" data-key="games-software.filter_text">Filter : </p>
+                    <button id="filter-button-Newest" class="Filter-button active" data-key="games-software.filter_newest_button">Newest</button>
+                    <button id="filter-button-Oldest" class="Filter-button" data-key="games-software.filter_oldest_button">Oldest</button>
                 </div>
                 <div class="left-div_filter">
-                    <!-- This div contains the project sections -->
                     
                     <section class="profile-section projects-section completed-projects">
-                        <h2>🎉 Completed Projects</h2>
+                        <h2 data-key="games-software.completed_projects_heading">🎉 Completed Projects</h2>
                         <div class="projects-grid">
-                            <!-- Material Color Project Card -->
                             <div class="project-card" data-release-date="2024-10-14">
                                 <h3>#Material_Color_AP</h3>
-                                <p class="project-description">A tool for exploring Material Design colors, providing a comprehensive palette for developers and designers.</p>
+                                <p class="project-description" data-key="games-software.material_color_description">A tool for exploring Material Design colors, providing a comprehensive palette for developers and designers.</p>
                                 <div>
-                                    <p style="color: white;">
+                                    <p style="color: white;" data-key="games-software.release_date">
                                         Release Date : 
                                         <span id="Tags-Time-Material_Color_AP" class="project-Tags">14-10-2024</span>
                                     </p>
-                                    
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-status completed">Completed</span>
-                                    <span class="project-type">Software</span>
+                                    <span class="project-status completed" data-key="games-software.status_completed">Completed</span>
+                                    <span class="project-type" data-key="games-software.type_software">Software</span>
                                 </div>
                                 <div class="project-meta">
                                     <span class="project-Tags">Material_Color</span>
-                                    <span class="project-Tags">Easy to Use</span>
-                                    <span class="project-Tags">Free</span>
+                                    <span class="project-Tags" data-key="games-software.tag_easy_to_use">Easy to Use</span>
+                                    <span class="project-Tags" data-key="games-software.tag_free">Free</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://t.me/AripaStudioGames/6" class="project-link github-repo-link"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="16"> View Details</a>
+                                    <a href="https://t.me/AripaStudioGames/6" class="project-link github-repo-link"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="16"> <span data-key="games-software.view_details_link">View Details</span></a>
                                 </div>
                             </div>
-                            <!-- RandomWK_AP Project Card -->
                             <div class="project-card" data-release-date="2024-10-03">
                                 <h3>#RandomWK_AP</h3>
-                                <p class="project-description">A random word generator designed for creative projects, writers, and brainstorming sessions.</p>
+                                <p class="project-description" data-key="games-software.randomwk_ap_description">A random word generator designed for creative projects, writers, and brainstorming sessions.</p>
                                 <div>
-                                    <p style="color: white;">
+                                    <p style="color: white;" data-key="games-software.release_date">
                                         Release Date : 
                                         <span id="Tags-Time-RandomWK_AP" class="project-Tags">03-10-2024</span>
                                     </p>
                                     
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-status completed">Completed</span>
-                                    <span class="project-type">Software</span>
+                                    <span class="project-status completed" data-key="games-software.status_completed">Completed</span>
+                                    <span class="project-type" data-key="games-software.type_software">Software</span>
                                 </div>
                                 <div class="project-meta">
                                     <span class="project-Tags">#RandomWK_AP</span>
-                                    <span class="project-Tags">Easy to Use</span>
-                                    <span class="project-Tags">Free</span>
-                                    <span class="project-Tags">simple</span>
+                                    <span class="project-Tags" data-key="games-software.tag_easy_to_use">Easy to Use</span>
+                                    <span class="project-Tags" data-key="games-software.tag_free">Free</span>
+                                    <span class="project-Tags" data-key="games-software.tag_simple">simple</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://t.me/AripaStudioGames/6" class="project-link github-repo-link"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="16"> View Details</a>
+                                    <a href="https://t.me/AripaStudioGames/6" class="project-link github-repo-link"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="16"> <span data-key="games-software.view_details_link">View Details</span></a>
                                 </div>
                             </div>
-                            <!-- jange_dayero Project Card -->
                             <div class="project-card" data-release-date="2024-11-01">
                                 <h3>#jange_dayero</h3>
-                                <p class="project-description">A challenging 2D puzzle game that tests your strategic thinking and problem-solving skills.</p>
+                                <p class="project-description" data-key="games-software.jange_dayero_description">A challenging 2D puzzle game that tests your strategic thinking and problem-solving skills.</p>
                                 <div>
-                                    <p style="color: white;">
+                                    <p style="color: white;" data-key="games-software.release_date">
                                         Release Date : 
                                         <span id="Tags-Time-jange_dayro" class="project-Tags">01-11-2024</span>
                                     </p>
                                     
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-status completed">Completed</span>
-                                    <span class="project-type">Game</span>
+                                    <span class="project-status completed" data-key="games-software.status_completed">Completed</span>
+                                    <span class="project-type" data-key="games-software.type_game">Game</span>
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-Tags">Game</span>
-                                    <span class="project-Tags">puzzle</span>
-                                    <span class="project-Tags">Free</span>
-                                    <span class="project-Tags">2D</span>
+                                    <span class="project-Tags" data-key="games-software.tag_game">Game</span>
+                                    <span class="project-Tags" data-key="games-software.tag_puzzle">puzzle</span>
+                                    <span class="project-Tags" data-key="games-software.tag_free">Free</span>
+                                    <span class="project-Tags" data-key="games-software.tag_2d">2D</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://aripastudio.itch.io/" class="project-link github-repo-link"><img src="img/itch-icon.svg" class="background-icons" alt="itch.io Icon" width="16"> View Details</a>
+                                    <a href="https://aripastudio.itch.io/" class="project-link github-repo-link"><img src="img/itch-icon.svg" class="background-icons" alt="itch.io Icon" width="16"> <span data-key="games-software.view_details_link">View Details</span></a>
                                 </div>
                             </div>
-                            <!-- ToDoList_AP Project Card -->
                             <div class="project-card" data-release-date="2024-12-19">
                                 <h3>#ToDoListAP</h3>
-                                <p class="project-description">A simple yet effective to-do list application to help you organize your daily tasks and boost productivity.</p>
+                                <p class="project-description" data-key="games-software.todolist_ap_description">A simple yet effective to-do list application to help you organize your daily tasks and boost productivity.</p>
                                 <div>
-                                    <p style="color: white;">
+                                    <p style="color: white;" data-key="games-software.release_date">
                                         Release Date : 
                                         <span id="Tags-Time-ToDoList_AP" class="project-Tags">19-12-2024</span>
                                     </p>
                                     
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-status completed">Completed</span>
-                                    <span class="project-type">Software</span>
+                                    <span class="project-status completed" data-key="games-software.status_completed">Completed</span>
+                                    <span class="project-type" data-key="games-software.type_software">Software</span>
                                 </div>
                                 <div class="project-meta">
                                     <span class="project-Tags">#ToDoListAP</span>
-                                    <span class="project-Tags">Manager</span>
-                                    <span class="project-Tags">Free</span>
-                                    <span class="project-Tags">simple</span>
+                                    <span class="project-Tags" data-key="games-software.tag_manager">Manager</span>
+                                    <span class="project-Tags" data-key="games-software.tag_free">Free</span>
+                                    <span class="project-Tags" data-key="games-software.tag_simple">simple</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://t.me/AripaStudioGames/6" class="project-link github-repo-link"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="16"> View Details</a>
+                                    <a href="https://t.me/AripaStudioGames/6" class="project-link github-repo-link"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="16"> <span data-key="games-software.view_details_link">View Details</span></a>
                                 </div>
                             </div>
-                            <!-- Escape_from_Reality Project Card -->
                             <div class="project-card" data-release-date="2025-04-01">
                                 <h3>#Escape_from_Reality</h3>
-                                <p class="project-description">An immersive 2D puzzle and history game that takes you on a captivating journey through time.</p>
+                                <p class="project-description" data-key="games-software.escape_from_reality_description">An immersive 2D puzzle and history game that takes you on a captivating journey through time.</p>
                                 <div>
-                                    <p style="color: white;">
+                                    <p style="color: white;" data-key="games-software.release_date">
                                         Release Date : 
                                         <span id="Tags-Time-Escape_From_Reality" class="project-Tags">01-04-2025</span>
                                     </p>
                                     
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-status completed">Completed</span>
-                                    <span class="project-type">Game</span>
+                                    <span class="project-status completed" data-key="games-software.status_completed">Completed</span>
+                                    <span class="project-type" data-key="games-software.type_game">Game</span>
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-Tags">Game</span>
-                                    <span class="project-Tags">2D</span>
-                                    <span class="project-Tags">Free</span>
-                                    <span class="project-Tags">Puzzel</span>
-                                    <span class="project-Tags">history</span>
+                                    <span class="project-Tags" data-key="games-software.tag_game">Game</span>
+                                    <span class="project-Tags" data-key="games-software.tag_2d">2D</span>
+                                    <span class="project-Tags" data-key="games-software.tag_free">Free</span>
+                                    <span class="project-Tags" data-key="games-software.tag_puzzle">Puzzel</span>
+                                    <span class="project-Tags" data-key="games-software.tag_history">history</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://aripastudio.itch.io/" class="project-link github-repo-link"><img src="img/itch-icon.svg" class="background-icons" alt="itch.io Icon" width="16"> View Details</a>
+                                    <a href="https://aripastudio.itch.io/" class="project-link github-repo-link"><img src="img/itch-icon.svg" class="background-icons" alt="itch.io Icon" width="16"> <span data-key="games-software.view_details_link">View Details</span></a>
                                 </div>
                             </div>
-                            <!-- DNCaripa Project Card -->
                             <div class="project-card" data-release-date="2025-04-11">
                                 <h3>#DNCaripa</h3>
-                                <p class="project-description">A utility to easily switch DNS settings, available as both a console application and a Dlang version.</p>
+                                <p class="project-description" data-key="games-software.dncaripa_description">A utility to easily switch DNS settings, available as both a console application and a Dlang version.</p>
                                 <div>
-                                    <p style="color: white;">
+                                    <p style="color: white;" data-key="games-software.release_date">
                                         Release Date : 
                                         <span id="Tags-Time-DNCaripa_AP" class="project-Tags">11-04-2025</span>
                                     </p>
                                     
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-status completed">Completed</span>
-                                    <span class="project-type">Software</span>
+                                    <span class="project-status completed" data-key="games-software.status_completed">Completed</span>
+                                    <span class="project-type" data-key="games-software.type_software">Software</span>
                                 </div>
                                 <div class="project-meta">
                                     <span class="project-Tags">#DNSchanger</span>
-                                    <span class="project-Tags">Open Source</span>
-                                    <span class="project-Tags">Free</span>
-                                    <span class="project-Tags">Easy to Use</span>
-                                    <span class="project-Tags">Console</span>
+                                    <span class="project-Tags" data-key="games-software.tag_open_source">Open Source</span>
+                                    <span class="project-Tags" data-key="games-software.tag_free">Free</span>
+                                    <span class="project-Tags" data-key="games-software.tag_easy_to_use">Easy to Use</span>
+                                    <span class="project-Tags" data-key="games-software.tag_console">Console</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://github.com/AripaStudio/DNSchangerWindowsConsole/releases" class="project-link download-app-link"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="16"> Download App</a>
-                                    <a href="https://github.com/AripaStudio/DNSchangerWindowsConsole" class="project-link github-repo-link"><img src="img/github-icon.svg" class="background-icons" alt="GitHub Icon" width="16"> View Details</a>
+                                    <a href="https://github.com/AripaStudio/DNSchangerWindowsConsole/releases" class="project-link download-app-link"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="16"> <span data-key="games-software.download_app_link">Download App</span></a>
+                                    <a href="https://github.com/AripaStudio/DNSchangerWindowsConsole" class="project-link github-repo-link"><img src="img/github-icon.svg" class="background-icons" alt="GitHub Icon" width="16"> <span data-key="games-software.view_details_link">View Details</span></a>
                                 </div>
                             </div>
-                            <!-- AripaStudio_Hub Project Card -->
                             <div class="project-card" data-release-date="2025-04-18">
                                 <h3>#AripaStudio_Hub</h3>
-                                <p class="project-description">a SoftWare For AripaStudio</p>
+                                <p class="project-description" data-key="games-software.aripastudio_hub_description">a SoftWare For AripaStudio</p>
                                 <div>
-                                    <p style="color: white;">
+                                    <p style="color: white;" data-key="games-software.release_date">
                                         Release Date : 
                                         <span id="Tags-Time-AripaStudioHub" class="project-Tags">18-04-2025</span>
                                     </p>
                                    
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-status completed">Completed</span>
-                                    <span class="project-type">Software</span>
+                                    <span class="project-status completed" data-key="games-software.status_completed">Completed</span>
+                                    <span class="project-type" data-key="games-software.type_software">Software</span>
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-Tags">Open Source</span>
-                                    <span class="project-Tags">Free</span>
-                                    <span class="project-Tags">Aripa Studio</span>
+                                    <span class="project-Tags" data-key="games-software.tag_open_source">Open Source</span>
+                                    <span class="project-Tags" data-key="games-software.tag_free">Free</span>
+                                    <span class="project-Tags" data-key="games-software.tag_aripa_studio">Aripa Studio</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://github.com/AripaStudio/AripaStudioHub/releases" class="project-link download-app-link"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="16"> Download App</a>
-                                    <a href="https://github.com/AripaStudio/AripaStudioHub" class="project-link github-repo-link"><img src="img/github-icon.svg" class="background-icons" alt="GitHub Icon" width="16"> View Details</a>
+                                    <a href="https://github.com/AripaStudio/AripaStudioHub/releases" class="project-link download-app-link"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="16"> <span data-key="games-software.download_app_link">Download App</span></a>
+                                    <a href="https://github.com/AripaStudio/AripaStudioHub" class="project-link github-repo-link"><img src="img/github-icon.svg" class="background-icons" alt="GitHub Icon" width="16"> <span data-key="games-software.view_details_link">View Details</span></a>
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     <section class="profile-section projects-section in-progress-projects" style="display: none;">
-                        <h2>🔧 Under Construction (Coming Soon)</h2>
+                        <h2 data-key="games-software.in_progress_projects_heading">🔧 Under Construction (Coming Soon)</h2>
                         <div class="projects-grid">
                             <div class="project-card">
                                 <h3>#Corner_of_Existence</h3>
-                                <p class="project-description">A captivating 2D game blending elements of puzzle, history, and survival into a unique experience.</p>
+                                <p class="project-description" data-key="games-software.corner_of_existence_description">A captivating 2D game blending elements of puzzle, history, and survival into a unique experience.</p>
                                 <div class="project-meta">
-                                    <span class="project-status in-progress">In Progress</span>
-                                    <span class="project-type">Game</span>
+                                    <span class="project-status in-progress" data-key="games-software.status_in_progress">In Progress</span>
+                                    <span class="project-type" data-key="games-software.type_game">Game</span>
                                 </div>
                                 <div class="project-links">
-                                    <span class="project-link coming-soon-link">Coming Soon!</span>
+                                    <span class="project-link coming-soon-link" data-key="games-software.coming_soon_link">Coming Soon!</span>
                                 </div>
                             </div>
                             <div class="project-card">
                                 <h3>#VibeDriveAP</h3>
-                                <p class="project-description">An innovative file management and organization software designed for intuitive user experience.</p>
+                                <p class="project-description" data-key="games-software.vibedrive_ap_description">An innovative file management and organization software designed for intuitive user experience.</p>
                                 <div class="project-meta">
-                                    <span class="project-status in-progress">In Progress</span>
-                                    <span class="project-type">Software</span>
+                                    <span class="project-status in-progress" data-key="games-software.status_in_progress">In Progress</span>
+                                    <span class="project-type" data-key="games-software.type_software">Software</span>
                                 </div>
                                 <div class="project-links">
-                                    <span class="project-link coming-soon-link">Coming Soon!</span>
+                                    <span class="project-link coming-soon-link" data-key="games-software.coming_soon_link">Coming Soon!</span>
                                 </div>
                             </div>
                             <div class="project-card">
                                 <h3>#AIO_Toolbox_AP</h3>
-                                <p class="project-description">An all-in-one utility software packed with various tools to enhance your productivity and daily tasks.</p>
+                                <p class="project-description" data-key="games-software.aio_toolbox_ap_description">An all-in-one utility software packed with various tools to enhance your productivity and daily tasks.</p>
                                 <div class="project-meta">
-                                    <span class="project-status in-progress">In Progress</span>
-                                    <span class="project-type">Software</span>
+                                    <span class="project-status in-progress" data-key="games-software.status_in_progress">In Progress</span>
+                                    <span class="project-type" data-key="games-software.type_software">Software</span>
                                 </div>
                                 <div class="project-links">
-                                    <span class="project-link coming-soon-link">Coming Soon!</span>
+                                    <span class="project-link coming-soon-link" data-key="games-software.coming_soon_link">Coming Soon!</span>
                                 </div>
                             </div>
                             <div class="project-card">
                                 <h3>#DNCaripa2</h3>
-                                <p class="project-description">The next-generation graphical DNS changer software, offering a user-friendly interface for managing your DNS settings.</p>
+                                <p class="project-description" data-key="games-software.dncaripa2_description">The next-generation graphical DNS changer software, offering a user-friendly interface for managing your DNS settings.</p>
                                 <div class="project-meta">
-                                    <span class="project-status in-progress">In Progress</span>
-                                    <span class="project-type">Software</span>
+                                    <span class="project-status in-progress" data-key="games-software.status_in_progress">In Progress</span>
+                                    <span class="project-type" data-key="games-software.type_software">Software</span>
                                 </div>
                                 <div class="project-links">
-                                    <span class="project-link coming-soon-link">Coming Soon!</span>
+                                    <span class="project-link coming-soon-link" data-key="games-software.coming_soon_link">Coming Soon!</span>
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     <section class="profile-section projects-section miscellaneous-projects" style="display: none;">
-                        <h2>✨ Miscellaneous Projects</h2>
+                        <h2 data-key="games-software.miscellaneous_projects_heading">✨ Miscellaneous Projects</h2>
                         <div class="projects-grid">
-                            <!-- SNshotAP Project Card -->
                             <div class="project-card" data-release-date="2025-05-31">
                                 <h3>#SNshotAP</h3>
-                                <p class="project-description">A convenient tool to utilize the xfce4-screenshooter package for easy screenshot capture on Void Linux.</p>
+                                <p class="project-description" data-key="games-software.snshot_ap_description">A convenient tool to utilize the xfce4-screenshooter package for easy screenshot capture on Void Linux.</p>
                                 <div>
-                                    <p style="color: white;">
+                                    <p style="color: white;" data-key="games-software.release_date">
                                         Release Date : 
                                         <span id="Tags-Time-SNshotAP" class="project-Tags">31-05-2025</span>
                                     </p>
                                     
                                 </div>
                                 <div class="project-meta">
-                                    <span class="project-status completed">Completed</span>
-                                    <span class="project-type">Software</span>
+                                    <span class="project-status completed" data-key="games-software.status_completed">Completed</span>
+                                    <span class="project-type" data-key="games-software.type_software">Software</span>
                                 </div>
                                 <div class="project-meta">
                                     <span class="project-Tags">#SNshotAP</span>
@@ -298,18 +289,18 @@
                                     <span class="project-Tags">Void Linux</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://github.com/AripaStudio/SNshotAP_voidLinux" class="project-link github-repo-link"><img src="img/github-icon.svg" class="background-icons" alt="GitHub Icon" width="16"> View Details</a>
+                                    <a href="https://github.com/AripaStudio/SNshotAP_voidLinux" class="project-link github-repo-link"><img src="img/github-icon.svg" class="background-icons" alt="GitHub Icon" width="16"> <span data-key="games-software.view_details_link">View Details</span></a>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </div>
                 <div class="download-all-note">
-                    <p>Discover and download more of my projects on these platforms:</p>
+                    <p data-key="games-software.download_note">Discover and download more of my projects on these platforms:</p>
                     <div class="download-platforms">
-                        <a href="https://t.me/AripaStudio" class="download-platform-link"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> Telegram Channel</a>
-                        <a href="https://aripastudio.itch.io" class="download-platform-link"><img src="img/itch-icon.svg" class="background-icons" alt="itch.io Icon" width="24"> itch.io Profile</a>
-                        <a href="https://github.com/AripaStudio" class="download-platform-link"><img src="img/github-icon.svg" class="background-icons" alt="GitHub Icon" width="24"> GitHub Profile</a>
+                        <a href="https://t.me/AripaStudio" class="download-platform-link"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> <span data-key="games-software.telegram_channel_link">Telegram Channel</span></a>
+                        <a href="https://aripastudio.itch.io" class="download-platform-link"><img src="img/itch-icon.svg" class="background-icons" alt="itch.io Icon" width="24"> <span data-key="games-software.itchio_profile_link">itch.io Profile</span></a>
+                        <a href="https://github.com/AripaStudio" class="download-platform-link"><img src="img/github-icon.svg" class="background-icons" alt="GitHub Icon" width="24"> <span data-key="games-software.github_profile_link">GitHub Profile</span></a>
                     </div>
                 </div>
             </section>
@@ -317,11 +308,11 @@
 
         <footer class="profile-footer">
             <div class="footer-nav-buttons">
-                <a href="index.html" class="footer-button">Main Page</a>
-                <a href="games-software.html" class="footer-button active">Games & Software</a>
-                <a href="aboutme.html" class="footer-button">About Me</a>
-                <button class="quick-links-button" onclick="toggleMenu()">🔗 Quick Links</button>
-                <p style="color: white; font-size: 20;">© 2025 Aripa Pars Studio. All rights reserved.</p>
+                <a href="index.html" class="footer-button" data-key="navigation.main_page">Main Page</a>
+                <a href="games-software.html" class="footer-button active" data-key="navigation.games_software">Games & Software</a>
+                <a href="aboutme.html" class="footer-button" data-key="navigation.about_me">About Me</a>
+                <button class="quick-links-button" onclick="toggleMenu()" data-key="navigation.quick_links">🔗 Quick Links</button>
+                <p style="color: white; font-size: 20;" data-key="general.copyright_text">© 2025 Aripa Pars Studio. All rights reserved.</p>
             </div>
         </footer>
     </div>
@@ -329,14 +320,14 @@
     <div class="menu-overlay" id="quickLinksMenu">
         <div class="menu-content">
             <button class="menu-close-button" onclick="toggleMenu()">×</button>
-            <h2>🔗 Quick Links</h2>
+            <h2 data-key="navigation.menu_heading">🔗 Quick Links</h2>
             <ul class="menu-links">
-                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link"><img src="img/telegram-personal-icon.svg" class="background-icons_GreenLight" alt="Telegram Icon" width="24"> Aripa Studio Telegram Channel</a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="24"> AripaStudioHub (Download)</a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio"><img src="img/github-icon.svg" class="background-icons_GreenLight" alt="GitHub Icon" width="24"> Aripa Studio GitHub</a></li>
-                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio"><img src="img/youtube-icon.svg" class="background-icons" alt="YouTube Icon" width="24"> Aripa Studio YouTube</a></li>
-                <li class="menu-link-item"><a href="https://aripastudio.itch.io"><img src="img/itch-icon.svg" class="background-icons_GreenLight" alt="itch.io Icon" width="24"> Aripa Studio itch.io</a></li>
-                <li class="menu-link-item"><a href="https://t.me/khashayarAP"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> Personal Telegram</a></li>
+                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link"><img src="img/telegram-personal-icon.svg" class="background-icons_GreenLight" alt="Telegram Icon" width="24"> <span data-key="navigation.telegram_channel">Aripa Studio Telegram Channel</span></a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="24"> <span data-key="navigation.aripa_studio_hub_download">AripaStudioHub (Download)</span></a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio"><img src="img/github-icon.svg" class="background-icons_GreenLight" alt="GitHub Icon" width="24"> <span data-key="navigation.aripa_studio_github">Aripa Studio GitHub</span></a></li>
+                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio"><img src="img/youtube-icon.svg" class="background-icons" alt="YouTube Icon" width="24"> <span data-key="navigation.aripa_studio_youtube">Aripa Studio YouTube</span></a></li>
+                <li class="menu-link-item"><a href="https://aripastudio.itch.io"><img src="img/itch-icon.svg" class="background-icons_GreenLight" alt="itch.io Icon" width="24"> <span data-key="navigation.aripa_studio_itchio">Aripa Studio itch.io</span></a></li>
+                <li class="menu-link-item"><a href="https://t.me/khashayarAP"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> <span data-key="navigation.personal_telegram">Personal Telegram</span></a></li>
             </ul>
         </div>
     </div>
@@ -344,5 +335,6 @@
     <script src="js/games-filter.js"></script>
     <script src="js/quickLinkMenu.js"></script>
     <script src="js/change_color_hmPage.js"></script>
+    <script src="js/LangManager.js"></script> 
 </body>
 </html>
