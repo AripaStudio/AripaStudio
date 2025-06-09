@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Aripa Studio</title>
+    <title data-key="aboutme.page_title">About Me - Aripa Studio</title>
+    <meta name="description" data-key="aboutme.meta_description" content="Hello everyone, welcome to the official GitHub account of Aripa Studio. I'm Khashayar Mobasheri (Abolfazl Mobasheri), and Aripa Studio is a one-person studio that works in game development and software development. Thank you for following us! ❤️Full name of the studio: Aripa Pars Studio">
     <link rel="icon" href="img/studio/studio.jpg">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/aboutme.css">
@@ -12,33 +13,34 @@
 <body>
     <div class="container">
         <header class="profile-header">
-            <h1 id="head_aboutme">Hi there! 👋 Welcome to Aripa Studio</h1>
-            <p class="info_aboutme">Hello everyone, welcome to the official GitHub account of <b>Aripa Studio</b>. I'm <b>Khashayar Mobasheri</b> (Abolfazl Mobasheri), and Aripa Studio is a one-person studio that works in game development and software development. Thank you for following us! ❤️</p>
+            <h1 id="head_aboutme" data-key="aboutme.page_title">Hi there! 👋 Welcome to Aripa Studio</h1>
+            <p class="info_aboutme" data-key="aboutme.meta_description">Hello everyone, welcome to the official GitHub account of <b>Aripa Studio</b>. I'm <b>Khashayar Mobasheri</b> (Abolfazl Mobasheri), and Aripa Studio is a one-person studio that works in game development and software development. Thank you for following us! ❤️</p>
             <p class="info_aboutme">Full name of the studio: <b>Aripa Pars Studio</b></p>
         </header>
 
         <nav class="main-nav">
             <div class="nav-links-container">
-                <a href="index.html" class="nav-link">Main Page</a>
-                <a href="games-software.html" class="nav-link">Games & Software</a>
-                <a href="aboutme.html" class="nav-link active">About Me</a>
+                <a href="index.html" class="nav-link" data-key="navigation.main_page">Main Page</a>
+                <a href="games-software.html" class="nav-link" data-key="navigation.games_software">Games & Software</a>
+                <a href="aboutme.html" class="nav-link active" data-key="navigation.about_me">About Me</a>
             </div>
+            <button id="lang-toggle-buttonID" class="lang-toggle-button">EN/FA</button>
         </nav>
 
         <main class="profile-main">
             <section class="profile-section">
-                <h2>Skills</h2>
+                <h2 data-key="aboutme.skills_heading">Skills</h2>
                 <table class="skills-table">
                     <tr>
                         <td class="skill-category-cell">
-                            <h3>I mostly work with:</h3>
+                            <h3 data-key="aboutme.mostly_work_with_heading">I mostly work with:</h3>
                             <table class="inner-skill-table">
                                 <tr class="skill-row">
-                                    <td class="skill-icon-cell"><img src="img/skill_icon/csharp-svgrepo-com.svg" class="background-icons"  alt="C# Icon" width="27"></td>
+                                    <td class="skill-icon-cell"><img src="img/skill_icon/csharp-svgrepo-com.svg" class="background-icons" alt="C# Icon" width="27"></td>
                                     <td class="skill-name-cell">C#</td>
                                 </tr>
                                 <tr class="skill-row">
-                                    <td class="skill-icon-cell"><img src="img/skill_icon/brand-dlang-svgrepo-com.svg" class="background-icons_GreenLight"  alt="Dlang Icon" width="32"></td>
+                                    <td class="skill-icon-cell"><img src="img/skill_icon/brand-dlang-svgrepo-com.svg" class="background-icons_GreenLight" alt="Dlang Icon" width="32"></td>
                                     <td class="skill-name-cell">D lang</td>
                                 </tr>
                                 <tr class="skill-row">
@@ -48,14 +50,14 @@
                             </table>
                         </td>
                         <td class="skill-category-cell">
-                            <h3>I also work with:</h3>
+                            <h3 data-key="aboutme.also_work_with_heading">I also work with:</h3>
                             <table class="inner-skill-table">
                                 <tr class="skill-row">
-                                    <td class="skill-icon-cell"><img src="img/skill_icon/DotNet-icon.svg" class="background-icons"  alt="WPF Icon" width="27"></td>
+                                    <td class="skill-icon-cell"><img src="img/skill_icon/DotNet-icon.svg" class="background-icons" alt="WPF Icon" width="27"></td>
                                     <td class="skill-name-cell">WPF UI</td>
                                 </tr>
                                 <tr class="skill-row">
-                                    <td class="skill-icon-cell"><img src="img/skill_icon/avalonia-logo.ico" class="background-icons_GreenLight"  alt="Avalonia Icon" width="32"></td>
+                                    <td class="skill-icon-cell"><img src="img/skill_icon/avalonia-logo.ico" class="background-icons_GreenLight" alt="Avalonia Icon" width="32"></td>
                                     <td class="skill-name-cell">Avalonia</td>
                                 </tr>
                                 <tr class="skill-row">
@@ -70,41 +72,41 @@
                         </td>
                     </tr>
                 </table>
-                <p class="note">And other things!</p>
+                <p class="note" data-key="aboutme.skills_note">And other things!</p>
             </section>
 
             <section class="profile-section">
-                <h2>About Me</h2>
-                <p>I’m relatively new to the field, having entered the computer domain about 3 years ago, and I’m passionate about learning new things every day! 🌱</p>
-                <p>I’m a self-taught developer from Iran, and my native language is Persian. My name is Khashayar (which I prefer), but my official name is Abolfazl. I started programming around 3 years ago, and while I’m still a beginner, I love creating games and tools.</p>
+                <h2 data-key="aboutme.about_me_heading">About Me</h2>
+                <p data-key="aboutme.about_me_paragraph1">I’m relatively new to the field, having entered the computer domain about 3 years ago, and I’m passionate about learning new things every day! 🌱</p>
+                <p data-key="aboutme.about_me_paragraph2">I’m a self-taught developer from Iran, and my native language is Persian. My name is Khashayar (which I prefer), but my official name is Abolfazl. I started programming around 3 years ago, and while I’m still a beginner, I love creating games and tools.</p>
             </section>
 
             <section class="profile-section">
-                <h2>My Journey</h2>
-                <p>I first started by learning basic HTML and CSS, but after a while, I left it behind and moved on to C#. That’s where I got introduced to software development and began practicing and working on small projects.</p>
-                <p>After some time, I started making games with Godot Mono and developed a passion for game development.</p>
-                <p>In fact, even before programming, I was very interested in game development because of my love for writing.</p>
-                <p>Now, I work on both game development and programming, but I’m still at the early stages of this journey.</p>
+                <h2 data-key="aboutme.my_journey_heading">My Journey</h2>
+                <p data-key="aboutme.my_journey_paragraph1">I first started by learning basic HTML and CSS, but after a while, I left it behind and moved on to C#. That’s where I got introduced to software development and began practicing and working on small projects.</p>
+                <p data-key="aboutme.my_journey_paragraph2">After some time, I started making games with Godot Mono and developed a passion for game development.</p>
+                <p data-key="aboutme.my_journey_paragraph3">In fact, even before programming, I was very interested in game development because of my love for writing.</p>
+                <p data-key="aboutme.my_journey_paragraph4">Now, I work on both game development and programming, but I’m still at the early stages of this journey.</p>
             </section>
 
             <section class="profile-section">
-                <h2>Hobbies</h2>
+                <h2 data-key="aboutme.hobbies_heading">Hobbies</h2>
                 <ul class="hobby-list">
-                    <li>Playing 2D games (puzzle, strategy, or survival) or battle royale games (one of my favorite games is Botanicula)</li>
-                    <li>Watching movies and anime is another one of my hobbies</li>
-                    <li>Writing stories and listening to music</li>
+                    <li data-key="aboutme.hobbies_item1">Playing 2D games (puzzle, strategy, or survival) or battle royale games (one of my favorite games is Botanicula)</li>
+                    <li data-key="aboutme.hobbies_item2">Watching movies and anime is another one of my hobbies</li>
+                    <li data-key="aboutme.hobbies_item3">Writing stories and listening to music</li>
                 </ul>
             </section>
 
             <section class="profile-section">
-                <h2>Most Used Languages</h2>
+                <h2 data-key="aboutme.most_used_languages_heading">Most Used Languages</h2>
                 <div class="stats-image-wrapper">
                     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AripaStudio&layout=compact&theme=dracula" alt="Top Languages">
                 </div>
             </section>
 
             <section class="profile-section">
-                <h2>GitHub Stats</h2>
+                <h2 data-key="aboutme.github_stats_heading">GitHub Stats</h2>
                 <div class="github-stats-container">
                     <img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=dracula" alt="GitHub Stats">
                     <img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=dracula" alt="GitHub Streak">
@@ -112,38 +114,38 @@
             </section>
 
             <section class="profile-section">
-                <h2>Featured Project: AripaStudioHub</h2>
-                <p>AripaStudioHub is a central software for managing Aripa Studio's projects and tools. Check it out!</p>
+                <h2 data-key="aboutme.featured_project_heading">Featured Project: AripaStudioHub</h2>
+                <p data-key="aboutme.featured_project_description">AripaStudioHub is a central software for managing Aripa Studio's projects and tools. Check it out!</p>
                 <div class="project-list">
-                    <li><a href="https://github.com/AripaStudio/AripaStudioHub"><img src="img/github-icon.svg" class="background-icons" alt="GitHub Icon" width="16"> View on GitHub</a></li>
-                    <li><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="16"> Download</a></li>
+                    <li><a href="https://github.com/AripaStudio/AripaStudioHub"><img src="img/github-icon.svg" class="background-icons" alt="GitHub Icon" width="16"> <span data-key="aboutme.view_on_github">View on GitHub</span></a></li>
+                    <li><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="16"> <span data-key="aboutme.download_project">Download</span></a></li>
                 </div>
             </section>
 
             <section class="profile-section">
-                <h2>Achievements</h2>
+                <h2 data-key="aboutme.achievements_heading">Achievements</h2>
                 <ul class="project-list">
-                    <li>🎯 Working solo on game and software development projects</li>
-                    <li>🥇 Building a growing community on Telegram</li>
+                    <li data-key="aboutme.achievements_item1">🎯 Working solo on game and software development projects</li>
+                    <li data-key="aboutme.achievements_item2">🥇 Building a growing community on Telegram</li>
                 </ul>
             </section>
 
             <section class="profile-section">
-                <h2>Contact Me</h2>
-                <p>Feel free to reach out to me through my social channels:</p>
+                <h2 data-key="aboutme.contact_me_heading">Contact Me</h2>
+                <p data-key="aboutme.contact_me_paragraph">Feel free to reach out to me through my social channels:</p>
                 <div class="contact-links">
-                    <a href="https://t.me/khashayarAP" class="contact-link"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> Telegram</a>                   
+                    <a href="https://t.me/khashayarAP" class="contact-link"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> <span data-key="aboutme.telegram_link_text">Telegram</span></a>
                 </div>
             </section>
         </main>
 
         <footer class="profile-footer">
             <div class="footer-nav-buttons">
-                <a href="index.html" class="footer-button">Main Page</a>
-                <a href="games-software.html" class="footer-button">Games & Software</a>
-                <a href="aboutme.html" class="footer-button active">About Me</a>
-                <button class="quick-links-button" onclick="toggleMenu()">🔗 Quick Links</button>
-                <p style="color: white; font-size: 20;">© 2025 Aripa Pars Studio. All rights reserved.</p>
+                <a href="index.html" class="footer-button" data-key="navigation.main_page">Main Page</a>
+                <a href="games-software.html" class="footer-button" data-key="navigation.games_software">Games & Software</a>
+                <a href="aboutme.html" class="footer-button active" data-key="navigation.about_me">About Me</a>
+                <button class="quick-links-button" onclick="toggleMenu()" data-key="navigation.quick_links">🔗 Quick Links</button>
+                <p style="color: white; font-size: 20;" data-key="general.copyright_text">© 2025 Aripa Pars Studio. All rights reserved.</p>
             </div>
         </footer>
     </div>
@@ -151,19 +153,20 @@
     <div class="menu-overlay" id="quickLinksMenu">
         <div class="menu-content">
             <button class="menu-close-button" onclick="toggleMenu()">×</button>
-            <h2>🔗 Quick Links</h2>
+            <h2 data-key="navigation.menu_heading">🔗 Quick Links</h2>
             <ul class="menu-links">
-                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link"><img src="img/telegram-personal-icon.svg" class="background-icons_GreenLight" alt="Telegram Icon" width="24"> Aripa Studio Telegram Channel</a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="24"> AripaStudioHub (Download)</a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio"><img src="img/github-icon.svg" class="background-icons_GreenLight" alt="GitHub Icon" width="24"> Aripa Studio GitHub</a></li>
-                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio"><img src="img/youtube-icon.svg" class="background-icons" alt="YouTube Icon" width="24"> Aripa Studio YouTube</a></li>
-                <li class="menu-link-item"><a href="https://aripastudio.itch.io"><img src="img/itch-icon.svg" class="background-icons_GreenLight" alt="itch.io Icon" width="24"> Aripa Studio itch.io</a></li>
-                <li class="menu-link-item"><a href="https://t.me/khashayarAP"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> Personal Telegram</a></li>
+                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link"><img src="img/telegram-personal-icon.svg" class="background-icons_GreenLight" alt="Telegram Icon" width="24"> <span data-key="navigation.telegram_channel">Aripa Studio Telegram Channel</span></a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="24"> <span data-key="navigation.aripa_studio_hub_download">AripaStudioHub (Download)</span></a></li>
+                <li class="menu-link-item"><a href="https://github.com/AripaStudio"><img src="img/github-icon.svg" class="background-icons_GreenLight" alt="GitHub Icon" width="24"> <span data-key="navigation.aripa_studio_github">Aripa Studio GitHub</span></a></li>
+                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio"><img src="img/youtube-icon.svg" class="background-icons" alt="YouTube Icon" width="24"> <span data-key="navigation.aripa_studio_youtube">Aripa Studio YouTube</span></a></li>
+                <li class="menu-link-item"><a href="https://aripastudio.itch.io"><img src="img/itch-icon.svg" class="background-icons_GreenLight" alt="itch.io Icon" width="24"> <span data-key="navigation.aripa_studio_itchio">Aripa Studio itch.io</span></a></li>
+                <li class="menu-link-item"><a href="https://t.me/khashayarAP"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> <span data-key="navigation.personal_telegram">Personal Telegram</span></a></li>
             </ul>
         </div>
     </div>
-
+    
     <script src="js/quickLinkMenu.js"></script>
     <script src="js/change_color_hmPage.js"></script>
+    <script src="js/LangManager.js"></script>
 </body>
 </html>

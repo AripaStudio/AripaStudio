@@ -26,7 +26,8 @@ function getNestedValue(obj, keyPath) {
     return current;
 }
 
-function applyTranslations(lang) {
+function applyTranslations(lang)
+ {
     if (!translations[lang]) {
         console.warn(`Translations for ${lang} are not loaded.`);
         return;
