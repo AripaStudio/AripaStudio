@@ -1,4 +1,3 @@
-
 {
     "homepage": {
         "welcome_message": "Welcome to Aripa Pars Studio!",
@@ -7,7 +6,6 @@
         "explore_work_paragraph": "Check out our <a href=\"games-software.html\">Games & Software</a> page to see our latest projects, or learn more <a href=\"aboutme.html\">About Me</a> to understand our journey!"
     },
     "aboutme": {
-
        "page_title": "Hi there! 👋 Welcome to Aripa Studio",
         "meta_description": "Hello everyone, welcome to the official GitHub account of Aripa Studio. I'm Khashayar Mobasheri (Abolfazl Mobasheri), and Aripa Studio is a one-person studio that works in game development and software development. Thank you for following us! ❤️Full name of the studio: Aripa Pars Studio",
         "skills_heading": "Skills",
@@ -40,7 +38,7 @@
         "telegram_link_text": "Telegram"
     },
     "games-software": {       
-"page_title": "Games & Software - Aripa Studio",
+        "page_title": "Games & Software - Aripa Studio",
         "heading": "🎮 My Games & Software at Aripa Studio 💻",
         "info_paragraph": "Here’s a showcase of my projects—some are completed, and others are in the works! 🚀",
         "category_heading": "Category",
@@ -66,7 +64,6 @@
         "itchio_profile_link": "itch.io Profile",
         "github_profile_link": "GitHub Profile",
         
-        
         "material_color_description": "A tool for exploring Material Design colors, providing a comprehensive palette for developers and designers.",
         "randomwk_ap_description": "A random word generator designed for creative projects, writers, and brainstorming sessions.",
         "jange_dayero_description": "A challenging 2D puzzle game that tests your strategic thinking and problem-solving skills.",
@@ -79,7 +76,6 @@
         "aio_toolbox_ap_description": "An all-in-one utility software packed with various tools to enhance your productivity and daily tasks.",
         "dncaripa2_description": "The next-generation graphical DNS changer software, offering a user-friendly interface for managing your DNS settings.",
         "snshot_ap_description": "A convenient tool to utilize the xfce4-screenshooter package for easy screenshot capture on Void Linux.",
-
         
         "tag_easy_to_use": "Easy to Use",
         "tag_free": "Free",
