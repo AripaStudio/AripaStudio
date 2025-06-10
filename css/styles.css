@@ -472,6 +472,14 @@ a:hover {
     margin-right: 10px;
 }
 
+.lang-toggle-button:hover
+{
+    transform: rotate(360deg);
+    color: #4d054d;
+    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
+    background-color: darkorchid;
+}
+
 
 
 @keyframes pulse-telegram {
