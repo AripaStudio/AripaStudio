@@ -474,7 +474,7 @@ a:hover {
 
 .lang-toggle-button:hover
 {
-    transform: rotate(360deg);
+    transform: translateY(-5px);
     color: #4d054d;
     box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
     background-color: darkorchid;
