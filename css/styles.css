@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
-
 /* Container for main content */
 .container {
     max-width: 1000px;
