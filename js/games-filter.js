@@ -14,6 +14,7 @@ const Tag_TodoList = document.getElementById('Tags-Time-ToDoList_AP');
 const Tag_Escape_from_reality = document.getElementById('Tags-Time-Escape_From_Reality');
 const Tag_DNCaripa = document.getElementById('Tags-Time-DNCaripa_AP');
 const Tag_AripaStudioHub = document.getElementById('Tags-Time-AripaStudioHub');
+const Tag_JsonDAP = document.getElementById('Tags-Time-JsonDAP');
 
 
 const parseDate = (dateString) => {
@@ -95,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (Tag_DNCaripa) Tag_DNCaripa.textContent = "11-04-2025";
     if (Tag_AripaStudioHub) Tag_AripaStudioHub.textContent = "18-04-2025";
     if (Tag_SNshotAP) Tag_SNshotAP.textContent = "31-05-2025";
+    if (Tag_JsonDAP) Tag_JsonDAP.textContent = "11-7-2025";
 
    
     const initialActiveCategoryButton = document.querySelector('.category-button.active');
