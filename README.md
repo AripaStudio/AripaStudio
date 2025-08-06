@@ -24,6 +24,8 @@
 
 <details>
   <summary>Other!</summary>
+
+  <h2> Github Trophies : </h2>
 <p  align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=AripaStudio&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies" />
 </p>
