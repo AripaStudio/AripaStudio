@@ -27,7 +27,7 @@
 
   <h2> Github Trophies : </h2>
 <p  align="left"> 
-  <img src="https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=kimbie_dark&margin-w=10" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=AripaStudio&theme=kimbie_dark&margin-w=10" alt="GitHub Trophies" />
 </p>
 <h2> Github Stats : </h2>
 <img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=dark" alt="GitHub Stats">
