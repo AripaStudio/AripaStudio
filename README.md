@@ -27,6 +27,6 @@
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=dark" alt="GitHub Streak">
 </p>
 
-<p align="center">
+<p  align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=AripaStudio&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies" />
 </p>
