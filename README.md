@@ -21,14 +21,17 @@
     <img src="https://img.shields.io/badge/Telegram-Channel-grey?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
   </a>
 </p>
-<img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=dark" alt="GitHub Stats">
-</p>
-<p>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=dark" alt="GitHub Streak">
-</p>
+
 <details>
   <summary>Other!</summary>
 <p  align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=AripaStudio&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies" />
 </p>
+
+<img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=dark" alt="GitHub Stats">
+
+<p>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=dark" alt="GitHub Streak">
+</p>
+ 
 </details>
