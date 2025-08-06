@@ -27,11 +27,15 @@
 <p  align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=AripaStudio&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies" />
 </p>
-
+<h2> Github Stats : </h2>
 <img src="https://github-readme-stats.vercel.app/api?username=AripaStudio&show_icons=true&theme=dark" alt="GitHub Stats">
 
+<h2> Github Streak : </h2>
 <p>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=dark" alt="GitHub Streak">
 </p>
+
+
+
  
 </details>
