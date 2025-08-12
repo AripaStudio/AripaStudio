@@ -3,7 +3,9 @@
         "welcome_message": "Welcome to Aripa Pars Studio!",
         "studio_info": "I'm Khashayar Mobasheri, the founder of Aripa Pars Studio. We specialize in game development and software creation, driven by a passion for innovation and learning. Explore our journey and projects!",
         "explore_work_heading": "Explore Our Work",
-        "explore_work_paragraph": "Check out our <a href=\"games-software.html\">Games & Software</a> page to see our latest projects, or learn more <a href=\"aboutme.html\">About Me</a> to understand our journey!"
+        "explore_work_paragraph": "Check out our <a href=\"games-software.html\">Games & Software</a> page to see our latest projects, or learn more <a href=\"aboutme.html\">About Me</a> to understand our journey!",
+        "homepage-Prelude_heading": "A Prelude to the Future",
+        "homepage-Prelude_paragraph" : "This is a prelude. In the future, a 'Articles/Stories/Poems' section will be added, where these three types of content will be featured. 🛠"
     },
     "aboutme": {
        "page_title": "Hi there! 👋 Welcome to Aripa Studio",
