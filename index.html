@@ -50,6 +50,7 @@
                 <a href="aboutme.html" class="footer-button" data-key="navigation.about_me">About Me</a>
                 <button id="lang-toggle-buttonID" class="lang-toggle-button">EN/FA</button>
                 <button class="quick-links-button" onclick="toggleMenu()" data-key="navigation.quick_links">🔗 Quick Links</button>
+                <button class="quick-other-links-button" onclick="toggleMenuOtherLink()" data-key="navigation.quick_links">🔗 Quick Other Links</button>
                 <p style="color: white; font-size: 20px;" data-key="general.copyright_text">© 2025 Aripa Pars Studio. All rights reserved.</p>
             </div>
         </footer>
@@ -60,14 +61,58 @@
             <button class="menu-close-button" onclick="toggleMenu()">×</button>
             <h2 data-key="navigation.menu_heading">🔗 Quick Links</h2>
             <ul class="menu-links">
-                <li class="menu-link-item"><a href="https://t.me/AripaStudio" class="prominent-telegram-link"><img src="img/telegram-personal-icon.svg" class="background-icons_GreenLight" alt="Telegram Icon" width="24"> <span data-key="navigation.telegram_channel">Aripa Studio Telegram Channel</span></a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio/AripaStudioHub/releases"><img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="24"> <span data-key="navigation.aripa_studio_hub_download">AripaStudioHub (Download)</span></a></li>
-                <li class="menu-link-item"><a href="https://github.com/AripaStudio"><img src="img/github-icon.svg" class="background-icons_GreenLight" alt="GitHub Icon" width="24"> <span data-key="navigation.aripa_studio_github">Aripa Studio GitHub</span></a></li>
-                <li class="menu-link-item"><a href="https://www.youtube.com/@AripaStudio"><img src="img/youtube-icon.svg" class="background-icons" alt="YouTube Icon" width="24"> <span data-key="navigation.aripa_studio_youtube">Aripa Studio YouTube</span></a></li>
-                <li class="menu-link-item"><a href="https://aripastudio.itch.io"><img src="img/itch-icon.svg" class="background-icons_GreenLight" alt="itch.io Icon" width="24"> <span data-key="navigation.aripa_studio_itchio">Aripa Studio itch.io</span></a></li>
-                <li class="menu-link-item"><a href="https://t.me/khashayarAP"><img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24"> <span data-key="navigation.personal_telegram">Personal Telegram</span></a></li>
-            </ul>
+                 <li class="menu-link-item">
+                    <a href="https://t.me/AripaStudio" class="prominent-telegram-link">
+                        <img src="img/telegram-personal-icon.svg" class="background-icons_GreenLight" alt="Telegram Icon" width="24"> 
+                        <span data-key="navigation.telegram_channel">Aripa Studio Telegram Channel</span>
+                    </a>
+                </li>
+                <li class="menu-link-item">
+                    <a href="https://github.com/AripaStudio/AripaStudioHub/releases">
+                        <img src="img/download-icon.svg" class="background-icons" alt="Download Icon" width="24">
+                         <span data-key="navigation.aripa_studio_hub_download">AripaStudioHub (Download)</span>
+                    </a>
+                </li>
+                <li class="menu-link-item">
+                    <a href="https://github.com/AripaStudio">
+                        <img src="img/github-icon.svg" class="background-icons_GreenLight" alt="GitHub Icon" width="24">
+                         <span data-key="navigation.aripa_studio_github">Aripa Studio GitHub</span>
+                    </a>
+                </li>
+                <li class="menu-link-item">
+                    <a href="https://www.youtube.com/@AripaStudio">
+                        <img src="img/youtube-icon.svg" class="background-icons" alt="YouTube Icon" width="24"> 
+                        <span data-key="navigation.aripa_studio_youtube">Aripa Studio YouTube</span>
+                    </a>
+                </li>
+                <li class="menu-link-item">
+                    <a href="https://aripastudio.itch.io">
+                        <img src="img/itch-icon.svg" class="background-icons_GreenLight" alt="itch.io Icon" width="24">
+                         <span data-key="navigation.aripa_studio_itchio">Aripa Studio itch.io</span>
+                    </a>
+                </li>
+                <li class="menu-link-item">
+                    <a href="https://t.me/khashayarAP">
+                        <img src="img/telegram-personal-icon.svg" class="background-icons" alt="Telegram Icon" width="24">
+                        <span data-key="navigation.personal_telegram">Personal Telegram</span>
+                    </a>
+                </li>            </ul>
         </div>
+    </div>
+
+     <div class="menu-overlay" id="quickOtherLink">
+            <div class="menu-content">
+                <button class="menu-close-button" onclick="toggleMenuOtherLink()">P</button>
+                <h2 data-key="navigation.menu_heading">🔗 Quick Other Links</h2>
+                <ul class="menu-links">
+                    <li class="menu-links">
+                        <a href="https://t.me/DLanguageAP" class="prominent-telegram-link">
+                            <img src="img/telegram-personal-icon.svg" alt="telegram-img" class="background-icons_GreenLight" width="24">
+                            <span data-key="navigation.telegram_channel_D">D Language Community by Aripa Pars Studio</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
     </div>
 
     
