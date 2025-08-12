@@ -309,6 +309,32 @@ a:hover {
     background: linear-gradient(45deg, #ffcc00, #aaff00);
 }
 
+.quick-other-links-button{
+    background: linear-gradient(45deg, #00fff2, #00ff2a);
+    color: #231a2e;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(170, 255, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 3; 
+}
+
+.quick-other-links-button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(170, 255, 0, 0.5);
+    background: linear-gradient(45deg, #ffcc00, #aaff00);
+}
+
 /* Menu Overlay */
 .menu-overlay {
     position: fixed;
