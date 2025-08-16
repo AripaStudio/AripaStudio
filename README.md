@@ -34,7 +34,7 @@
 
 <h2> Github Streak : </h2>
 <p>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=white" alt="GitHub Streak">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=dark" alt="GitHub Streak">
 </p>
 
 
