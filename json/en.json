@@ -65,6 +65,9 @@
         "telegram_channel_link": "Telegram Channel",
         "itchio_profile_link": "itch.io Profile",
         "github_profile_link": "GitHub Profile",
+        "library_projects_heading" : "📚 Library Projects",
+        "type_library":"Library",
+        
         
         "material_color_description": "A tool for exploring Material Design colors, providing a comprehensive palette for developers and designers.",
         "randomwk_ap_description": "RandomWK_AP is a practical tool designed to help you make random selections from various options.",
@@ -78,6 +81,8 @@
         "aio_toolbox_ap_description": "An all-in-one utility software packed with various tools to enhance your productivity and daily tasks.",
         "dncaripa2_description": "The next-generation graphical DNS changer software, offering a user-friendly interface for managing your DNS settings.",
         "snshot_ap_description": "A convenient tool to utilize the xfce4-screenshooter package for easy screenshot capture on Void Linux.",
+        "jsondap_description":"JsonAP is a lightweight and easy-to-use D language library designed to simplify common JSON file operations. It provides a clean, high-level API to read and write JSON data, abstracting away boilerplate code and error handling.  JsonDAP: A powerful JSON library for D from Aripa Pars Studio.",        
+        "jsondap_description2":"Web Site Comming Soon!",
         
         "tag_easy_to_use": "Easy to Use",
         "tag_free": "Free",
