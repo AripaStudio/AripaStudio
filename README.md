@@ -30,11 +30,11 @@
   <img src="https://github-profile-trophy.vercel.app/?username=AripaStudio&theme=juicyfresh&margin-w=10" alt="GitHub Trophies" />
 </p>
 <h2> Github Stats : </h2>
-<img src="https://github-readme-stats.vercel.app/api?username=Aripastudio&show_icons=true&theme=dark" alt="GitHub Stats">
+<img src="https://github-readme-stats.vercel.app/api?username=aripastudio&show_icons=true&theme=dark&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" alt="github status">
 
 <h2> Github Streak : </h2>
 <p>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=dark" alt="GitHub Streak">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AripaStudio&theme=white" alt="GitHub Streak">
 </p>
 
 
