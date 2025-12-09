@@ -15,6 +15,7 @@ const Tag_Escape_from_reality = document.getElementById('Tags-Time-Escape_From_R
 const Tag_DNCaripa = document.getElementById('Tags-Time-DNCaripa_AP');
 const Tag_AripaStudioHub = document.getElementById('Tags-Time-AripaStudioHub');
 const Tag_JsonDAP = document.getElementById('Tags-Time-JsonDAP');
+const Tag_NumericalSoldiersAP = document.getElementById('Tags-Time-NumericalSoldiersAP');
 
 
 const parseDate = (dateString) => {
@@ -97,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (Tag_AripaStudioHub) Tag_AripaStudioHub.textContent = "18-04-2025";
     if (Tag_SNshotAP) Tag_SNshotAP.textContent = "31-05-2025";
     if (Tag_JsonDAP) Tag_JsonDAP.textContent = "11-7-2025";
+    if(Tag_NumericalSoldiersAP) Tag_NumericalSoldiersAP.textContent = "1-12-2025";
 
    
     const initialActiveCategoryButton = document.querySelector('.category-button.active');
